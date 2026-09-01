@@ -1,0 +1,20 @@
+{
+  "bytes": 25892530,
+  "contains_audio": false,
+  "license": "CC BY 4.0",
+  "name": "LibriSpeech-PC",
+  "openslr_id": "SLR145",
+  "partition_counts": {
+    "dev-clean": 2530,
+    "dev-other": 2728,
+    "test-clean": 2417,
+    "test-other": 2856,
+    "train-clean-100": 26041,
+    "train-clean-360": 95404,
+    "train-other-500": 134679
+  },
+  "role": "public source corpus; not LibriSpeech-Gloss",
+  "sha256": "96d4eae2222b29b66437a21959252419bcd4762e5042e71e023790171054d1c0",
+  "total_records": 266655,
+  "url": "https://www.openslr.org/resources/145/manifests.tar.gz"
+}

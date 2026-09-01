@@ -1,0 +1,18 @@
+{
+  "columns": [
+    "gloss",
+    "text"
+  ],
+  "dataset_id": "achrafothman/aslg_pc12",
+  "gloss_column": "gloss",
+  "license": "CC BY-NC 4.0",
+  "local_path": "datasets/raw/aslg_pc12",
+  "orientation": "gloss -> English text",
+  "parquet_sha256": "a4661fe4a0ad021884f68be05a496e58fdcf9aeba0c627a2c5f807c4c2accfcc",
+  "revision": "cb7cd272db8fcd4004ee04ddf50e194c15ea24d6",
+  "source_url": "https://huggingface.co/datasets/achrafothman/aslg_pc12",
+  "splits": {
+    "train": 87710
+  },
+  "target_column": "text"
+}

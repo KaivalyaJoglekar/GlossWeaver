@@ -1,0 +1,2 @@
+experiment,model,grammar_loss,synthetic_augmentation,seed,bleu,rouge_l,meteor,bertscore_f1,exact_match
+E0,e0-copy,false,false,42,21.13486846892788,0.7438483181569644,0.5640612768604959,0.8623229265213013,0.0

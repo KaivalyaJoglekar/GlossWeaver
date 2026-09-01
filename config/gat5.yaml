@@ -1,0 +1,24 @@
+experiment_name: gat5
+model: google-t5/t5-small
+seed: 42
+device: mps
+prefix: "reconstruct gloss: "
+max_source_length: 128
+max_target_length: 128
+batch_size: 8
+learning_rate: 0.0003
+epochs: 3
+weight_decay: 0.01
+warmup_ratio: 0.05
+num_beams: 4
+output_dir: checkpoints/gat5
+data:
+  train: datasets/processed/aslg_pc12/train.jsonl
+  validation: datasets/processed/aslg_pc12/validation.jsonl
+  train_ids: datasets/processed/aslg_pc12/research_train_ids.json
+  validation_ids: datasets/processed/aslg_pc12/research_validation_ids.json
+  use_synthetic: false
+grammar:
+  enabled: true
+  num_labels: 6
+  lambda: 0.25

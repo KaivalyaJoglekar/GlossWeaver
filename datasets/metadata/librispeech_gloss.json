@@ -1,0 +1,14 @@
+{
+  "name": "LibriSpeech-Gloss",
+  "doi": "10.18760/v25.5453",
+  "publication_date": "2026-08-14",
+  "verified_on": "2026-09-01",
+  "reported_examples": 266655,
+  "reported_hours": 981,
+  "construction": "Automatically generated from LibriSpeech-PC using extended TxtSLProcess",
+  "availability": "private; shared by authors upon request",
+  "license": null,
+  "official_download_url": null,
+  "task_direction": "asl gloss column -> English text column"
+}
+
