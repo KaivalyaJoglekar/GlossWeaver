@@ -1,0 +1,2 @@
+experiment_name,model_name,seed,device,grammar_enabled,grammar_lambda,train_examples,validation_examples,training_data_description,best_validation_epoch
+e2_flan,google/flan-t5-small,42,mps,False,0.1,10000,1000,ASLG-PC12 + synthetic telegraphic English,3

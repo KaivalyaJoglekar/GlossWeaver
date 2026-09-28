@@ -5,8 +5,9 @@ from collections import Counter
 
 
 ERROR_CATEGORIES = (
-    "ARTICLE", "PREPOSITION", "TENSE", "PRONOUN", "WORD_ORDER", "LEXICAL",
-    "OMISSION", "HALLUCINATION", "REPETITION", "VALID_PARAPHRASE", "OTHER",
+    "SEMANTIC_DRIFT", "CONTENT_OMISSION", "HALLUCINATION", "COPY_FAILURE",
+    "ARTICLE", "PREPOSITION", "TENSE", "PRONOUN", "AGREEMENT", "WORD_ORDER",
+    "LEXICAL", "REPETITION", "VALID_PARAPHRASE", "OTHER",
 )
 
 
@@ -27,4 +28,3 @@ def possible_hallucination_tokens(gloss: str, prediction: str) -> list[str]:
 def repeated_tokens(prediction: str, minimum_repetitions: int = 3) -> list[str]:
     counts = Counter(re.findall(r"[A-Za-z]+", prediction.lower()))
     return sorted(token for token, count in counts.items() if count >= minimum_repetitions)
-

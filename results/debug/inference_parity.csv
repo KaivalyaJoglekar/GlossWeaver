@@ -1,0 +1,5 @@
+gloss,direct_prediction,api_prediction,exact_match,direct_checkpoint,api_checkpoint
+ME GO STORE YESTERDAY,I went to the store yesterday.,I went to the store yesterday.,True,/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/e4_glossweaver,/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/e4_glossweaver
+TEACHER EXPLAIN STUDENT MATH,The teacher explained math to the student.,The teacher explained math to the student.,True,/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/e4_glossweaver,/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/e4_glossweaver
+CHILD PLAY OUTSIDE SUNNY,The child plays outside when it is sunny.,The child plays outside when it is sunny.,True,/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/e4_glossweaver,/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/e4_glossweaver
+BOY THROW BALL STRONG,The strong boy throws the ball.,The strong boy throws the ball.,True,/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/e4_glossweaver,/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/e4_glossweaver

@@ -17,7 +17,6 @@ dependencies = [
   "nltk>=3.8",
   "numpy>=1.26",
   "pandas>=2.1",
-  "PyYAML>=6.0",
   "rouge-score>=0.1.2",
   "sacrebleu>=2.4",
   "scikit-learn>=1.4",

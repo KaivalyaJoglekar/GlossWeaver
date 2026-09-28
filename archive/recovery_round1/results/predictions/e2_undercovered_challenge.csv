@@ -1,0 +1,10 @@
+id,gloss,reference_1,reference_2,reference_3,notes,model,prediction
+c01,ME GO STORE YESTERDAY,I went to the store yesterday.,I went to a store yesterday.,Yesterday I went to the store.,Past tense signaled by yesterday.,e2_flan,I went to the store yesterday.
+c02,WOMAN BUY CAR RED,The woman bought a red car.,A woman bought a red car.,A woman buys a red car.,Article and tense are ambiguous.,e2_flan,The woman bought a car red.
+c03,MOTHER COOK FOOD TONIGHT,The mother will cook food tonight.,Mother is cooking food tonight.,The mother cooks food tonight.,Future or present progressive is acceptable.,e2_flan,The mother came out to eat the food at the night.
+c04,BOY GO SCHOOL MORNING,The boy went to school this morning.,The boy goes to school in the morning.,A boy will go to school in the morning.,Tense is ambiguous.,e2_flan,The boys went to school in morning.
+c05,TEACHER EXPLAIN STUDENT MATH,The teacher explained math to the student.,A teacher explains math to the student.,The teacher is explaining math to a student.,Argument order must preserve teacher/student roles.,e2_flan,The teacher explained the student's madness.
+c06,CHILD PLAY OUTSIDE SUNNY,The child is playing outside in the sun.,A child played outside on a sunny day.,The child plays outside when it is sunny.,Sunny attachment is ambiguous.,e2_flan,The child played outside the sunny.
+c07,DOG RUN FAST PARK,The dog runs fast in the park.,A dog ran quickly through the park.,The dog is running fast in the park.,Tense and preposition are ambiguous.,e2_flan,The dog ran past the park.
+c08,BOY THROW BALL STRONG,The strong boy threw the ball.,A boy throws the ball with force.,The boy strongly throws a ball.,Strong attachment is ambiguous.,e2_flan,The boy had a roar of the ball strong.
+c09,I WANT BOOK,I want a book.,I want the book.,I would like a book.,Article is ambiguous.,e2_flan,I want a book.

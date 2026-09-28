@@ -1,0 +1,2 @@
+sacrebleu,sacrebleu_signature,chrf,rouge_l,meteor,exact_match,content_word_recall,copy_ratio,bertscore_status,experiment
+94.26685690102568,BLEU = 94.27 98.4/96.7/95.1/93.9 (BP = 0.982 ratio = 0.982 hyp_len = 879 ref_len = 895),96.51879917530715,0.9676333281211734,0.7472977637560336,0.015625,0.8829472177128425,0.8915345938783437,skipped by explicit command-line option,overfit_t5_64

@@ -1,126 +1,153 @@
 from __future__ import annotations
 
 import argparse
-import csv
 import json
 from pathlib import Path
+from time import perf_counter
 
-import torch
-from transformers import AutoConfig, AutoTokenizer, T5ForConditionalGeneration
+import pandas as pd
 
 from glossweaver.evaluation.grammar_metrics import grammar_diagnostics
-from glossweaver.evaluation.metrics import compute_metrics
-from glossweaver.data.grammar_labels import LABEL_NAMES
-from glossweaver.modeling.baseline import CopyHeuristicBaseline
-from glossweaver.modeling.grammar_t5 import GrammarAwareT5
-from glossweaver.utils import read_jsonl, resolve_device, write_json
+from glossweaver.evaluation.metrics import compute_metrics, compute_multi_reference_metrics
+from glossweaver.inference import Reconstructor
+from glossweaver.model_registry import MODELS
+from glossweaver.settings import ROOT
+from glossweaver.utils import read_jsonl
 
 
-def evaluate_checkpoint(
-    checkpoint: str,
-    dataset_file: str,
-    output_csv: str,
-    output_metrics: str,
+def _load(path: Path) -> list[dict[str, object]]:
+    if path.suffix == ".csv":
+        return pd.read_csv(path).fillna("").to_dict(orient="records")
+    return list(read_jsonl(path))
+
+
+def evaluate_model(
+    model_key: str,
+    dataset_file: str | Path,
+    output_csv: str | Path,
     *,
-    batch_size: int = 8,
-    num_beams: int = 4,
-    skip_bertscore: bool = False,
-    ids_file: str | None = None,
+    dataset_name: str,
+    split: str,
+    ids_file: str | Path | None = None,
     max_examples: int | None = None,
+    num_beams: int = 4,
+    batch_size: int = 16,
+    include_bertscore: bool = True,
     device: str = "auto",
 ) -> dict[str, object]:
-    records = list(read_jsonl(dataset_file))
+    records = _load(Path(dataset_file))
     if ids_file:
-        with Path(ids_file).open(encoding="utf-8") as handle:
-            identifiers = json.load(handle)
-        by_id = {record["id"]: record for record in records}
+        ids_path = Path(ids_file)
+        if ids_path.suffix == ".csv":
+            identifiers = pd.read_csv(ids_path)["id"].astype(str).tolist()
+        else:
+            with ids_path.open(encoding="utf-8") as handle:
+                identifiers = json.load(handle)
+        by_id = {str(record["id"]): record for record in records}
         records = [by_id[identifier] for identifier in identifiers]
     if max_examples is not None:
         records = records[:max_examples]
-    glosses = [record["gloss"] for record in records]
-    references = [record["target"] for record in records]
-    grammar_probabilities = None
-    if checkpoint == "e0-copy":
-        predictions = CopyHeuristicBaseline().predict_batch(glosses)
-    else:
-        config = AutoConfig.from_pretrained(checkpoint)
-        tokenizer = AutoTokenizer.from_pretrained(checkpoint)
-        grammar_aware = bool(getattr(config, "glossweaver_grammar_aware", False))
-        model = GrammarAwareT5.from_pretrained(checkpoint) if grammar_aware else T5ForConditionalGeneration.from_pretrained(checkpoint)
-        device = resolve_device(device)
-        model.to(device).eval()
-        predictions = []
-        probability_rows: list[list[float]] = []
-        for start in range(0, len(glosses), batch_size):
-            batch_glosses = glosses[start:start + batch_size]
-            encoded = tokenizer(
-                ["reconstruct gloss: " + gloss for gloss in batch_glosses],
-                padding=True, truncation=True, max_length=128, return_tensors="pt",
-            ).to(device)
-            with torch.no_grad():
-                generated = model.generate(**encoded, num_beams=num_beams, max_new_tokens=128)
-                if grammar_aware:
-                    output = model(**encoded)
-                    probability_rows.extend(torch.sigmoid(output.grammar_logits).cpu().tolist())
-            predictions.extend(tokenizer.batch_decode(generated, skip_special_tokens=True))
-        grammar_probabilities = probability_rows if grammar_aware else None
-
-    output = Path(output_csv)
-    output.parent.mkdir(parents=True, exist_ok=True)
-    with output.open("w", newline="", encoding="utf-8") as handle:
-        fields = ["id", "gloss", "reference", "prediction"]
-        if grammar_probabilities is not None:
-            fields.extend(f"grammar_probability_{name.lower()}" for name in LABEL_NAMES)
-        writer = csv.DictWriter(handle, fieldnames=fields)
-        writer.writeheader()
-        for index, (record, prediction) in enumerate(zip(records, predictions, strict=True)):
+    reconstructor = Reconstructor(model_key, device=device)
+    start = perf_counter()
+    rows: list[dict[str, object]] = []
+    for start_index in range(0, len(records), batch_size):
+        batch = records[start_index:start_index + batch_size]
+        outputs = reconstructor.reconstruct_batch(
+            [str(record["gloss"]) for record in batch], num_beams
+        )
+        for record, (prediction, grammar) in zip(batch, outputs, strict=True):
             row = {
                 "id": record["id"], "gloss": record["gloss"],
-                "reference": record["target"], "prediction": prediction,
+                "reference": record.get("target", record.get("reference_1", "")),
+                "prediction": prediction, "model": model_key,
             }
-            if grammar_probabilities is not None:
-                row.update({
-                    f"grammar_probability_{name.lower()}": value
-                    for name, value in zip(LABEL_NAMES, grammar_probabilities[index], strict=True)
-                })
-            writer.writerow(row)
-    metrics: dict[str, object] = compute_metrics(
-        predictions, references, include_bertscore=not skip_bertscore
-    )
-    metrics["grammar_diagnostics"] = grammar_diagnostics(glosses, references, predictions)
-    metrics["checkpoint"] = checkpoint
-    metrics["examples"] = len(records)
-    write_json(output_metrics, metrics)
-    return metrics
+            row.update({f"grammar_probability_{key.lower()}": value for key, value in grammar.items()})
+            rows.append(row)
+    runtime_minutes = (perf_counter() - start) / 60
+    output = Path(output_csv)
+    output.parent.mkdir(parents=True, exist_ok=True)
+    pd.DataFrame(rows).to_csv(output, index=False)
+    glosses = [str(row["gloss"]) for row in rows]
+    references = [str(row["reference"]) for row in rows]
+    predictions = [str(row["prediction"]) for row in rows]
+    if records and records[0].get("reference_2"):
+        reference_sets = [
+            [str(record[key]) for key in ("reference_1", "reference_2", "reference_3") if record.get(key)]
+            for record in records
+        ]
+        metrics = compute_multi_reference_metrics(
+            predictions, reference_sets, include_bertscore=include_bertscore, glosses=glosses
+        )
+    else:
+        metrics = compute_metrics(
+            predictions, references, include_bertscore=include_bertscore, glosses=glosses
+        )
+    metric_row: dict[str, object] = {
+        "model": model_key,
+        "dataset": dataset_name,
+        "split": split,
+        "train_examples": "",
+        "seed": 42,
+        "bleu": metrics["sacrebleu"],
+        "rouge_l": metrics["rouge_l"],
+        "meteor": metrics["meteor"],
+        "bertscore_f1": metrics.get("bertscore_f1", ""),
+        "content_word_recall": metrics["content_word_recall"],
+        "copy_ratio": metrics["copy_ratio"],
+        "runtime_minutes": runtime_minutes,
+        "checkpoint": reconstructor.debug_info["checkpoint_path"],
+        "examples": len(rows),
+        "num_beams": num_beams,
+    }
+    metrics_path = ROOT / "results/metrics/model_metrics.csv"
+    metrics_path.parent.mkdir(parents=True, exist_ok=True)
+    if metrics_path.exists():
+        frame = pd.read_csv(metrics_path)
+        keep = ~(
+            (frame["model"] == model_key)
+            & (frame["dataset"] == dataset_name)
+            & (frame["split"] == split)
+            & (frame["num_beams"] == num_beams)
+        )
+        frame = frame[keep]
+        frame = pd.concat([frame, pd.DataFrame([metric_row])], ignore_index=True)
+    else:
+        frame = pd.DataFrame([metric_row])
+    frame.to_csv(metrics_path, index=False)
+    diagnostics = grammar_diagnostics(glosses, references, predictions)
+    diagnostic_rows = [
+        {"model": model_key, "dataset": dataset_name, "split": split, "category": category, **values}
+        for category, values in diagnostics.items()
+    ]
+    diagnostics_path = ROOT / "results/tables/grammar_diagnostics.csv"
+    existing = pd.read_csv(diagnostics_path) if diagnostics_path.exists() else pd.DataFrame()
+    if not existing.empty and "model" in existing:
+        existing = existing[~((existing["model"] == model_key) & (existing["dataset"] == dataset_name) & (existing["split"] == split))]
+    pd.concat([existing, pd.DataFrame(diagnostic_rows)], ignore_index=True).to_csv(diagnostics_path, index=False)
+    print(pd.DataFrame([metric_row]).to_string(index=False))
+    return metric_row
 
 
 def main() -> None:
-    parser = argparse.ArgumentParser(description="Evaluate E0 or a trained GlossWeaver checkpoint")
-    parser.add_argument("--checkpoint", required=True, help="Checkpoint path or e0-copy")
-    parser.add_argument("--split", choices=("validation", "test"), default="test")
-    parser.add_argument("--dataset-dir", default="datasets/processed/aslg_pc12")
+    parser = argparse.ArgumentParser(description="Evaluate a registered GlossWeaver model")
+    parser.add_argument("--model", choices=sorted(MODELS), required=True)
+    parser.add_argument("--dataset-file", required=True)
+    parser.add_argument("--dataset-name", required=True)
+    parser.add_argument("--split", required=True)
     parser.add_argument("--ids")
     parser.add_argument("--max-examples", type=int)
-    parser.add_argument("--output-name")
-    parser.add_argument("--batch-size", type=int, default=8)
     parser.add_argument("--num-beams", type=int, default=4)
+    parser.add_argument("--batch-size", type=int, default=16)
     parser.add_argument("--skip-bertscore", action="store_true")
     parser.add_argument("--device", choices=("auto", "cpu", "mps", "cuda"), default="auto")
+    parser.add_argument("--output", required=True)
     args = parser.parse_args()
-    name = args.output_name or ("e0_copy" if args.checkpoint == "e0-copy" else Path(args.checkpoint).name)
-    metrics = evaluate_checkpoint(
-        args.checkpoint,
-        str(Path(args.dataset_dir) / f"{args.split}.jsonl"),
-        f"results/predictions/{name}.csv",
-        f"results/metrics/{name}.json",
-        batch_size=args.batch_size,
-        num_beams=args.num_beams,
-        skip_bertscore=args.skip_bertscore,
-        ids_file=args.ids,
-        max_examples=args.max_examples,
-        device=args.device,
+    evaluate_model(
+        args.model, args.dataset_file, args.output, dataset_name=args.dataset_name,
+        split=args.split, ids_file=args.ids, max_examples=args.max_examples,
+        num_beams=args.num_beams, include_bertscore=not args.skip_bertscore,
+        device=args.device, batch_size=args.batch_size,
     )
-    print(json.dumps(metrics, indent=2))
 
 
 if __name__ == "__main__":

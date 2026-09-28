@@ -22,6 +22,9 @@ def test_grammar_model_forward_and_gloss_only_generation():
     )
     assert output.loss is not None
     assert output.grammar_logits.shape == (1, 6)
+    grammar_only_logits = model.predict_grammar(
+        input_ids=input_ids, attention_mask=attention_mask
+    )
+    assert grammar_only_logits.shape == (1, 6)
     generated = model.generate(input_ids=input_ids, attention_mask=attention_mask, max_new_tokens=2)
     assert generated.shape[0] == 1
-

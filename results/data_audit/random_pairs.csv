@@ -1,0 +1,101 @@
+id,gloss,target,gloss_tokens,target_tokens,token_overlap
+aslg_pc12:2fcd2af15b93ede37c37,"DURING DESC-SAME PERIOD , EMPLOYMENT RATE DROP BY 2 % AND DESC-INDUSTRIAL PRODUCTION BY 10.2 % .","during the same period , the employment rate dropped by 2 % and industrial production by 10.2 % .",13,13,0.818182
+aslg_pc12:7c8dda5f8ab50204f94d,"LABOR CLAUSE IN CONTRACT BE DESC-GOOD , BUT X-Y DO DESC-NOT GO DESC-FAR DESC-ENOUGH .","the labour clauses in the contract are good , but they do not go far enough .",18,15,0.6
+aslg_pc12:cc5aae2b191b7201a428,"DESC-INDEED , DESC-RE BE RISK EUROPEAN KNOWLEDGE BE LOSE DESC-FOREVER TO COUNTRY BENEFIT FROM TECHNOLOGY TRANSFER .","indeed , there is a risk of european knowledge being lost forever to countries benefiting from technology transfer .",18,17,0.6
+aslg_pc12:efda262d3192c3763e32,"X-Y HAVE DESC-NEW GOVERNMENT X-Y WILL MANAGE , BUT KOSOVO WILL DESC-ONLY MANAGE IF X-YOU ALL HELP .","they have a new government they will manage , but kosovo will only manage if you all help .",21,17,0.8
+aslg_pc12:99a7617f344fdf8eea56,DEBATE WILL BE HOLD FROM 09.00 TO 13.00 AND FROM 15.00 TO 19.00 .,the debates will be held from 09.00 to 13.00 and from 15.00 to 19.00 .,9,10,0.714286
+aslg_pc12:9e39b59cb2f8fdbc1eeb,THIS CAN GO ON NO DESC-LONGER .,this can go on no longer .,7,6,0.857143
+aslg_pc12:051191669b2aad026a5d,DESC-RE BE SOME PRINCIPLE AND PRACTICE TO BE SAFEGUARD .,there are some principles and practices to be safeguarded .,10,9,0.444444
+aslg_pc12:e83ee66ad28463ee425b,"REPORT BE DESC-CLEAR , CONCISE AND TO POINT .","the report is clear , concise and to the point .",8,9,0.75
+aslg_pc12:e6d00419159224922d42,X-WE DESC-REFORE VOTE AGAINST REPORT AND IN FAVOR REFER PROPOSAL DESC-BACK TO COMMISSION .,we therefore voted against the report and in favour of referring the proposal back to the commission .,16,17,0.6
+aslg_pc12:32d1e4194884ce30156c,X-Y KEEP SIGNAL TO X-I TO TELL X-I THAT X-Y CAN DESC-NOT KEEP DESC-UP WITH X-YOU .,they keep signalling to me to tell me that they cannot keep up with you .,23,15,0.5
+aslg_pc12:f200c6ca7c66be495bd4,IMPORTANCE THIS CAN DESC-HARDLY BE EXAGGERATE .,the importance of this can hardly be exaggerated .,7,8,0.714286
+aslg_pc12:2f97dca7adccaea7c6ae,"FOR THIS REASON , X-I ASK COMMISSION TO REMEDY THIS DESC-IRREGULAR SITUATION .","for this reason , I ask the commission to remedy this irregular situation .",13,12,0.833333
+aslg_pc12:1956de3f1b6a318a4971,X-IT BE DESC-UNACCEPTABLE TO GIVE EU FUND TO DESC-THIRD COUNTRY WITHOUT ANY ESTABLISH INDICATOR .,it is unacceptable to give eu funds to third countries without any established indicators .,17,14,0.533333
+aslg_pc12:7b18d1d3435fd1ad04d6,MOST COST DESC-EFFECTIVE MEANS TO REDUCE GREENHOUSE GAS BE TO MOVE DESC-FORWARD WITH STRATEGY FOR ENERGY EFFICIENCY .,the most cost effective means to reduce greenhouse gases is to move forward with a strategy for energy efficiency .,19,19,0.823529
+aslg_pc12:2730fa1711ca51140f6b,"IN 1950 , COMMUNIST FORCE INVADE TIBET , LEAD TO EXILE DALAUS LAMA 50 YEAR DESC-AGO .","in 1950 , communist forces invaded tibet , leading to the exile of the dalai lama 50 years ago .",13,15,0.538462
+aslg_pc12:ffcefa6e88ebcd97aace,X-IT BE DESC-FULLY INVOLVE IN G20 PROCESS .,it is fully involved in the g20 process .,9,8,0.555556
+aslg_pc12:e8f04faa1b117a693f29,SE BE KEY POINT .,these are key points .,4,4,0.25
+aslg_pc12:bdc12fbc236fa55d7f7c,X-YOU HAVE BE IN CHARGE OVERSEE THAT DESC-CONSTITUTIONAL TREATY BE PUSH THROUGH .,you have been in charge of overseeing that the constitutional treaty was pushed through .,14,14,0.615385
+aslg_pc12:ec842c76db37efbd2045,THIS BE DESC-ALSO DESC-IMPORTANT TASK FOR X-WE .,this is also an important task for us .,10,8,0.555556
+aslg_pc12:4102bfce984357df463b,SYSTEM MONITOR DESC-REFORE REQUIRE DESC-GREATER SUPERVISION .,the system of monitoring therefore requires greater supervision .,8,8,0.428571
+aslg_pc12:ae6229351f094d4d4471,"DESC-RE BE SITE IN UK , BELGIUM , POLAND , SPAIN , GERMANY AND DESC-OR EUROPEAN COUNTRY .","there are sites in the uk , belgium , poland , spain , germany and other european countries .",15,14,0.571429
+aslg_pc12:bed9f63dc5c0f06b2c3e,X-IT BE DESC-UNREASONABLY DESC-LARGE AMOUNT AND X-IT BE DESC-TOTALLY DESC-UNACCEPTABLE .,it is an unreasonably large amount and it is totally unacceptable .,16,11,0.7
+aslg_pc12:466e087da32381f4caa7,"X-WE BE AT WAR , AND X-WE SOLDIER , WHICH BE X-WE BUSINESS , BE FIRING DESC-BLANK .","we are at war , and our soldiers , which are our businesses , are firing blanks .",18,14,0.5
+aslg_pc12:5729a3be40e850dc74ce,DESC-SUCH CONCEPT BE REWARD FOR DESC-GOOD DESC-ENVIRONMENTAL BEHAVIOR .,such a concept is a reward for good environmental behaviour .,11,10,0.666667
+aslg_pc12:3526a7751e61cdfe2f36,"MADAM PRESIDENT , COMMISSIONER , LADY AND GENTLEMAN , THIS BE DESC-LAST DESC-PLENARY SIT THIS DESC-LEGISLATIVE PERIOD .","madam president , commissioner , ladies and gentlemen , this is the last plenary sitting of this legislative period .",17,16,0.642857
+aslg_pc12:8eb370c0f76c5e6cbcfd,DESC-NEW ERA IN INTEGRATION DESC-FAIRER EUROPE WHICH SHOW DESC-GREATER SOLIDARITY .,a new era in the integration of a fairer europe which shows greater solidarity .,13,14,0.818182
+aslg_pc12:4d9310d880fb55583549,"COUNCIL PRESIDENT , DESC-HIGH REPRESENTATIVE OR COMMISSION PRESIDENT ?","the council president , the high representative or the commission president ?",8,10,0.857143
+aslg_pc12:1a04776702b1cbeabd2f,THIS BE WHY X-I BE ASK ALL GROUP TO VOTE FOR THIS REPORT .,this is why I am asking all groups to vote for this report .,14,13,0.666667
+aslg_pc12:1f00ce409d462eb18bf5,"2009 BUDGET GUIDELINE , DESC-OR SECTION","2009 budget guidelines , other sections",5,4,0.2
+aslg_pc12:1e7c367310b9447c3dc2,DESC-NEW DESC-STRATEGIC IMPORTANCE FOR FOOD PRODUCTION AND CAP DESC-ABSOLUTELY .,a new strategic importance for food production and the cap absolutely .,12,11,0.9
+aslg_pc12:a5394841cc40bcc6e3be,SHOULD THIS QUESTION DESC-NOT BE LINK TO DESC-CERTAIN LEVEL SUCCESS ?,should this question not be linked to a certain level of success ?,12,12,0.818182
+aslg_pc12:8224c4bae919f734f523,"DESC-YOUNG PEOPLE , IN DESC-PARTICULAR , BE DESC-ESPECIALLY DESC-HARD HIT BY DESC-CURRENT CRISIS .","young people , in particular , are especially hard hit by the current crisis .",16,12,0.833333
+aslg_pc12:61cd2278e58314568521,"X-WE , DESC-TOO , HAVE RESPONSIBILITY DESC-HERE , X-I BE DESC-HAPPY TO ACCEPT THAT .","we , too , have responsibility here , I am happy to accept that .",16,11,0.769231
+aslg_pc12:05e17aef363fa0fbcf70,GAS BE SUPPLY FROM RUSSIUM .,the gas is supplied from russia .,5,6,0.4
+aslg_pc12:df65f031ed7c91c356d3,CHILD DESC-ACTUALLY RECEIVE HUMANE TREATMENT .,children actually receive humane treatment .,6,5,0.666667
+aslg_pc12:74a17535b93f36acb045,DESC-PERHAPS NEXT DESC-SUCH REPORT COULD GO INTO MORE DETAIL ON THIS MATTER .,perhaps the next such report could go into more detail on this matter .,14,13,0.923077
+aslg_pc12:193215ae869d92d602b7,FIASCO CLIMATE SUMMIT HAVE EXPOSE EUROPE X-POSS WEAKNESS AND NAIVETY X-ITS DESC-POLITICAL ELITE .,the fiasco of the climate summit has exposed europe's weakness and the naivety of its political elite .,16,17,0.6
+aslg_pc12:d416f11288ed750700ec,"DESC-OVERALL , X-WE MUST FOCUS ON DESC-SMALL AND MEDIUM SIZE ENTERPRISE SME .","overall , we must focus on the small and medium sized enterprises smes .",14,12,0.615385
+aslg_pc12:150d298218d8775d6039,CROATIUM AND ICELAND X-I WOULD LIKE X-Y TO COMPETE TO BE NUMBER NEXT TASK DESC-NOW WILL BE TO SET DESC-UP EUROPEAN UNION X-POSS DESC-FOREIGN SERVICE .,croatia and iceland I would like them to compete to be number the next task now will be to set up the european union's foreign service .,31,26,0.75
+aslg_pc12:7cddf211ecf9ed0339b4,CAN X-WE ENCOURAGE PEOPLE TO MAKE SACRIFICE IF X-WE TELL X-Y X-Y WILL DESC-ALWAYS BE KEEP WAIT OUTSIDE ?,can we encourage people to make sacrifices if we tell them they will always be kept waiting outside ?,23,18,0.666667
+aslg_pc12:60bcff866e5787c25b2e,"RING NUMBER . , NONE EMPLOYEE HAVE DESC-PERSONAL IDENTITY NUMBER , DESC-SO CALL FOLKBOKF ?","to this day , none of the employees have a personal identity number , the so called folkbokföring number .",13,18,0.727273
+aslg_pc12:dbf278ef87c657a787ab,X-I TURN DESC-NOW TO DUBLIN REGULATION .,i turn now to the dublin regulation .,8,7,0.75
+aslg_pc12:ed76b429f5032c7da02b,"DESC-FINALLY , X-WE HAVE INTRODUCE REQUIREMENT FOR DESC-STREAMLINED DECISION TAKE .","finally , we have introduced requirements for streamlined decision taking .",12,9,0.545455
+aslg_pc12:6cbe4d21b61ad1bd0eed,DOUBLE IN MURDER RELATE TO DRUG VIOLENCE BE WORRY SITUATION .,the doubling in murders related to drug violence is a worrying situation .,10,12,0.5
+aslg_pc12:7baeb51524525a5cca35,"IN VIEW X-YOU DESC-PERSONAL BACKGROUND , HOW CAN X-YOU DO DESC-SUCH THING ?","in view of your personal background , how can you do such a thing ?",15,13,0.833333
+aslg_pc12:046b2c5d7372399a3e48,EU EXPECT DESC-STRONG COMMITMENT AND LEADERSHIP FROM PRESIDENT KARZAUS AND X-HE GOVERNMENT .,the eu expects a strong commitment and leadership from president karzai and his government .,14,14,0.615385
+aslg_pc12:4c0ec56cba8c3b7cc32f,X-WE REMAIN DESC-INDISPENSABLE AND DESC-CRUCIAL ACTOR IN MIDDLE DESC-EAST .,the us remains an indispensable and crucial actor in the middle east .,13,12,0.636364
+aslg_pc12:9c8fc3a8349ce5bf3f46,"MR PRESIDENT , THANK X-YOU FOR GIVE X-I THIS OPPORTUNITY TO EXPLAIN HOW X-I VOTE .","mr president , thank you for giving me this opportunity to explain how I voted .",17,14,0.785714
+aslg_pc12:72afe30957f21e12c824,X-I DESC-PARTICULARLY DISAGREE WITH CUT MAKE IN BUDGET HEAD IN SUPPORT LISBON STRATEGY .,i particularly disagree with the cuts made in the budget headings in support of the lisbon strategy .,15,17,0.642857
+aslg_pc12:310879b16ef9daab5f59,"AFTER ALL , EUROPEAN PARLIAMENT SHOULD BE AT LEAD EDGE TECHNOLOGY .","after all , the european parliament should be at the leading edge of technology .",10,13,0.9
+aslg_pc12:898b56dd3f0f4677e8ab,X-I WOULD LIKE TO CONGRATULATE RAPPORTEUR .,i would like to congratulate the rapporteur .,7,7,0.857143
+aslg_pc12:710e87f362d15a09dcc3,"DESC-PERSONALLY , X-I CAN DESC-NOT UNDERSTAND HOW , AS POLITICIAN , ANYONE COULD THINK IN THAT WAY .","personally , I cannot understand how , as a politician , anyone could think in that way .",17,14,0.75
+aslg_pc12:f557f464f484090da023,"DESC-REFORE , X-I DESC-WELCOME OUTCOME THIS VOTE .","therefore , I welcome the outcome of this vote .",9,8,0.625
+aslg_pc12:4b3c9301952b26ac35d8,"IF X-YOU WANT TO BE PATIENT AND WAIT , X-WE WILL SEE HOW X-WE GET ON .","if you want to be patient and wait , we will see how we get on .",18,15,0.933333
+aslg_pc12:62f42f520a69ccc8dab5,"DE MR PRESIDENT , X-WE NEED DESC-DIFFERENT EU AND X-WE DESC-ALSO NEED DESC-DIFFERENT EU BUDGET .","de mr president , we need a different eu and we also need a different eu budget .",19,16,0.833333
+aslg_pc12:6e786538cb7064d04dd1,X-WE WILL DESC-NOW GO ON WITH DEBATE AND DESC-ALSO DEVOTE X-WE DESC-FULL ATTENTION TO X-IT .,we will now go on with the debate and also devote our full attention to it .,21,16,0.875
+aslg_pc12:4a7a2e9b4c3d3964189b,THIS BE SOMETHING THAT GOVERNMENT EU NEED TO TAKE NOTE .,this is something that the governments of the eu need to take note of .,10,14,0.8
+aslg_pc12:27e7b62bf7b1f85dd5ed,COMMISSION BE DESC-VERY DESC-PLEASED WITH OUTCOME CODECISION PROCESS .,the commission is very pleased with the outcome of the codecision process .,10,12,0.777778
+aslg_pc12:b932a6f6a9d91805bcb6,"TWO PILLAR DESC-ABSOLUTELY , X-I AGREE WITH THAT .","two pillars absolutely , I agree with that .",9,7,0.666667
+aslg_pc12:18944a9a7880ab944ad3,FOLLOW QUESTION HAVE BE SUBMIT TO COMMISSION .,the following questions have been submitted to the commission .,7,9,0.428571
+aslg_pc12:cf8b5c68313e1b8188a2,"X-I HAVE TO SAY THAT WITHOUT X-Y WORK AND X-Y HELP , X-WE WOULD DESC-NOT HAVE ACHIEVE THIS .","i have to say that without their work and their help , we would not have achieved this .",22,17,0.764706
+aslg_pc12:5f9aaddb7a0c878dbb00,BE X-IT CASE EUROPEAN SOLIDARITY OR SUPPORT FOR STATE ?,is it a case of european solidarity or support for the states ?,10,12,0.7
+aslg_pc12:1e9539ecf21d4669d2c0,FOR YEAR ON END BULGARIUM BE REQUIRE TO MAKE DESC-GREATER EFFORT IN FIGHT AGAINST CRIME .,for years on end bulgaria was required to make greater efforts in the fight against crime .,16,16,0.625
+aslg_pc12:d04e21f2f57026bf5ca4,RESOLUTION ADOPT CONTINUE PATTERN INTERVENTION IN DEFENSE COMPETITION AND AGAINST PUBLIC SERVICE .,the resolution adopted continues the pattern of intervention in defence of competition and against public services .,12,16,0.666667
+aslg_pc12:392945411ef08a84408d,PLACE MORE TRUST IN EUROPE THAN HIRTO MUST BE X-WE OBLIGATION FOR FUTURE .,placing more trust in europe than hitherto must be our obligation for the future .,14,14,0.714286
+aslg_pc12:aae48843e68ba2856cf4,DO DESC-NOT REPROACH X-I FOR DESCRIBE FACT AS X-Y BE .,do not reproach me for describing the facts as they are .,13,11,0.416667
+aslg_pc12:be7d3a9225a15a70d510,INSIDER DEAL AND MARKET MANIPULATION IMPLEMENT POWER CONFER ON COMMISSION VOTE,insider dealing and market manipulation implementing powers conferred on the commission vote,11,12,0.636364
+aslg_pc12:1e2305bba9ae79232e36,VOTE WILL TAKE PLACE TOMORROW AT 12.00 .,the vote will take place tomorrow at 12.00 .,6,7,1.0
+aslg_pc12:e968bb0aa8dde6680183,"DESC-FIRSTLY , AS REGARD BAN ON FLIGHT AND COORDINATION .","firstly , as regards the ban on flights and coordination .",9,9,0.666667
+aslg_pc12:7809072251b63318a511,ALLOW X-I TO GIVE TWO EXAMPLE .,allow me to give two examples .,7,6,0.571429
+aslg_pc12:2dfc4ab0d9f35ffd8d63,"MR ASHTON , WHY BE EUROPE DOOM TO REPEAT X-ITS MISTAKE ?","mrs ashton , why is europe doomed to repeat its mistakes ?",11,10,0.545455
+aslg_pc12:6a3b8191d725cbbe92ae,BALL BE DESC-NOW IN COUNCIL X-POSS COURT .,the ball is now in the council's court .,9,8,0.444444
+aslg_pc12:ce096df475a49a883071,X-I WANT TO THANK RAPPORTEUR FOR X-HE DESC-CONSTRUCTIVE APPROACH TO THIS .,i want to thank the rapporteur for his constructive approach to this .,14,12,0.75
+aslg_pc12:4dc226a5854e83df21a2,THING HAVE DESC-LARGELY DEPEND ON SEND COUNTRY X-POSS DESC-VERY DESC-LATEST REGULATION .,things have largely depended on the sending country's very latest regulations .,15,11,0.384615
+aslg_pc12:c7398af018be96b4af0e,DESC-SO X-WE KNOW WHAT TO DO .,so we know what to do .,8,6,0.75
+aslg_pc12:458d575cff8c1dca234e,UKRAINE ?,ukraine ?,1,1,1.0
+aslg_pc12:452407bb5f01c16bfbaa,X-I BE DESC-VERY DESC-PLEASED TO SEE THAT OVER EUR 100 BILLION BE TO BE INVEST IN PROTECT ENVIRONMENT .,i am very pleased to see that over eur 100 billion is to be invested in protecting the environment .,20,18,0.75
+aslg_pc12:ed73e2ddbd8aa69d1986,THAT BE X-WE TASK AND THAT BE WHAT X-WE HAVE DO .,that was our task and that is what we have done .,13,11,0.666667
+aslg_pc12:b622477c35dd3b047971,THIS SHOULD BRING X-WE ONE STEP CLOSER TO MORE DESC-SUSTAINABLE TRANSPORT SYSTEM .,this should bring us one step closer to a more sustainable transport system .,14,13,0.785714
+aslg_pc12:9a8c5b7f2414a443d987,X-IT BE DESC-GOOD FOR X-Y AND X-IT BE DESC-GOOD FOR X-WE .,it is good for them and it is good for us .,17,11,0.444444
+aslg_pc12:cd9e2c17efb1eb7c5a68,"HOW BE X-YOU GO TO ENSURE THIS , AND WHAT TIMETABLE BE X-YOU WORK TO ?","how are you going to ensure this , and what timetable are you working to ?",16,14,0.666667
+aslg_pc12:ee60f59462a811271108,X-I VIEW THIS TO DESC-CERTAIN EXTENT AS LACK TRUST IN PARLIAMENT .,i view this to a certain extent as a lack of trust in parliament .,13,14,0.846154
+aslg_pc12:ccdff5c07414c025c6c8,PRESIDENT REPLY TO THIS THAT SE BE DESC-INTERNAL MATTER AND EUROPEAN UNION CAN DESC-NOT INTERFERE IN DESC-INTERNAL MATTER .,the president replied to this that these were internal matters and the european union cannot interfere in internal matters .,21,19,0.588235
+aslg_pc12:a1a1d51ffee107ea7aa7,WORD MUST DESC-ALSO BE ACCOMPANY BY ACTION .,words must also be accompanied by action .,8,7,0.625
+aslg_pc12:8b74b68e25cedf766701,X-WE DESC-URGENTLY NEED TO ADOPT DESC-EFFECTIVE COMMUNITY MEASURE ON IMMIGRATION AND ASYLUM .,we urgently need to adopt effective community measures on immigration and asylum .,15,12,0.785714
+aslg_pc12:5590a6b7999f1f16d495,AGRICULTURE BE DESC-IMPORTANT TO X-WE CITIZEN .,agriculture is important to our citizens .,8,6,0.375
+aslg_pc12:68d9d324777c2b433bbc,"DESC-FIRSTLY , BECAUSE ONE PRIORITY SPANISH PRESIDENCY BE ENERGY SECURITY .","firstly , because one of the priorities of the spanish presidency is energy security .",10,13,0.7
+aslg_pc12:603b81ee0bd54169aad8,"NEXT , HOW CAN X-WE GUARANTEE ENERGY SECURITY ?","next , how can we guarantee energy security ?",8,7,0.875
+aslg_pc12:2864ceecbcd0437fcf54,X-IT DESC-UNRESERVEDLY CONDEMN STALINISM .,it unreservedly condemns stalinism .,6,4,0.5
+aslg_pc12:316eef1e6e7b15faefc9,X-WE NEED TO REDUCE OVERCAPACITY DESC-CERTAIN FLEET .,we need to reduce the overcapacity of certain fleets .,9,9,0.666667
+aslg_pc12:0e38ccf74f4068bed5da,"THANK X-YOU DESC-VERY DESC-MUCH , MR SCHULZ .","thank you very much , mr schulz .",9,6,0.75
+aslg_pc12:9fd710ccca6aed2f51bb,"BEFORE X-WE CAN LOOK FOR SOLUTION , HAMA MUST STOP X-ITS ROCKET ATTACK ON ISRAEL .","before we can look for a solution , hamas must stop its rocket attacks on israel .",16,15,0.8
+aslg_pc12:df6209774a9cef3ccb62,X-IT DO DESC-NOT DESC-CURRENTLY REQUIRE SUPPORT FROM EUROPEAN DESC-CIVIL PROTECTION MECHANISM .,it does not currently require support from the european civil protection mechanism .,15,12,0.769231
+aslg_pc12:95e3de7ba43cf61df1c8,"DESC-UNEXPECTEDLY , COURSE , DESC-RE BE DISCUSSION ON SITUATION IN GREECE .","unexpectedly , of course , there was a discussion on the situation in greece .",11,12,0.7
+aslg_pc12:60672e89d29a1f580190,"ZIMBABWE , IN DESC-PARTICULAR CASE FARA X-I MAGUWU","zimbabwe , in particular the case of farai maguwu",9,8,0.555556
+aslg_pc12:f9a56fe1e513de81a75f,"X-YOU PRESIDENCY HAVE COINCIDE WITH SPANISH DESC-ECONOMIC COLLAPSE , WHICH X-YOU BE WARN ABOUT .","your presidency has coincided with the spanish economic collapse , which you were warned about .",16,14,0.571429
+aslg_pc12:d05176b8eef4de8623f3,MONTREAL PROTOCOL BE CONSIDER TO BE ONE MOST DESC-SUCCESSFUL ALL DESC-INTERNATIONAL DESC-ENVIRONMENTAL AGREEMENT .,the montreal protocol is considered to be one of the most successful of all international environmental agreements .,16,17,0.769231
+aslg_pc12:e2f538b3d2bf5a615304,NAME YOU WHAT(wh),What's your name?,4,3,0.25
+aslg_pc12:ce45ce833ee9e1acf313,"THIS DESTINY BE FOR X-WE DESC-COMMON DESC-GOOD , AND X-IT BE VISION X-WE FOUNDING FAR .","this destiny is for our common good , and it is the vision of our founding fathers .",19,16,0.642857
+aslg_pc12:076dbaf626bae33ee30f,KEY TO SUCCESS LIE IN DESC-AGRICULTURAL SECTOR .,the key to success lies in the agricultural sector .,8,9,0.75

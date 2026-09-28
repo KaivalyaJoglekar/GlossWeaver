@@ -1,0 +1,19 @@
+id,model,prediction,categories
+c01,legacy_e4,i am going to stand on yesterday.,SEMANTIC_DRIFT|TENSE
+c02,legacy_e4,women buy cars red.,AGREEMENT|WORD_ORDER
+c03,legacy_e4,the other looks at food tonight.,SEMANTIC_DRIFT|CONTENT_OMISSION
+c04,legacy_e4,both go school rolling.,SEMANTIC_DRIFT|LEXICAL
+c05,legacy_e4,the teacher explained the student path.,LEXICAL
+c06,legacy_e4,children play outside the sunnies.,LEXICAL|AGREEMENT
+c07,legacy_e4,dogs run the first park?,LEXICAL|TENSE
+c08,legacy_e4,both sides are falling strong.,SEMANTIC_DRIFT|CONTENT_OMISSION
+c09,legacy_e4,i want to book.,LEXICAL
+c01,e4_glossweaver,I went to the store yesterday.,VALID_PARAPHRASE
+c02,e4_glossweaver,The woman buys a red car.,VALID_PARAPHRASE
+c03,e4_glossweaver,The mother cooks food tonight.,VALID_PARAPHRASE
+c04,e4_glossweaver,The boy goes to the school in the morning.,VALID_PARAPHRASE
+c05,e4_glossweaver,The teacher explained math to the student.,VALID_PARAPHRASE
+c06,e4_glossweaver,The child plays outside when it is sunny.,VALID_PARAPHRASE
+c07,e4_glossweaver,The dog runs fast in the park.,VALID_PARAPHRASE
+c08,e4_glossweaver,The strong boy throws the ball.,VALID_PARAPHRASE
+c09,e4_glossweaver,I want a book.,VALID_PARAPHRASE

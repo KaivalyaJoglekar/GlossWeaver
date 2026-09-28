@@ -1,0 +1,50 @@
+{
+  "bertscore_f1": 0.9706330895423889,
+  "bertscore_model": "distilbert-base-uncased",
+  "checkpoint": "checkpoints/t5_augmented",
+  "chrf": 87.71139584983705,
+  "exact_match": 0.0172,
+  "examples": 2500,
+  "grammar_diagnostics": {
+    "AGREEMENT_INFLECTION": {
+      "f1": 0.83008356545961,
+      "precision": 0.8773307163886163,
+      "recall": 0.7876651982378855,
+      "support": 1135
+    },
+    "ARTICLE": {
+      "f1": 0.8669342389626428,
+      "precision": 0.9110966904607398,
+      "recall": 0.8268551236749117,
+      "support": 1698
+    },
+    "AUXILIARY": {
+      "f1": 0.9875551987153753,
+      "precision": 0.9887459807073955,
+      "recall": 0.9863672814755413,
+      "support": 1247
+    },
+    "PREPOSITION": {
+      "f1": 0.8394403730846102,
+      "precision": 0.8860759493670886,
+      "recall": 0.7974683544303798,
+      "support": 790
+    },
+    "PRONOUN": {
+      "f1": 0.9718456725755995,
+      "precision": 0.966804979253112,
+      "recall": 0.9769392033542977,
+      "support": 477
+    },
+    "TENSE_ASPECT": {
+      "f1": 0.9568253968253968,
+      "precision": 0.9811197916666666,
+      "recall": 0.9337050805452293,
+      "support": 1614
+    }
+  },
+  "meteor": 0.7053113168108422,
+  "rouge_l": 0.9115411864396481,
+  "sacrebleu": 74.23682869250798,
+  "sacrebleu_signature": "BLEU = 74.24 90.1/79.4/71.2/64.1 (BP = 0.982 ratio = 0.982 hyp_len = 33414 ref_len = 34018)"
+}

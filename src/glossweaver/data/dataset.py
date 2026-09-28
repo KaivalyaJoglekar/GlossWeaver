@@ -6,6 +6,8 @@ from typing import Any, Sequence
 import torch
 from torch.utils.data import Dataset
 
+from glossweaver.data.grammar_labels import LABEL_NAMES, extract_grammar_labels
+from glossweaver.text_format import format_gloss_input
 from glossweaver.utils import read_jsonl
 
 
@@ -15,15 +17,15 @@ class GlossTextDataset(Dataset):
         records: Sequence[dict[str, Any]],
         tokenizer: Any,
         *,
-        prefix: str = "reconstruct gloss: ",
         max_source_length: int = 128,
         max_target_length: int = 128,
+        include_grammar_labels: bool = False,
     ) -> None:
         self.records = list(records)
         self.tokenizer = tokenizer
-        self.prefix = prefix
         self.max_source_length = max_source_length
         self.max_target_length = max_target_length
+        self.include_grammar_labels = include_grammar_labels
 
     @classmethod
     def from_jsonl(cls, path: str | Path, tokenizer: Any, **kwargs: Any):
@@ -35,7 +37,7 @@ class GlossTextDataset(Dataset):
     def __getitem__(self, index: int) -> dict[str, torch.Tensor]:
         record = self.records[index]
         source = self.tokenizer(
-            self.prefix + record["gloss"],
+            format_gloss_input(record["gloss"]),
             max_length=self.max_source_length,
             truncation=True,
         )
@@ -50,6 +52,8 @@ class GlossTextDataset(Dataset):
             "labels": torch.tensor(target["input_ids"], dtype=torch.long),
         }
         labels = record.get("grammar_labels")
+        if self.include_grammar_labels and (labels is None or len(labels) != len(LABEL_NAMES)):
+            labels = extract_grammar_labels(record["gloss"], record["target"])
         if labels is not None:
             item["grammar_labels"] = torch.tensor(labels, dtype=torch.float)
         return item

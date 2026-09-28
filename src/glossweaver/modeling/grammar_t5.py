@@ -51,6 +51,22 @@ class GrammarAwareT5(T5ForConditionalGeneration):
         mask = attention_mask.unsqueeze(-1).to(hidden_state.dtype)
         return (hidden_state * mask).sum(dim=1) / mask.sum(dim=1).clamp_min(1.0)
 
+    def predict_grammar(
+        self,
+        input_ids: Optional[torch.LongTensor] = None,
+        attention_mask: Optional[torch.FloatTensor] = None,
+        inputs_embeds: Optional[torch.FloatTensor] = None,
+    ) -> torch.FloatTensor:
+        """Return grammar logits from the encoder without invoking the decoder."""
+        encoder_outputs = self.encoder(
+            input_ids=input_ids,
+            attention_mask=attention_mask,
+            inputs_embeds=inputs_embeds,
+            return_dict=True,
+        )
+        pooled = self._pool_encoder(encoder_outputs.last_hidden_state, attention_mask)
+        return self.grammar_head(pooled)
+
     def forward(
         self,
         input_ids: Optional[torch.LongTensor] = None,

@@ -1,0 +1,49 @@
+{
+  "bertscore_status": "skipped by explicit command-line option",
+  "checkpoint": "checkpoints/gat5_augmented",
+  "chrf": 83.47656586681109,
+  "exact_match": 0.0,
+  "examples": 2,
+  "grammar_diagnostics": {
+    "AGREEMENT_INFLECTION": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 1
+    },
+    "ARTICLE": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1
+    },
+    "AUXILIARY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    },
+    "PREPOSITION": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 1
+    },
+    "PRONOUN": {
+      "f1": 1.0,
+      "precision": 1.0,
+      "recall": 1.0,
+      "support": 1
+    },
+    "TENSE_ASPECT": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 0
+    }
+  },
+  "meteor": 0.695139706973132,
+  "rouge_l": 0.911764705882353,
+  "sacrebleu": 74.07464087232769,
+  "sacrebleu_signature": "BLEU = 74.07 90.9/80.0/72.2/68.8 (BP = 0.956 ratio = 0.957 hyp_len = 22 ref_len = 23)"
+}

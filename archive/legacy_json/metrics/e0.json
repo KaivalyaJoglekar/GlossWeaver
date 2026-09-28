@@ -1,0 +1,50 @@
+{
+  "bertscore_f1": 0.8623229265213013,
+  "bertscore_model": "distilbert-base-uncased",
+  "checkpoint": "e0-copy",
+  "chrf": 67.3352723808019,
+  "exact_match": 0.0,
+  "examples": 2500,
+  "grammar_diagnostics": {
+    "AGREEMENT_INFLECTION": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1135
+    },
+    "ARTICLE": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1698
+    },
+    "AUXILIARY": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1247
+    },
+    "PREPOSITION": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 790
+    },
+    "PRONOUN": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 477
+    },
+    "TENSE_ASPECT": {
+      "f1": 0.0,
+      "precision": 0.0,
+      "recall": 0.0,
+      "support": 1614
+    }
+  },
+  "meteor": 0.5640612768604959,
+  "rouge_l": 0.7438483181569644,
+  "sacrebleu": 21.13486846892788,
+  "sacrebleu_signature": "BLEU = 21.13 59.7/30.8/15.2/7.2 (BP = 1.000 ratio = 1.050 hyp_len = 35705 ref_len = 34018)"
+}

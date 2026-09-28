@@ -1,0 +1,2 @@
+dataset_rows,audited_rows,mean_gloss_tokens,mean_target_tokens,mean_token_overlap,orientation,count_mother,count_cook,count_food,count_tonight,count_woman,count_buy,count_car,count_red,count_me,count_go,count_store,count_yesterday,count_teacher,count_student,count_math,count_child,count_play,count_outside,count_dog,count_run,count_park
+64813,500,13.294,12.194,0.670651206,gloss -> target English,0,1,301,21,386,44,151,44,17,930,21,91,14,33,0,321,263,92,11,90,7

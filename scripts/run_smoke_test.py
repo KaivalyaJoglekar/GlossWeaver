@@ -30,7 +30,9 @@ RECORDS = [
 
 def tiny_tokenizer() -> PreTrainedTokenizerFast:
     words = {"<pad>": 0, "</s>": 1, "<unk>": 2}
-    corpus = ["reconstruct gloss: " + row["gloss"] for row in RECORDS] + [row["target"] for row in RECORDS]
+    from glossweaver.text_format import format_gloss_input
+
+    corpus = [format_gloss_input(row["gloss"]) for row in RECORDS] + [row["target"] for row in RECORDS]
     for text in corpus:
         for token in text.replace(":", " :").replace(".", " .").split():
             words.setdefault(token, len(words))
@@ -84,4 +86,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

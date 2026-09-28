@@ -1,0 +1,2 @@
+epoch,global_step,train_generation_loss,train_grammar_loss,train_total_loss,validation_generation_loss,validation_grammar_loss,validation_total_loss,validation_bleu,validation_rouge_l,validation_meteor
+1,625,0.753343712234497,0.0,0.753343712234497,0.6406943750759911,0.3416307000886826,0.6748574461255755,60.3652662865988,0.851909549774453,0.831919912296372

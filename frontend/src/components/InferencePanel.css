@@ -1,0 +1,227 @@
+.infer-container {
+  width: 100%;
+}
+
+.infer-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 24px;
+  align-items: start;
+}
+
+@media (max-width: 900px) {
+  .infer-grid {
+    grid-template-columns: 1fr;
+  }
+}
+
+.output-column {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
+.shortcut-hint {
+  font-size: 0.7rem;
+  color: var(--text-dim);
+  font-weight: 400;
+  text-transform: none;
+}
+
+.examples-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 6px;
+}
+
+.example-btn {
+  background: rgba(148, 163, 184, 0.05);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  padding: 5px 10px;
+  font-family: var(--font-mono);
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: all var(--dur) var(--ease);
+  letter-spacing: 0.02em;
+}
+.example-btn:hover {
+  background: rgba(99, 102, 241, 0.1);
+  border-color: var(--border-focus);
+  color: var(--text-primary);
+}
+
+.advanced-options {
+  margin-bottom: 20px;
+  border-radius: var(--radius-sm);
+}
+
+.advanced-summary {
+  font-size: 0.8rem;
+  color: var(--text-muted);
+  cursor: pointer;
+  padding: 6px 0;
+  user-select: none;
+  transition: color var(--dur) var(--ease);
+}
+.advanced-summary:hover {
+  color: var(--text-primary);
+}
+
+.advanced-content {
+  padding-top: 12px;
+}
+
+.form-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+}
+
+.form-input {
+  width: 100%;
+  background: var(--surface-input);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-primary);
+  padding: 8px 12px;
+  font-size: 0.85rem;
+  transition: all var(--dur) var(--ease);
+}
+.form-input:focus {
+  outline: none;
+  border-color: var(--accent);
+  box-shadow: 0 0 0 1px var(--accent);
+}
+
+/* States */
+.state-empty {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 48px 16px;
+  text-align: center;
+}
+.empty-symbol {
+  font-size: 2.2rem;
+  margin-bottom: 12px;
+  opacity: 0.35;
+}
+.state-title {
+  font-size: 0.95rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  margin-bottom: 4px;
+}
+.state-desc {
+  font-size: 0.82rem;
+  color: var(--text-dim);
+  max-width: 320px;
+}
+
+.error-banner {
+  background: var(--error-dim);
+  color: var(--error);
+  padding: 8px 12px;
+  border-radius: var(--radius-sm);
+  font-size: 0.82rem;
+  border: 1px solid rgba(239, 68, 68, 0.2);
+}
+
+.error-box {
+  background: var(--error-dim);
+  border: 1px solid rgba(239, 68, 68, 0.25);
+  border-radius: var(--radius-md);
+  padding: 16px;
+}
+.error-title {
+  font-size: 0.85rem;
+  font-weight: 600;
+  color: var(--error);
+  margin-bottom: 4px;
+}
+.error-message {
+  font-size: 0.82rem;
+  color: #fca5a5;
+  line-height: 1.5;
+}
+
+/* Result Elements */
+.btn-copy {
+  background: rgba(148, 163, 184, 0.08);
+  border: 1px solid var(--border);
+  border-radius: var(--radius-sm);
+  color: var(--text-secondary);
+  padding: 4px 10px;
+  font-size: 0.75rem;
+  font-weight: 500;
+  cursor: pointer;
+  transition: all var(--dur) var(--ease);
+}
+.btn-copy:hover {
+  background: rgba(148, 163, 184, 0.15);
+  color: var(--text-primary);
+}
+
+.result-view {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.result-gloss-chip {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  background: rgba(15, 23, 42, 0.6);
+  border: 1px solid var(--border-subtle);
+  border-radius: var(--radius-sm);
+  padding: 10px 14px;
+}
+.chip-label {
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--text-dim);
+  letter-spacing: 0.06em;
+}
+.chip-value {
+  font-family: var(--font-mono);
+  font-size: 0.88rem;
+  color: var(--text-secondary);
+  letter-spacing: 0.04em;
+}
+
+.result-arrow {
+  text-align: center;
+  color: var(--text-dim);
+  font-size: 1.1rem;
+  line-height: 1;
+}
+
+.result-text-card {
+  background: rgba(99, 102, 241, 0.04);
+  border: 1px solid rgba(99, 102, 241, 0.2);
+  border-radius: var(--radius-md);
+  padding: 18px 20px;
+}
+.result-label {
+  display: block;
+  font-size: 0.65rem;
+  font-weight: 700;
+  color: var(--accent-light);
+  letter-spacing: 0.06em;
+  margin-bottom: 8px;
+}
+.result-text {
+  font-size: 1.15rem;
+  font-weight: 500;
+  color: var(--text-primary);
+  line-height: 1.6;
+}
+
+.subtle-status {
+  font-size: 0.75rem;
+  color: var(--text-dim);
+}

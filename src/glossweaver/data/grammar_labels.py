@@ -14,6 +14,7 @@ LABEL_NAMES = (
     "PRONOUN",
     "TENSE_ASPECT",
     "AGREEMENT_INFLECTION",
+    "WORD_ORDER",
 )
 
 ARTICLES = {"a", "an", "the"}
@@ -38,11 +39,14 @@ PRONOUNS = {
 }
 IRREGULAR_LEMMAS = {
     "am": "be", "is": "be", "are": "be", "was": "be", "were": "be",
-    "been": "be", "being": "be", "went": "go", "gone": "go", "did": "do",
+    "been": "be", "being": "be", "went": "go", "gone": "go", "goes": "go", "did": "do",
     "done": "do", "had": "have", "has": "have", "bought": "buy", "brought": "bring",
     "came": "come", "got": "get", "gave": "give", "made": "make", "said": "say",
     "saw": "see", "seen": "see", "took": "take", "taken": "take", "thought": "think",
     "wrote": "write", "written": "write", "ran": "run", "ate": "eat", "eaten": "eat",
+    "caught": "catch", "chose": "choose", "chosen": "choose", "drove": "drive",
+    "driven": "drive", "found": "find", "sold": "sell", "taught": "teach",
+    "threw": "throw", "thrown": "throw",
     "children": "child", "men": "man", "women": "woman", "people": "person",
 }
 TOKEN_RE = re.compile(r"[A-Za-z]+(?:'[A-Za-z]+)?|\d+(?:[.,]\d+)?")
@@ -183,6 +187,21 @@ def explain_grammar_labels(gloss: str, target: str) -> list[LabelDecision]:
             tuple(agreement_reasons) or ("no unmatched agreement/inflection found",),
         )
     )
+    ignored = ARTICLES | PREPOSITIONS | AUXILIARIES | PRONOUNS
+    gloss_content = [simple_lemma(token) for token in tokenize(gloss) if token not in ignored]
+    target_content = [
+        simple_lemma(token) for token in features["tokens"] if token not in ignored
+    ]
+    shared = set(gloss_content) & set(target_content)
+    gloss_order = [token for token in gloss_content if token in shared]
+    target_order = [token for token in target_content if token in shared]
+    changed = len(shared) >= 2 and gloss_order != target_order
+    decisions.append(LabelDecision(
+        "WORD_ORDER",
+        int(changed),
+        (f"shared content order differs: gloss={gloss_order}, target={target_order}",)
+        if changed else ("shared content order is unchanged or indeterminate",),
+    ))
     return decisions
 
 
@@ -216,4 +235,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-

@@ -6,219 +6,130 @@ GlossWeaver reconstructs fluent English from textual ASL-gloss-style input.
 ME GO STORE YESTERDAY -> I went to the store yesterday.
 ```
 
-It is text-only: video recognition, pose estimation, hand tracking, sign
-detection, and speech synthesis are out of scope.
+The project is text-only. Video recognition, pose estimation, hand tracking,
+sign detection, and speech synthesis are outside its scope.
 
-## Research design
+## Current result
 
-The research question is whether grammar-aware auxiliary supervision and
-controlled telegraphic augmentation improve Gloss-to-Text reconstruction over
-a matched `google-t5/t5-small` baseline.
+The recovered E4 model passes the isolated nine-example challenge set and is
+the default served checkpoint. Its three-reference challenge metrics are:
 
-| ID | System | Grammar loss | Augmentation |
-|---|---|---:|---:|
-| E0 | Copy/normalization | No | No |
-| E1 | T5-small | No | No |
-| E2 | T5-small | No | Yes |
-| E3 | Grammar-Aware T5 | Yes | No |
-| E4 | GlossWeaver | Yes | Yes |
+- SacreBLEU: 90.92
+- ROUGE-L: 0.956
+- METEOR: 0.953
+- BERTScore F1: 0.990
+- content-word recall: 1.000
 
-The grammar-aware model shares a T5 encoder between the decoder and a six-label
-head: ARTICLE, PREPOSITION, AUXILIARY, PRONOUN, TENSE_ASPECT, and
-AGREEMENT_INFLECTION. Target-derived weak labels supervise training only;
-inference requires the gloss alone.
+See [`results/REPORT.md`](results/REPORT.md) for the root-cause analysis,
+dataset audit, E0–E4 comparison, limitations, and exact evaluation scope.
+For a file-by-file explanation of the complete system in plain and technical
+language, see [`PROJECT_WALKTHROUGH.md`](PROJECT_WALKTHROUGH.md).
 
-## Primary dataset
+## Reproducible Python configuration
 
-The active dataset is ASLG-PC12 from the pinned public Hugging Face revision
-`cb7cd272db8fcd4004ee04ddf50e194c15ea24d6`. It contains 87,710 raw rows in one
-split with verified `gloss` and English `text` columns.
+The active pipeline does not use YAML. Experiment presets are typed Python
+dataclasses in `src/glossweaver/settings.py`:
 
-ASLG-PC12 is useful for controlled large-scale experimentation, but its glosses
-are rule-generated. It is not a fully natural human-produced ASL corpus or a
-real-world ASL benchmark. LibriSpeech-Gloss is related work only because its
-official gloss files were not publicly accessible during implementation.
-See [DATASETS.md](DATASETS.md) for exact provenance, checksum, license, cleaning
-counts, and splits.
+| Preset | System | Initialization | Data | Grammar loss |
+|---|---|---|---|---:|
+| `e1` | T5-small baseline | `google-t5/t5-small` | ASLG-PC12 | No |
+| `e2` | FLAN hybrid | `google/flan-t5-small` | ASLG + clean reconstruction | No |
+| `e3` | grammar-aware FLAN | passing E2 | same hybrid mix | Yes |
+| `e4` | GlossWeaver | E3 | scaled hybrid mix | Yes |
 
-## Setup
+All training, evaluation, API, and UI inference paths share the formatter in
+`src/glossweaver/text_format.py` and registry in
+`src/glossweaver/model_registry.py`. A requested missing checkpoint raises an
+explicit error; it never silently falls back to another model.
 
-The existing environment is ready:
+## Setup and verification
 
 ```bash
 cd /Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver
 source .venv/bin/activate
+pytest -q
 ```
 
-To recreate it:
-
-```bash
-python3.11 -m venv .venv
-source .venv/bin/activate
-pip install -e '.[dev]'
-python -m spacy download en_core_web_sm
-```
-
-The supplied training configs require Apple MPS so a research run cannot
-silently fall back to CPU. Verify Metal access from a normal macOS Terminal:
+Apple MPS is supported:
 
 ```bash
 python -c "import torch; print(torch.backends.mps.is_available())"
 ```
 
-The result must be `True`. Codex's sandbox may report `False` even when the
-same environment can use MPS in Terminal. Every training, evaluation, and
-inference command also accepts `--device mps` (or `auto`, `cpu`, `cuda`).
-No CUDA-only mixed-precision setting is assumed on MPS.
-
-## Acquire and inspect ASLG-PC12
+## Data audit and construction
 
 ```bash
-python scripts/download_data.py aslg-pc12
-python scripts/download_data.py status
+python -m glossweaver.data.audit_dataset
+python -m glossweaver.data.build_reconstruction_data \
+  --maximum 12000 --controlled-count 8000 \
+  --conditional-count 1000 --schedule-count 800
+python -m glossweaver.data.audit_grammar_labels
 ```
 
-The pinned snapshot is stored in `datasets/raw/aslg_pc12/` rather than being
-left only in a global cache.
+ASLG-PC12 orientation is verified as `gloss -> English`. The deterministic
+seed-42 split contains 64,813 train, 8,101 validation, and 8,103 test pairs.
+The reconstruction builder asserts that no exact challenge input or reference
+enters training data.
 
-## Preprocess
+## Pipeline gates
+
+Run the two mandatory 64-pair overfit gates before larger training:
 
 ```bash
-python scripts/prepare_data.py
+python scripts/run_overfit_check.py --preset overfit-t5 --device mps
+python scripts/run_overfit_check.py --preset overfit-flan --device mps
 ```
 
-This cleans all pairs before splitting, assigns stable IDs, creates a seeded
-80/10/10 split, verifies zero normalized-pair overlap, reports repeated glosses
-with different targets, prints ten orientation samples, and saves fixed
-20k/2.5k/2.5k research ID manifests.
-
-Actual retained counts are 64,813 train, 8,101 validation, and 8,103 test from
-81,017 unique pairs.
-
-## Verify the implementation
+Then run staged experiments in order:
 
 ```bash
-pytest -q
-python scripts/run_smoke_test.py
+python -m glossweaver.training.train --preset e1 --device mps
+python -m glossweaver.training.train --preset e2 --device mps
+python -m glossweaver.training.train --preset e3 --device mps
+python -m glossweaver.training.train --preset e4 --device mps
 ```
 
-The first command runs schema, orientation, duplicate, leakage, augmentation,
-model, and metric tests. The second is an offline tiny-model architecture test.
-
-## Real-data E1 smoke test
-
-`config/smoke.yaml` selects 512 training and 64 validation examples and stops
-after eight optimizer steps:
+Training saves checkpoints and CSV histories. The final research artifacts are
+rebuilt with:
 
 ```bash
-python -m glossweaver.training.train --config config/smoke.yaml --device mps
-
-python -m glossweaver.evaluation.evaluate \
-  --checkpoint checkpoints/smoke \
-  --split test \
-  --max-examples 64 \
-  --output-name e1_smoke \
-  --device mps
-
-python -m glossweaver.inference \
-  --checkpoint checkpoints/smoke \
-  --text 'X-I WANT BOOK' \
-  --device mps
+python scripts/build_research_artifacts.py
 ```
-
-## E0
-
-Evaluate E0 on the fixed research test subset:
-
-```bash
-python -m glossweaver.evaluation.evaluate \
-  --checkpoint e0-copy \
-  --split test \
-  --ids datasets/processed/aslg_pc12/research_test_ids.json \
-  --output-name e0
-```
-
-## Development experiment
-
-After smoke validation, run the 5k/500 E1 development experiment:
-
-```bash
-python -m glossweaver.training.train --config config/t5_development.yaml --device mps
-```
-
-This is a pipeline check, not a final reported result.
-
-## Fixed research experiments
-
-Generate conservative 25% training-only augmentation:
-
-```bash
-python scripts/generate_synthetic.py --ratio 0.25 --seed 42
-```
-
-Then run the matched 20k/2.5k base subsets:
-
-```bash
-python -m glossweaver.training.train --config config/t5_baseline.yaml --device mps
-python -m glossweaver.training.train --config config/t5_augmented.yaml --device mps
-python -m glossweaver.training.train --config config/gat5.yaml --device mps
-python -m glossweaver.training.train --config config/gat5_augmented.yaml --device mps
-```
-
-Do not jump directly to E4. Evaluate and inspect E1 before proceeding through
-E2, E3, and E4.
 
 ## Evaluation and inference
 
 ```bash
 python -m glossweaver.evaluation.evaluate \
-  --checkpoint checkpoints/gat5_augmented \
-  --split test \
-  --ids datasets/processed/aslg_pc12/research_test_ids.json \
-  --device mps
+  --model e4_glossweaver \
+  --dataset-file data/challenge/glossweaver_challenge.csv \
+  --dataset-name challenge --split test \
+  --device mps --output results/predictions/e4_challenge.csv
 
 python -m glossweaver.inference \
-  --checkpoint checkpoints/gat5_augmented \
-  --text 'X-I WANT BOOK' \
+  --model e4_glossweaver \
+  --text 'TEACHER EXPLAIN STUDENT MATH' \
   --device mps
 ```
 
-Evaluation includes SacreBLEU, chrF, ROUGE-L, METEOR, BERTScore F1, exact
-match, and heuristic grammar diagnostics. Predictions and metrics are saved
-under `results/`.
+Evaluation writes CSV predictions, consolidated CSV metrics, diagnostic CSVs,
+and PNG figures. Historical YAML configs and JSON result logs are retained
+under `archive/` only and are not active pipeline inputs.
 
-## Notebooks
+## Frontend and API
 
-The notebooks are optional research-analysis interfaces; they are not used to
-train models.
+```bash
+cd frontend && npm run build
+cd .. && uvicorn app.api:app --reload
+```
 
-- `notebooks/01_data_analysis.ipynb` reruns EDA over the processed ASLG-PC12
-  data and writes dataset plots/statistics to `results/figures/`.
-- `notebooks/02_error_analysis.ipynb` opens the manual annotation template for
-  categorizing errors after E1 and E4 prediction CSVs exist.
+The UI calls the same API/registry as direct inference and displays the active
+checkpoint metadata. Use `python scripts/verify_inference_parity.py` to verify
+that direct and API outputs match exactly.
 
-The Python scripts and YAML configs remain the authoritative reproducible
-pipeline. Start Jupyter with `jupyter lab` only when you want interactive data
-or error analysis.
+## Limitations
 
-## Optional external validation
-
-ASLLRP/NCSLGR may later provide a human-annotated external generalization test
-if legally accessible manual glosses can be cleanly aligned with English text.
-It must never be mixed into ASLG-PC12 training.
-
-## Status and limitations
-
-- ASLG-PC12 acquisition, cleaning, splitting, manifests, and leakage checks are
-  implemented and reproducible.
-- E0 is complete on the fixed 2,500-example research test manifest. The E1
-  eight-step smoke and 5K/500 development runs also complete end to end; the
-  latter is a development check, not a final research result.
-- Model results must not be reported until their prediction and metric files
-  exist.
-- Rule-generated glosses, weak grammar labels, automatic diagnostics, domain
-  limitations, and hallucination risk must be stated in the paper.
-- A frontend is intentionally deferred until E0–E4 and evaluation are complete.
-
-Final fixed-subset E1–E4 results remain pending experiment execution. See
-`results/REPORT.md` for completed, traceable non-final runs.
+ASLG-PC12 is rule-generated parliamentary text rather than a natural ASL
+benchmark. The reconstruction supplement is synthetic, grammar targets are
+weak labels, and the nine-example challenge is deliberately small. Automatic
+metrics and this controlled challenge do not replace evaluation by fluent ASL
+users or professional interpreters.
