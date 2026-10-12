@@ -1,0 +1,13 @@
+services:
+  glossweaver:
+    build: .
+    ports:
+      - "127.0.0.1:8000:8000"
+    environment:
+      GLOSSWEAVER_CORS_ORIGINS: ${GLOSSWEAVER_CORS_ORIGINS:-http://localhost:8000,http://127.0.0.1:8000}
+      HF_HUB_OFFLINE: "1"
+    volumes:
+      - ./checkpoints:/app/checkpoints:ro
+      - ./results:/app/results:ro
+      - ./datasets/processed:/app/datasets/processed:ro
+    restart: unless-stopped

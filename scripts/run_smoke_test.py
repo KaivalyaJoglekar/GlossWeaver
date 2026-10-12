@@ -58,6 +58,7 @@ def main() -> None:
         batch = next(iter(loader))
         if model_class is T5ForConditionalGeneration:
             batch.pop("grammar_labels")
+            batch.pop("grammar_mask", None)
         optimizer = torch.optim.AdamW(model.parameters(), lr=1e-3)
         model.train()
         output = model(**batch)

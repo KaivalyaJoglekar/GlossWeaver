@@ -1,0 +1,106 @@
+            evaluation_id                                                checkpoint_sha256                                                   dataset_sha256                                                    sample_sha256               model              dataset                  split  train_examples  seed      bleu  rouge_l   meteor bertscore_f1  content_word_recall  copy_ratio  runtime_minutes                                                                                                     checkpoint  examples  num_beams      chrf  exact_match                                        sacrebleu_signature bertscore_model grammar_label_policy
+20261010T190406Z-71be26a2 6e8e1b06007cb1c895e188f6236b35c97881bdd8ce2c3da7daa33e6d870b6255 0498b41228dbc30502c41b8106165848d7d8ff4be2fba96cfd9121641045e034 c9a37440fac3c2e015af646f65c231a01172e71ea0c94c76c4493685d77c4345 reconstruction-flan balanced_development development_diagnostic            7368    57 64.474223 0.865318 0.849548                          0.873539    0.845977         0.173457 /Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/reconstruction-flan/20261010T184103Z-d5f247db       120          4 77.225493     0.341667 nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0         skipped           lexical-v1
+            evaluation_id                                                checkpoint_sha256                                                   dataset_sha256                                                    sample_sha256               model                    dataset                  split  train_examples  seed      bleu  rouge_l   meteor bertscore_f1  content_word_recall  copy_ratio  runtime_minutes                                                                                                     checkpoint  examples  num_beams      chrf  exact_match                                        sacrebleu_signature bertscore_model grammar_label_policy
+20261010T190408Z-81d15608 6e8e1b06007cb1c895e188f6236b35c97881bdd8ce2c3da7daa33e6d870b6255 887dfbfc30d74bdf0a27d34e61e697e5dc4509069253ac1b1a4d23222d930ff7 04ddaef4c0807a8c2432941391f3e3aa230898375fdd1782ff2daaef967fc388 reconstruction-flan untimed_present_diagnostic development_diagnostic            7368    57 63.872309 0.852392 0.894272                          0.956349    0.953175         0.036189 /Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/reconstruction-flan/20261010T184103Z-d5f247db        63          4 76.947744     0.190476 nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0         skipped           lexical-v1
+            evaluation_id                                                checkpoint_sha256                                                   dataset_sha256                                                    sample_sha256               model                  dataset                  split  train_examples  seed  bleu  rouge_l   meteor bertscore_f1  content_word_recall  copy_ratio  runtime_minutes                                                                                                     checkpoint  examples  num_beams  chrf  exact_match                                        sacrebleu_signature bertscore_model grammar_label_policy
+20261010T190411Z-bbdc0e67 6e8e1b06007cb1c895e188f6236b35c97881bdd8ce2c3da7daa33e6d870b6255 ee751f23d806bc791535c201734f4942189ca48f233489a5fe1112a9f78674ba 3e4ffa471b7f83eb32caf0a7bbae8f461e4f979e66cc8e02e065642cc1a00b0d reconstruction-flan time_quantity_regression development_diagnostic            7368    57 100.0      1.0 0.998799                             0.985       0.985         0.044585 /Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/reconstruction-flan/20261010T184103Z-d5f247db        80          4 100.0          1.0 nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0         skipped           lexical-v1
+            evaluation_id                                                checkpoint_sha256                                                   dataset_sha256                                                    sample_sha256         model              dataset                  split  train_examples  seed      bleu  rouge_l   meteor bertscore_f1  content_word_recall  copy_ratio  runtime_minutes                                                                                               checkpoint  examples  num_beams      chrf  exact_match                                        sacrebleu_signature bertscore_model grammar_label_policy
+20261010T190423Z-9b4fc231 ad15ed325ccde57f33f5c98fff5f28a530bd9779640331949bdc02a8455bf809 0498b41228dbc30502c41b8106165848d7d8ff4be2fba96cfd9121641045e034 c9a37440fac3c2e015af646f65c231a01172e71ea0c94c76c4493685d77c4345 balanced-flan balanced_development development_diagnostic           15968    57 68.239182 0.896879 0.870726                          0.906502    0.875318         0.156386 /Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/balanced-flan/20261010T185808Z-8b1dacec       120          4 80.130654        0.425 nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0         skipped           lexical-v1
+            evaluation_id                                                checkpoint_sha256                                                   dataset_sha256                                                    sample_sha256         model                    dataset                  split  train_examples  seed      bleu  rouge_l   meteor bertscore_f1  content_word_recall  copy_ratio  runtime_minutes                                                                                               checkpoint  examples  num_beams     chrf  exact_match                                        sacrebleu_signature bertscore_model grammar_label_policy
+20261010T190426Z-fd7aab8c ad15ed325ccde57f33f5c98fff5f28a530bd9779640331949bdc02a8455bf809 887dfbfc30d74bdf0a27d34e61e697e5dc4509069253ac1b1a4d23222d930ff7 04ddaef4c0807a8c2432941391f3e3aa230898375fdd1782ff2daaef967fc388 balanced-flan untimed_present_diagnostic development_diagnostic           15968    57 99.464097      1.0 0.996915                          0.992063    0.992063         0.031213 /Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/balanced-flan/20261010T185808Z-8b1dacec        63          4 99.71015     0.984127 nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0         skipped           lexical-v1
+            evaluation_id                                                checkpoint_sha256                                                   dataset_sha256                                                    sample_sha256         model                  dataset                  split  train_examples  seed  bleu  rouge_l   meteor bertscore_f1  content_word_recall  copy_ratio  runtime_minutes                                                                                               checkpoint  examples  num_beams  chrf  exact_match                                        sacrebleu_signature bertscore_model grammar_label_policy
+20261010T190429Z-2b02e857 ad15ed325ccde57f33f5c98fff5f28a530bd9779640331949bdc02a8455bf809 ee751f23d806bc791535c201734f4942189ca48f233489a5fe1112a9f78674ba 3e4ffa471b7f83eb32caf0a7bbae8f461e4f979e66cc8e02e065642cc1a00b0d balanced-flan time_quantity_regression development_diagnostic           15968    57 100.0      1.0 0.998799                             0.985       0.985         0.041772 /Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/balanced-flan/20261010T185808Z-8b1dacec        80          4 100.0          1.0 nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0         skipped           lexical-v1
+{
+  "reconstruction-flan": [
+    {
+      "input": "ME GO STORE YESTERDAY",
+      "output": "I went to the store yesterday."
+    },
+    {
+      "input": "BOY NOT WANT FOOD",
+      "output": "The boy will not want food."
+    },
+    {
+      "input": "SHE NEED HELP",
+      "output": "She needs help."
+    },
+    {
+      "input": "THEY LIKE MUSIC",
+      "output": "They like music."
+    },
+    {
+      "input": "SHE PUT BOOK ON TABLE",
+      "output": "She will put book on the table."
+    },
+    {
+      "input": "i going school tomorrow",
+      "output": "I will go to the school tomorrow."
+    },
+    {
+      "input": "WOMAN BUY CAR RED",
+      "output": "The woman bought a red car."
+    },
+    {
+      "input": "I NOT BUY 3 BOOK YESTERDAY",
+      "output": "I did not buy 3 books yesterday."
+    },
+    {
+      "input": "SHE NOT GO HOSPITAL TOMORROW",
+      "output": "She will not go to the hospital tomorrow."
+    },
+    {
+      "input": "WE READ 5 BOOK LAST NIGHT",
+      "output": "We read 5 books last night."
+    },
+    {
+      "input": "ME WALK LIBRARY NEXT WEEK",
+      "output": "I will walk to the library next week."
+    }
+  ],
+  "balanced-flan": [
+    {
+      "input": "ME GO STORE YESTERDAY",
+      "output": "I went to the store yesterday."
+    },
+    {
+      "input": "BOY NOT WANT FOOD",
+      "output": "The boy does not want food."
+    },
+    {
+      "input": "SHE NEED HELP",
+      "output": "She needs help."
+    },
+    {
+      "input": "THEY LIKE MUSIC",
+      "output": "They like music."
+    },
+    {
+      "input": "SHE PUT BOOK ON TABLE",
+      "output": "She put the book on the table."
+    },
+    {
+      "input": "i going school tomorrow",
+      "output": "I will go to the school tomorrow."
+    },
+    {
+      "input": "WOMAN BUY CAR RED",
+      "output": "The woman buys a red car."
+    },
+    {
+      "input": "I NOT BUY 3 BOOK YESTERDAY",
+      "output": "I did not buy 3 books yesterday."
+    },
+    {
+      "input": "SHE NOT GO HOSPITAL TOMORROW",
+      "output": "She will not go to the hospital tomorrow."
+    },
+    {
+      "input": "WE READ 5 BOOK LAST NIGHT",
+      "output": "We read 5 books last night."
+    },
+    {
+      "input": "ME WALK LIBRARY NEXT WEEK",
+      "output": "I will walk to the library next week."
+    }
+  ]
+}

@@ -1,0 +1,255 @@
+{
+  "metrics": [
+    {
+      "bertscore_f1": "",
+      "bertscore_model": "skipped",
+      "bleu": 64.4742232939583,
+      "checkpoint": "/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/reconstruction-flan/20261010T184103Z-d5f247db",
+      "checkpoint_sha256": "6e8e1b06007cb1c895e188f6236b35c97881bdd8ce2c3da7daa33e6d870b6255",
+      "chrf": 77.22549259358117,
+      "content_word_recall": 0.873538984163984,
+      "copy_ratio": 0.8459770553520549,
+      "dataset": "balanced_development",
+      "dataset_sha256": "0498b41228dbc30502c41b8106165848d7d8ff4be2fba96cfd9121641045e034",
+      "evaluation_id": "20261010T190406Z-71be26a2",
+      "exact_match": 0.3416666666666667,
+      "examples": 120,
+      "grammar_label_policy": "lexical-v1",
+      "meteor": 0.849547535258223,
+      "model": "reconstruction-flan",
+      "num_beams": 4,
+      "rouge_l": 0.8653181409114945,
+      "runtime_minutes": 0.17345705624999633,
+      "sacrebleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "sample_sha256": "c9a37440fac3c2e015af646f65c231a01172e71ea0c94c76c4493685d77c4345",
+      "seed": 57,
+      "split": "development_diagnostic",
+      "train_examples": 7368
+    },
+    {
+      "bertscore_f1": "",
+      "bertscore_model": "skipped",
+      "bleu": 63.87230919573431,
+      "checkpoint": "/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/reconstruction-flan/20261010T184103Z-d5f247db",
+      "checkpoint_sha256": "6e8e1b06007cb1c895e188f6236b35c97881bdd8ce2c3da7daa33e6d870b6255",
+      "chrf": 76.94774409780463,
+      "content_word_recall": 0.9563492063492064,
+      "copy_ratio": 0.9531746031746031,
+      "dataset": "untimed_present_diagnostic",
+      "dataset_sha256": "887dfbfc30d74bdf0a27d34e61e697e5dc4509069253ac1b1a4d23222d930ff7",
+      "evaluation_id": "20261010T190408Z-81d15608",
+      "exact_match": 0.19047619047619047,
+      "examples": 63,
+      "grammar_label_policy": "lexical-v1",
+      "meteor": 0.8942722282836975,
+      "model": "reconstruction-flan",
+      "num_beams": 4,
+      "rouge_l": 0.8523920964397151,
+      "runtime_minutes": 0.036188740283493344,
+      "sacrebleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "sample_sha256": "04ddaef4c0807a8c2432941391f3e3aa230898375fdd1782ff2daaef967fc388",
+      "seed": 57,
+      "split": "development_diagnostic",
+      "train_examples": 7368
+    },
+    {
+      "bertscore_f1": "",
+      "bertscore_model": "skipped",
+      "bleu": 100.00000000000004,
+      "checkpoint": "/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/reconstruction-flan/20261010T184103Z-d5f247db",
+      "checkpoint_sha256": "6e8e1b06007cb1c895e188f6236b35c97881bdd8ce2c3da7daa33e6d870b6255",
+      "chrf": 100.0,
+      "content_word_recall": 0.985,
+      "copy_ratio": 0.985,
+      "dataset": "time_quantity_regression",
+      "dataset_sha256": "ee751f23d806bc791535c201734f4942189ca48f233489a5fe1112a9f78674ba",
+      "evaluation_id": "20261010T190411Z-bbdc0e67",
+      "exact_match": 1.0,
+      "examples": 80,
+      "grammar_label_policy": "lexical-v1",
+      "meteor": 0.9987991623805191,
+      "model": "reconstruction-flan",
+      "num_beams": 4,
+      "rouge_l": 1.0,
+      "runtime_minutes": 0.04458488194989817,
+      "sacrebleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "sample_sha256": "3e4ffa471b7f83eb32caf0a7bbae8f461e4f979e66cc8e02e065642cc1a00b0d",
+      "seed": 57,
+      "split": "development_diagnostic",
+      "train_examples": 7368
+    },
+    {
+      "bertscore_f1": "",
+      "bertscore_model": "skipped",
+      "bleu": 68.23918248683579,
+      "checkpoint": "/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/balanced-flan/20261010T185808Z-8b1dacec",
+      "checkpoint_sha256": "ad15ed325ccde57f33f5c98fff5f28a530bd9779640331949bdc02a8455bf809",
+      "chrf": 80.13065392074431,
+      "content_word_recall": 0.9065022477522476,
+      "copy_ratio": 0.8753183853183849,
+      "dataset": "balanced_development",
+      "dataset_sha256": "0498b41228dbc30502c41b8106165848d7d8ff4be2fba96cfd9121641045e034",
+      "evaluation_id": "20261010T190423Z-9b4fc231",
+      "exact_match": 0.425,
+      "examples": 120,
+      "grammar_label_policy": "lexical-v1",
+      "meteor": 0.8707255829123645,
+      "model": "balanced-flan",
+      "num_beams": 4,
+      "rouge_l": 0.8968786354439906,
+      "runtime_minutes": 0.1563862305668105,
+      "sacrebleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "sample_sha256": "c9a37440fac3c2e015af646f65c231a01172e71ea0c94c76c4493685d77c4345",
+      "seed": 57,
+      "split": "development_diagnostic",
+      "train_examples": 15968
+    },
+    {
+      "bertscore_f1": "",
+      "bertscore_model": "skipped",
+      "bleu": 99.46409742473577,
+      "checkpoint": "/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/balanced-flan/20261010T185808Z-8b1dacec",
+      "checkpoint_sha256": "ad15ed325ccde57f33f5c98fff5f28a530bd9779640331949bdc02a8455bf809",
+      "chrf": 99.71015049280278,
+      "content_word_recall": 0.9920634920634921,
+      "copy_ratio": 0.9920634920634921,
+      "dataset": "untimed_present_diagnostic",
+      "dataset_sha256": "887dfbfc30d74bdf0a27d34e61e697e5dc4509069253ac1b1a4d23222d930ff7",
+      "evaluation_id": "20261010T190426Z-fd7aab8c",
+      "exact_match": 0.9841269841269841,
+      "examples": 63,
+      "grammar_label_policy": "lexical-v1",
+      "meteor": 0.9969149346128278,
+      "model": "balanced-flan",
+      "num_beams": 4,
+      "rouge_l": 1.0,
+      "runtime_minutes": 0.031212906250099575,
+      "sacrebleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "sample_sha256": "04ddaef4c0807a8c2432941391f3e3aa230898375fdd1782ff2daaef967fc388",
+      "seed": 57,
+      "split": "development_diagnostic",
+      "train_examples": 15968
+    },
+    {
+      "bertscore_f1": "",
+      "bertscore_model": "skipped",
+      "bleu": 100.00000000000004,
+      "checkpoint": "/Users/kaivalyajoglekar/Desktop/Projects/GlossWeaver/checkpoints/balanced-flan/20261010T185808Z-8b1dacec",
+      "checkpoint_sha256": "ad15ed325ccde57f33f5c98fff5f28a530bd9779640331949bdc02a8455bf809",
+      "chrf": 100.0,
+      "content_word_recall": 0.985,
+      "copy_ratio": 0.985,
+      "dataset": "time_quantity_regression",
+      "dataset_sha256": "ee751f23d806bc791535c201734f4942189ca48f233489a5fe1112a9f78674ba",
+      "evaluation_id": "20261010T190429Z-2b02e857",
+      "exact_match": 1.0,
+      "examples": 80,
+      "grammar_label_policy": "lexical-v1",
+      "meteor": 0.9987991623805191,
+      "model": "balanced-flan",
+      "num_beams": 4,
+      "rouge_l": 1.0,
+      "runtime_minutes": 0.04177158888342092,
+      "sacrebleu_signature": "nrefs:1|case:mixed|eff:no|tok:13a|smooth:exp|version:2.6.0",
+      "sample_sha256": "3e4ffa471b7f83eb32caf0a7bbae8f461e4f979e66cc8e02e065642cc1a00b0d",
+      "seed": 57,
+      "split": "development_diagnostic",
+      "train_examples": 15968
+    }
+  ],
+  "probes": {
+    "balanced-flan": [
+      {
+        "input": "ME GO STORE YESTERDAY",
+        "output": "I went to the store yesterday."
+      },
+      {
+        "input": "BOY NOT WANT FOOD",
+        "output": "The boy does not want food."
+      },
+      {
+        "input": "SHE NEED HELP",
+        "output": "She needs help."
+      },
+      {
+        "input": "THEY LIKE MUSIC",
+        "output": "They like music."
+      },
+      {
+        "input": "SHE PUT BOOK ON TABLE",
+        "output": "She put the book on the table."
+      },
+      {
+        "input": "i going school tomorrow",
+        "output": "I will go to the school tomorrow."
+      },
+      {
+        "input": "WOMAN BUY CAR RED",
+        "output": "The woman buys a red car."
+      },
+      {
+        "input": "I NOT BUY 3 BOOK YESTERDAY",
+        "output": "I did not buy 3 books yesterday."
+      },
+      {
+        "input": "SHE NOT GO HOSPITAL TOMORROW",
+        "output": "She will not go to the hospital tomorrow."
+      },
+      {
+        "input": "WE READ 5 BOOK LAST NIGHT",
+        "output": "We read 5 books last night."
+      },
+      {
+        "input": "ME WALK LIBRARY NEXT WEEK",
+        "output": "I will walk to the library next week."
+      }
+    ],
+    "reconstruction-flan": [
+      {
+        "input": "ME GO STORE YESTERDAY",
+        "output": "I went to the store yesterday."
+      },
+      {
+        "input": "BOY NOT WANT FOOD",
+        "output": "The boy will not want food."
+      },
+      {
+        "input": "SHE NEED HELP",
+        "output": "She needs help."
+      },
+      {
+        "input": "THEY LIKE MUSIC",
+        "output": "They like music."
+      },
+      {
+        "input": "SHE PUT BOOK ON TABLE",
+        "output": "She will put book on the table."
+      },
+      {
+        "input": "i going school tomorrow",
+        "output": "I will go to the school tomorrow."
+      },
+      {
+        "input": "WOMAN BUY CAR RED",
+        "output": "The woman bought a red car."
+      },
+      {
+        "input": "I NOT BUY 3 BOOK YESTERDAY",
+        "output": "I did not buy 3 books yesterday."
+      },
+      {
+        "input": "SHE NOT GO HOSPITAL TOMORROW",
+        "output": "She will not go to the hospital tomorrow."
+      },
+      {
+        "input": "WE READ 5 BOOK LAST NIGHT",
+        "output": "We read 5 books last night."
+      },
+      {
+        "input": "ME WALK LIBRARY NEXT WEEK",
+        "output": "I will walk to the library next week."
+      }
+    ]
+  },
+  "scope": "Development comparison; balanced validation used for early stopping; untimed diagnostics use a narrow generator; no authentic-ASL or final paper claim."
+}

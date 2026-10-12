@@ -1,194 +1,44 @@
-import React, { useState, useEffect } from 'react';
+import { useEffect, useState } from 'react';
 import { fetchMetrics } from '../api';
 import './MetricsPanel.css';
-
-const EXPERIMENTS = [
-  { id: 'e0', label: 'E0', name: 'Copy Baseline' },
-  { id: 'e1', label: 'E1', name: 'T5 Baseline' },
-  { id: 'e2', label: 'E2', name: 'T5 + Augmentation' },
-  { id: 'e3', label: 'E3', name: 'Grammar-Aware T5' },
-  { id: 'e4', label: 'E4', name: 'GlossWeaver (Full)' },
-];
-
-const GRAMMAR_LABELS = [
-  'ARTICLE',
-  'PREPOSITION',
-  'AUXILIARY',
-  'PRONOUN',
-  'TENSE_ASPECT',
-  'AGREEMENT_INFLECTION',
-];
-
-const METRICS_COLUMNS = [
-  { key: 'sacrebleu', label: 'SacreBLEU', format: v => v.toFixed(2) },
-  { key: 'chrf', label: 'chrF', format: v => v.toFixed(2) },
-  { key: 'rouge_l', label: 'ROUGE-L', format: v => v.toFixed(4) },
-  { key: 'meteor', label: 'METEOR', format: v => v.toFixed(4) },
-  { key: 'bertscore_f1', label: 'BERTScore F1', format: v => v.toFixed(4) },
-  { key: 'exact_match', label: 'Exact Match', format: v => `${(v * 100).toFixed(1)}%` },
-];
-
+const COLUMNS = [['bleu', 'BLEU', 2], ['chrf', 'chrF', 2], ['rouge_l', 'ROUGE-L', 3], ['meteor', 'METEOR', 3], ['bertscore_f1', 'BERTScore', 3], ['content_word_recall', 'Content recall', 3], ['exact_match', 'Exact match', 3]];
+const defaultEvaluation = next => JSON.stringify(next.evaluations.find(item => item.dataset === 'balanced_development') || next.evaluations.find(item => item.dataset === 'reconstruction_grouped') || next.evaluations[0] || {});
+const format = (value, digits) => typeof value === 'number' && Number.isFinite(value) ? value.toFixed(digits) : '—';
 export default function MetricsPanel() {
-  const [data, setData] = useState([]);
-  const [loading, setLoading] = useState(true);
-  const [error, setError] = useState(null);
-  const [selectedExp, setSelectedExp] = useState('e4');
-
-  useEffect(() => {
-    Promise.all(
-      EXPERIMENTS.map(exp =>
-        fetchMetrics(exp.id)
-          .then(m => ({ ...exp, metrics: m }))
-          .catch(() => ({ ...exp, metrics: null }))
-      )
-    )
-      .then(results => {
-        setData(results.filter(r => r.metrics));
-        setLoading(false);
-      })
-      .catch(err => {
-        setError(err.message);
-        setLoading(false);
-      });
-  }, []);
-
-  if (loading) {
-    return (
-      <div className="metrics-state-container animate-fade-in">
-        <div className="spinner" />
-        <p className="state-text">Loading benchmark results...</p>
-      </div>
-    );
+  const [data, setData] = useState(null);
+  const [error, setError] = useState('');
+  const [evaluation, setEvaluation] = useState('');
+  const [model, setModel] = useState('');
+  const [filter, setFilter] = useState('');
+  const [sort, setSort] = useState('name');
+  async function load() {
+    setError('');
+    try {
+      const next = await fetchMetrics(); setData(next);
+      setEvaluation(current => current || defaultEvaluation(next));
+    } catch (e) { setError(e.message); }
   }
-
-  if (error) {
-    return (
-      <div className="metrics-state-container animate-fade-in">
-        <p className="error-banner">Failed to load metrics: {error}</p>
-      </div>
-    );
-  }
-
-  // Calculate highest score for each metric
-  const bestScores = {};
-  METRICS_COLUMNS.forEach(({ key }) => {
-    const scores = data.map(d => d.metrics?.[key] ?? -Infinity);
-    bestScores[key] = Math.max(...scores);
-  });
-
-  const activeExperimentData = data.find(d => d.id === selectedExp);
-
-  return (
-    <div className="metrics-container animate-fade-in">
-      <div className="page-header">
-        <h1 className="page-title">Experimental Benchmarks</h1>
-        <p className="page-subtitle">
-          Evaluation results across 2,500 held-out test examples from the ASLG-PC12 dataset.
-        </p>
-      </div>
-
-      {/* Summary Table */}
-      <div className="card" style={{ marginBottom: 24 }}>
-        <div className="card-header">
-          <div className="card-title-group">
-            <span className="card-icon">📈</span>
-            <h2 className="card-title">Comparative Performance Summary</h2>
-          </div>
-          <span className="dataset-tag">ASLG-PC12 Test Split (N = 2,500)</span>
-        </div>
-
-        <div className="table-responsive">
-          <table className="benchmark-table">
-            <thead>
-              <tr>
-                <th>ID</th>
-                <th>System</th>
-                {METRICS_COLUMNS.map(col => (
-                  <th key={col.key}>{col.label}</th>
-                ))}
-              </tr>
-            </thead>
-            <tbody>
-              {data.map(row => (
-                <tr key={row.id} className={row.id === 'e4' ? 'featured-row' : ''}>
-                  <td>
-                    <span className="id-tag">{row.label}</span>
-                  </td>
-                  <td className="system-name">{row.name}</td>
-                  {METRICS_COLUMNS.map(({ key, format }) => {
-                    const value = row.metrics?.[key];
-                    const isBest = value !== undefined && Math.abs(value - bestScores[key]) < 1e-5;
-                    return (
-                      <td key={key} className={isBest ? 'best-cell' : ''}>
-                        {value !== undefined ? format(value) : '—'}
-                      </td>
-                    );
-                  })}
-                </tr>
-              ))}
-            </tbody>
-          </table>
-        </div>
-      </div>
-
-      {/* Grammar Diagnostics */}
-      <div className="card">
-        <div className="card-header">
-          <div className="card-title-group">
-            <span className="card-icon">🔬</span>
-            <h2 className="card-title">Grammar Category Diagnostics</h2>
-          </div>
-          <div className="tab-pill-group">
-            {data.map(d => (
-              <button
-                key={d.id}
-                type="button"
-                className={`tab-pill ${selectedExp === d.id ? 'active' : ''}`}
-                onClick={() => setSelectedExp(d.id)}
-              >
-                {d.label}
-              </button>
-            ))}
-          </div>
-        </div>
-
-        {activeExperimentData && (
-          <div className="diagnostics-grid animate-fade-in" key={selectedExp}>
-            {GRAMMAR_LABELS.map(label => {
-              const diag = activeExperimentData.metrics?.grammar_diagnostics?.[label];
-              if (!diag) return null;
-              return (
-                <div key={label} className="diag-card">
-                  <div className="diag-header">
-                    <span className="diag-title">{label.replace('_', ' ')}</span>
-                    <span className="diag-f1">F1: {(diag.f1 * 100).toFixed(1)}%</span>
-                  </div>
-
-                  <div className="diag-bars">
-                    {['precision', 'recall'].map(metric => (
-                      <div key={metric} className="diag-bar-item">
-                        <div className="diag-bar-info">
-                          <span className="metric-name">{metric}</span>
-                          <span className="metric-val">{(diag[metric] * 100).toFixed(1)}%</span>
-                        </div>
-                        <div className="diag-track">
-                          <div
-                            className="diag-fill"
-                            style={{ width: `${(diag[metric] * 100).toFixed(1)}%` }}
-                          />
-                        </div>
-                      </div>
-                    ))}
-                  </div>
-                  <div className="diag-support-info">
-                    Support: {diag.support.toLocaleString()} test instances
-                  </div>
-                </div>
-              );
-            })}
-          </div>
-        )}
-      </div>
-    </div>
-  );
+  useEffect(() => { let active = true; fetchMetrics().then(next => {
+    if (active) { setData(next); setEvaluation(defaultEvaluation(next)); }
+  }).catch(e => { if (active) setError(e.message); }); return () => { active = false; }; }, []);
+  const selection = evaluation ? JSON.parse(evaluation) : {};
+  const rows = (data?.rows.filter(row => row.dataset === selection.dataset && row.split === selection.split && row.display_name.toLowerCase().includes(filter.toLowerCase())) || []).sort((a, b) => sort === 'name' ? a.display_name.localeCompare(b.display_name) : (b[sort] ?? -Infinity) - (a[sort] ?? -Infinity));
+  const active = rows.find(row => (row.evaluation_id || row.model) === model) || rows.find(row => row.model === 'e4_glossweaver') || rows[0];
+  return <div>
+    <div className="page-header"><h1 className="page-title">Evaluation results.</h1><p className="page-subtitle">Compare saved evaluations within the same dataset and split. Historical scores do not imply that model weights are currently installed.</p></div>
+    <div className="metrics-toolbar"><div><label className="form-label" htmlFor="evaluation-select">Dataset and evaluation split</label><select id="evaluation-select" className="form-select" value={evaluation} onChange={e => { setEvaluation(e.target.value); setModel(''); }} disabled={!data}>
+      {!data && <option value="">Loading evaluations…</option>}{data?.evaluations.map(item => <option key={JSON.stringify(item)} value={JSON.stringify(item)}>{item.dataset} · {item.split}</option>)}</select></div><div><label className="form-label" htmlFor="metric-filter">Filter models</label><input id="metric-filter" className="form-input" value={filter} onChange={e => setFilter(e.target.value)} placeholder="Model name" /></div><div><label className="form-label" htmlFor="metric-sort">Sort results</label><select id="metric-sort" className="form-select" value={sort} onChange={e => setSort(e.target.value)}><option value="name">Model name</option>{COLUMNS.map(([key,label]) => <option key={key} value={key}>{label} · descending</option>)}</select></div><button className="text-button" onClick={load}>Refresh results</button></div>
+    {error && <p className="error-banner" role="alert">{error}</p>}
+    {!data && !error && <p role="status">Loading saved results…</p>}
+    {data && <><p className="benchmark-note">{data.provenance} {selection.dataset === 'challenge' && 'The nine-example challenge is a development/regression set.'} {selection.split === 'development_diagnostic' && 'Development diagnostics, not final research results. The balanced validation set also guided checkpoint selection.'} {selection.dataset === 'reconstruction_grouped' && 'This sample has been inspected during development; it is not an untouched final benchmark.'}</p>
+      {!rows.length ? <p className="history-empty">No evaluation rows exist for this selection.</p> : <div className="table-responsive"><table className="benchmark-table"><caption>Saved reconstruction metrics · {selection.dataset} / {selection.split}</caption><thead><tr><th scope="col">Model</th><th scope="col">Examples</th>{COLUMNS.map(([key, label]) => <th scope="col" key={key}>{label}</th>)}</tr></thead><tbody>
+        {rows.map((row, index) => <tr key={row.evaluation_id || `${row.model}-${index}`}><th scope="row"><span>{row.display_name}</span><small>{row.evaluation_id && `Run ${row.evaluation_id} · seed ${row.seed} · `}{row.model === 'e0_copy' ? 'Copy baseline available' : row.checkpoint_available ? 'Weights available' : 'Saved result · weights unavailable'}</small></th><td>{row.examples}</td>{COLUMNS.map(([key, , digits]) => <td key={key}>{format(row[key], digits)}</td>)}</tr>)}
+      </tbody></table></div>}
+      <p className="form-hint">— means the metric was not stored. Content recall checks lexical overlap; it does not verify semantic correctness.</p>
+      {active && <section className="diagnostics-section"><div className="pane-heading"><div><h2>Output grammar diagnostics</h2><p className="form-hint">Heuristic features compared with the primary reference. These do not measure the classifier’s accuracy.</p></div><select className="form-select" aria-label="Model for grammar diagnostics" value={active.evaluation_id || active.model} onChange={e => setModel(e.target.value)}>{rows.map((row, index) => <option key={row.evaluation_id || `${row.model}-${index}`} value={row.evaluation_id || row.model}>{row.display_name}{row.evaluation_id ? ` · ${row.evaluation_id}` : ' · historical'}</option>)}</select></div>
+        <div className="diagnostic-list">{Object.entries(active.grammar_diagnostics || {}).map(([category, item]) => <div className="diagnostic-row" key={category}><span>{category.replaceAll('_', ' ').toLowerCase()}</span><div className="diagnostic-track"><span style={{ width: `${item.f1 * 100}%` }} /></div><span>F1 {format(item.f1, 3)}</span><span>n = {item.support}</span></div>)}</div>
+        {!Object.keys(active.grammar_diagnostics || {}).length && <p className="form-hint">No grammar diagnostics were saved for this evaluation.</p>}
+      </section>}
+    </>}
+  </div>;
 }

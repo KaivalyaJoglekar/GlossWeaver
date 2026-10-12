@@ -12,6 +12,7 @@ import pandas as pd
 
 from glossweaver.data.grammar_labels import ARTICLES, AUXILIARIES, PREPOSITIONS, IRREGULAR_LEMMAS
 from glossweaver.settings import ROOT
+from glossweaver.data.split_integrity import group_split, assert_source_isolation
 
 
 WORD_RE = re.compile(r"[A-Za-z]+(?:'[A-Za-z]+)?")
@@ -391,6 +392,8 @@ def build_reconstruction_data(
         add_sentence(sentence, "controlled_schedules")
     if len(pairs) < 500:
         raise RuntimeError(f"Only generated {len(pairs)} valid pairs; need at least 500")
+    pairs = group_split(pairs, seed=seed)
+    assert_source_isolation(*[[p for p in pairs if p['split'] == s] for s in ('train', 'validation', 'test')])
     frame = pd.DataFrame(pairs)
     output = Path(output_dir)
     output.mkdir(parents=True, exist_ok=True)

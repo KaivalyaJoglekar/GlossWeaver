@@ -25,3 +25,12 @@ datasets/processed/**/*.jsonl
 datasets/processed/**/*.json
 datasets/synthetic/**/*.jsonl
 !datasets/**/.gitkeep
+
+# Reproducible local corpus downloads and newly prepared research splits
+datasets/raw/2m_flores_asl/*.jsonl
+datasets/processed/reconstruction_grouped/*.csv
+
+datasets/processed/demo_adaptation/*.csv
+
+# Study-v2 corpora are regenerated from versioned preparation code and audit hashes.
+datasets/processed/study_v2/

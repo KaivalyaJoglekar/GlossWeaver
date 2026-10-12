@@ -49,7 +49,7 @@ export default function GrammarBars({ grammar, threshold = 0.5, grammarAware }) 
         return (
           <div key={label} className={`grammar-card ${isActive ? 'active' : ''}`}>
             <div className="grammar-header">
-              <span className="grammar-name">{label.replace('_', ' ')}</span>
+              <span className="grammar-name">{label.replaceAll('_', ' ').toLowerCase()}</span>
               <span className="grammar-value">{pct}%</span>
             </div>
             <div className="grammar-desc">{LABEL_DESCRIPTIONS[label]}</div>

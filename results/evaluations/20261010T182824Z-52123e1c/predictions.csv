@@ -1,0 +1,101 @@
+id,gloss,reference,prediction,model
+synthetic_telegraphic:84954fd4e9147e266645,CHILD READ HISTORY SCHOOL,The child will read the history at school.,child read history school,pretrained_flan_t5
+synthetic_telegraphic:24bd5c6a81d1aac387f9,CAT STUDIES OUTSIDE SUNNY,The cat studies outside when it is sunny.,cat studies outside sunny,pretrained_flan_t5
+synthetic_telegraphic:8c5f67c65192a16fe15f,GIRL GO SCHOOL MORNING,The girl goes to the school in the morning.,girl go school morning,pretrained_flan_t5
+synthetic_telegraphic:330e19170a961d6e9b9f,SOME FORCE ENTERED HIS,Some force entered his being.,some force entered his house,pretrained_flan_t5
+synthetic_telegraphic:21d3603d259e6f55c054,TUTOR EXPLAIN CHILD GRAMMAR,The tutor is explaining grammar to the child.,tutor explain child grammar,pretrained_flan_t5
+synthetic_telegraphic:5b2bbae5d2bb22124b07,FAMILY READ OUTSIDE RAINY,The family will read outside when it is rainy.,family read outside rainy,pretrained_flan_t5
+synthetic_telegraphic:a887b0a1ffe568e9d21f,BOY GO PARK AFTERNOON,The boy goes to the park in the afternoon.,boy go park afternoon,pretrained_flan_t5
+synthetic_telegraphic:0d762ec97bbc06c8511a,CRACKLING MERELY PRESSURE,a crackling merely from the pressure within?,crackling merely pressure,pretrained_flan_t5
+synthetic_telegraphic:e47447d59e1572ff0e7d,BROTHER SERVE FOOD TODAY,The brother is serving food today.,brother serve food today,pretrained_flan_t5
+synthetic_telegraphic:3872f21e25852d0842b6,STUDENT RUN OUTSIDE COLD,The student ran outside when it is cold.,student running outside cold,pretrained_flan_t5
+synthetic_telegraphic:72e1fc44de6510b4d628,STUDENT GO LIBRARY NIGHT,The student goes to the library in the night.,students go library night,pretrained_flan_t5
+synthetic_telegraphic:7abe520b297a268fbd65,ME ANSWERED IT AS THOU WILT THUS PLEASE ALLAH ALMIGHTY,"I answered, 'Be it as thou wilt, an thus please Allah Almighty'.",me answered it as thou wilt thus please allah almighty,pretrained_flan_t5
+synthetic_telegraphic:c2041a8a04723faad797,BROTHER CHOOSE BOOK GREEN,The brother chooses a green book.,brother choose book green,pretrained_flan_t5
+synthetic_telegraphic:74538503f00d47021b52,PUPIL WALK OUTSIDE COLD,The pupil walks outside when it is cold.,pupils walk outside cold,pretrained_flan_t5
+synthetic_telegraphic:137aabaf6c86e07b3d45,FAMILY GO MARKET NIGHT,The family will go to the market in the night.,family go market night,pretrained_flan_t5
+synthetic_telegraphic:7031b1bf52fbad2dd6b4,SEEMED TURN ASIDE DOG AND DIRECT ITSELF HIS OWN PERSON,seemed to turn aside from the dog and direct itself upon his own person.,seemed to turn aside dog and direct itself his own person,pretrained_flan_t5
+synthetic_telegraphic:d6ec439855154fa5ac70,TUTOR SHOW LEARNER PROBLEM,The tutor is showing the problem to the learner.,tutor show learner problem,pretrained_flan_t5
+synthetic_telegraphic:e994fefa8586744b9058,DOG PLAY OUTSIDE WARM,The dog is playing outside when it is warm.,dog playing outside warm,pretrained_flan_t5
+synthetic_telegraphic:1d6aa6075fbb4f7a0cb8,FATHER GOING LIBRARY MORNING,The father is going to the library in the morning.,father going library morning,pretrained_flan_t5
+synthetic_telegraphic:67c7268fba555ece3c80,ME CONSCIOUS THAT MY HEART BEATING RAPIDLY AND I FELT SENSATION TERROR,"I was conscious that my heart was beating rapidly, and I felt a sensation of terror.",my heart beating rapidly and i felt sensation terror,pretrained_flan_t5
+synthetic_telegraphic:2211992977ddaa07408c,WOMAN SERVE DINNER TODAY,The woman serves dinner today.,woman serve dinner today,pretrained_flan_t5
+synthetic_telegraphic:08aa46bf7ce0ee5962c4,BOY READ OUTSIDE WARM,The boy read outside when it is warm.,boy read outside warm,pretrained_flan_t5
+synthetic_telegraphic:a0805fb3c7fb459be48b,MOTHER GO PARK NIGHT,The mother will go to the park in the night.,mother go park night,pretrained_flan_t5
+synthetic_telegraphic:4125f59d257ceb646072,MISTER CARLYLE MOTIONED BARBARA SEAT HERSELF THEN RESUMED HIS OWN SEAT HIS TABLE,"mister Carlyle motioned to Barbara to seat herself, then resumed his own seat, beside his table.",mister carlyle motioned barbara seat herself then resumed his own seat his table,pretrained_flan_t5
+synthetic_telegraphic:8802c9fb5886894ae361,PARENT BUY TICKET RED,The parent is buying a red ticket.,parent buy ticket red,pretrained_flan_t5
+synthetic_telegraphic:b61dcdb80d5f177a8145,BOY WALK OUTSIDE SUNNY,The boy walks outside when it is sunny.,boy walking outside sunny,pretrained_flan_t5
+synthetic_telegraphic:8ce866d99c42ed811dbd,FATHER GOING SCHOOL EVENING,The father is going to the school in the evening.,father going school evening,pretrained_flan_t5
+synthetic_telegraphic:2ddcab3b50b4d36358f8,I NEVER SEE SUCH CAPACITY AND TASTE AND APPLICATION AND ELEGANCE AS YOU DESCRIBE UNITED,"I never saw such capacity, and taste, and application, and elegance, as you describe, united.",i never see such capacity and taste and application and elegance as you describe united,pretrained_flan_t5
+synthetic_telegraphic:34ef077a45558e08b04b,BROTHER COOK SOUP THIS MORNING,The brother cooks soup this morning.,brother cook soup this morning,pretrained_flan_t5
+synthetic_telegraphic:b93b63cfdd5c0433dd59,PUPIL RUN OUTSIDE RAINY,The pupil is running outside when it is rainy.,pupils run outside rainy,pretrained_flan_t5
+synthetic_telegraphic:c49f72fdbb9d05763bf8,WOMAN GOING MARKET AFTERNOON,The woman is going to the market in the afternoon.,woman going market afternoon,pretrained_flan_t5
+synthetic_telegraphic:f403387c0b35aa97f811,NOW ARTHUR NOTTINGHAM TOWN DAY LITTLE JOHN SET FORTH HIS ERRAND,"Now Arthur had been to Nottingham Town the day before Little John set forth on his errand,.",now arthur nottingham town day little john set forth his errand,pretrained_flan_t5
+synthetic_telegraphic:d428c43c592dc36db378,WOMAN CHOOSE GIFT LARGE,The woman chose a large gift.,woman choose gift large,pretrained_flan_t5
+synthetic_telegraphic:73d790f0b15288da64d5,GIRL WALK OUTSIDE RAINY,The girl walks outside when it is rainy.,girl walking outside rainy,pretrained_flan_t5
+synthetic_telegraphic:3ccb7d01ebcf0ceee8ec,STUDENT GO LIBRARY NIGHT,The student went to the library in the night.,students go library night,pretrained_flan_t5
+synthetic_telegraphic:2733c77660d4408ce405,THEY EAT FEW JUST VARIETY BUT THEY LIVE MOSTLY BUGS AND INSECTS,"They eat a few just for variety, but they live mostly on bugs and insects.",they eat few just variety but they live mostly bugs and insects.,pretrained_flan_t5
+synthetic_telegraphic:5d0c7f0560d99d72fba0,HORSE GOING STORE,The horse is going to the store.,horse going store,pretrained_flan_t5
+synthetic_telegraphic:c4fabf4c2755748743aa,DOG PLAY OUTSIDE WARM,The dog plays outside when it is warm.,dog playing outside warm,pretrained_flan_t5
+synthetic_telegraphic:077da09946a14f72de79,WOMAN GO STORE EVENING,The woman went to the store in the evening.,woman go store evening,pretrained_flan_t5
+synthetic_telegraphic:ba2596c4df5af68a70f2,AND WHEN HE SAY THIS GREAT DEAL FIRMNESS,"And when he had said this with a great deal of firmness,.",and when he say this great deal firmness,pretrained_flan_t5
+synthetic_telegraphic:0a08080b6bb1f52c7fd0,AUNT SELL BOOK RED,The aunt sells a red book.,aunt sell book red,pretrained_flan_t5
+synthetic_telegraphic:893ad135d2664e4ca335,STUDENT STUDIES OUTSIDE RAINY,The student studies outside when it is rainy.,students studying outside rainy,pretrained_flan_t5
+synthetic_telegraphic:3378b530bf61e4569670,MOTHER GOING MARKET AFTERNOON,The mother is going to the market in the afternoon.,mother going market afternoon,pretrained_flan_t5
+synthetic_telegraphic:0f6ae603aea0da9e9c36,FOLDS THIS VEIL SMOKE AND THANKS HIS SMALL SIZE,"Beneath the folds of this veil of smoke, and thanks to his small size,.",folds this veil smoke and thanks his small size,pretrained_flan_t5
+synthetic_telegraphic:12d98d171aefd2688b69,PLAYER CATCH BALL FORCE,The player will catch the ball with force.,football player catch ball force,pretrained_flan_t5
+synthetic_telegraphic:16f6adbab0cc5136e75b,GIRL WALK OUTSIDE RAINY,The girl walked outside when it is rainy.,girl walking outside rainy,pretrained_flan_t5
+synthetic_telegraphic:aec2a109d90810d030d1,GIRL GO PARK NIGHT,The girl went to the park in the night.,girl go park night,pretrained_flan_t5
+synthetic_telegraphic:0ed0a85097465f14279a,I CUT HEAD,I cut off the head.,i cut my head,pretrained_flan_t5
+synthetic_telegraphic:6670e172e2ce981aa182,BROTHER PREPARE BREAD THIS AFTERNOON,The brother prepared bread this afternoon.,brother prepare bread this afternoon,pretrained_flan_t5
+synthetic_telegraphic:9c0a1944699b431fb53e,GIRL WALK OUTSIDE RAINY,The girl is walking outside when it is rainy.,girl walking outside rainy,pretrained_flan_t5
+synthetic_telegraphic:0d58d6ce608e958b7abb,FATHER GO SCHOOL MORNING,The father went to the school in the morning.,father go school morning,pretrained_flan_t5
+synthetic_telegraphic:2a827c14ce038720e3fe,COVER BOOK DEPICTED LADY OLD HOLDING HER HAND DISTAFF,On the cover of the book was depicted an old lady holding in her hand a distaff.,cover book depicted lady holding her hand distaff,pretrained_flan_t5
+synthetic_telegraphic:efc6c68b121bd0d70dcd,FATHER CHOOSE BOOK LARGE,The father chooses a large book.,father choose book large,pretrained_flan_t5
+synthetic_telegraphic:d29fa0f9bd62f73099cc,BOY READ OUTSIDE WARM,The boy is reading outside when it is warm.,boy read outside warm,pretrained_flan_t5
+synthetic_telegraphic:321f4c1c67ea7a9f1175,WOMAN GO STORE EVENING,The woman will go to the store in the evening.,woman go store evening,pretrained_flan_t5
+synthetic_telegraphic:666e90736f69e17b087f,SAY HEALTH BRAVE CUCUMETTO AND FAIR RITA,"saying, 'To the health of the brave Cucumetto and the fair Rita'.",say health brave cucumetto and fair rita,pretrained_flan_t5
+synthetic_telegraphic:152f44b986bca250db03,STUDENT RUN FAST MARKET,The student will run fast in the market.,student run fast market,pretrained_flan_t5
+synthetic_telegraphic:0e2591114c4770bfee57,BOY WALK OUTSIDE SUNNY,The boy walked outside when it is sunny.,boy walking outside sunny,pretrained_flan_t5
+synthetic_telegraphic:1c998d26d639489617b6,FAMILY GO LIBRARY AFTERNOON,The family goes to the library in the afternoon.,family go library afternoon,pretrained_flan_t5
+synthetic_telegraphic:6bacc468b823096ce05b,BUT NOW HE LOOK GOOD AS HE PASSED CLOSE HIM,but now he had a good look as he passed close beside him.,but now he looks good as he passed close him,pretrained_flan_t5
+synthetic_telegraphic:5ba4fc1853854fe9a31c,FATHER COOK LUNCH THIS EVENING,The father cooks lunch this evening.,father cook lunch this evening,pretrained_flan_t5
+synthetic_telegraphic:0b2d7c589d8107ab1b16,PUPPY RUN OUTSIDE COLD,The puppy will run outside when it is cold.,puppy running outside cold,pretrained_flan_t5
+synthetic_telegraphic:62cf156dacc1d9d46436,WOMAN GO STORE AFTERNOON,The woman went to the store in the afternoon.,woman go store afternoon,pretrained_flan_t5
+synthetic_telegraphic:e07c983b402db1e0b1cf,DELIGHTFUL SURPRISES OVERWHELM HIM INTERVALS AS WHEN,Delightful surprises would overwhelm him at intervals as when.,surprise overwhelms him intervals as when he is awake,pretrained_flan_t5
+synthetic_telegraphic:6d9a516712aa66866262,CAT PLAY STATION,The cat plays in the station.,cat play station,pretrained_flan_t5
+synthetic_telegraphic:3f8d82ed9ab4a8323076,CHILD STUDY OUTSIDE COLD,The child will study outside when it is cold.,child study outside cold,pretrained_flan_t5
+synthetic_telegraphic:9834a93cda9297efe7bd,STUDENT GOING LIBRARY NIGHT,The student is going to the library in the night.,student going library night,pretrained_flan_t5
+synthetic_telegraphic:0da14fcb7232fda8e81c,CURATE MAN SHE LIKE SHE NOT PERHAPS MINDED IT SO MUCH,"Had the curate been a man she liked, she would not perhaps have minded it so much.",curate man she like she not perhaps minded it so much,pretrained_flan_t5
+synthetic_telegraphic:71ecc769d2e51ac8028f,CLASS REVIEW SCIENCE SCHOOL,The class reviews the science at school.,class review science school,pretrained_flan_t5
+synthetic_telegraphic:fa7fb016fbe433f7d1d2,CHILD STUDY OUTSIDE COLD,The child studied outside when it is cold.,child study outside cold,pretrained_flan_t5
+synthetic_telegraphic:86f47cfaf2e70c37a261,FAMILY GO MARKET EVENING,The family goes to the market in the evening.,family go market evening,pretrained_flan_t5
+synthetic_telegraphic:fc503d5d2186debe9e8c,METHOD THEREFORE RECEIVED SUPPORT ALL ROUND,"The method therefore received support all round,.",method therefore received support all round,pretrained_flan_t5
+synthetic_telegraphic:834249f5feb7f8e78620,AUNT CHOOSE COAT RED,The aunt will choose a red coat.,aunt choose coat red,pretrained_flan_t5
+synthetic_telegraphic:b4dd1ba243ac6abd596c,STUDENT RUN OUTSIDE COLD,The student is running outside when it is cold.,student running outside cold,pretrained_flan_t5
+synthetic_telegraphic:47253c76965004e6fc21,WOMAN GO STORE EVENING,The woman goes to the store in the evening.,woman go store evening,pretrained_flan_t5
+synthetic_telegraphic:5cb56fb0a74d3afbd01b,THEIR SWORDS STRUCK FIRE ALMOST EVERY BLOW,Their Swords struck Fire almost at every Blow.,their swords struck fire almost every blow,pretrained_flan_t5
+synthetic_telegraphic:2e6d996545700d21ad05,PARENT PREPARE SOUP THIS EVENING,The parent will prepare soup this evening.,parent prepares soup this evening,pretrained_flan_t5
+synthetic_telegraphic:ec4a06bd9e3f41947494,PUPPY RUN OUTSIDE COLD,The puppy runs outside when it is cold.,puppy running outside cold,pretrained_flan_t5
+synthetic_telegraphic:b56b524b2f8ac922ea38,GIRL GO STORE AFTERNOON,The girl went to the store in the afternoon.,girl go store afternoon,pretrained_flan_t5
+synthetic_telegraphic:fe484b67d6fce004e141,VERY MUCH SUED OR HOPELESSLY SIGHED AS BRIDE INDEED,To be very much sued or hopelessly sighed for as a bride was indeed.,very much sued or hopelessly sighed as bride indeed,pretrained_flan_t5
+synthetic_telegraphic:4e02061e8799e0855395,WOMAN PREPARE BREAKFAST TODAY,The woman is preparing breakfast today.,woman prepare breakfast today,pretrained_flan_t5
+synthetic_telegraphic:f8d180b2328c3e04ce3d,PLAYER READ OUTSIDE WARM,The player is reading outside when it is warm.,football player read outside warm,pretrained_flan_t5
+synthetic_telegraphic:4b292e9f7e4b4e1b98a4,GIRL GO PARK NIGHT,The girl goes to the park in the night.,girl go park night,pretrained_flan_t5
+synthetic_telegraphic:b7f9cfbe10738dfe00f2,FRENCH ACCOUNTED THIS UNEXPECTED DEFECTION PART THEIR ALLY,The French had accounted for this unexpected defection on the part of their ally.,french accounted for this unexpected defection part their ally,pretrained_flan_t5
+synthetic_telegraphic:a40dcb86a57a0b29deec,PARENT CHOOSE TICKET GREEN,The parent chooses a green ticket.,parent choose green ticket,pretrained_flan_t5
+synthetic_telegraphic:80ee467ec9e15470d195,BOY STUDY OUTSIDE WARM,The boy will study outside when it is warm.,boy studying outside warm,pretrained_flan_t5
+synthetic_telegraphic:760d0aaf37108789087e,MOTHER GO PARK MORNING,The mother went to the park in the morning.,mother go park morning,pretrained_flan_t5
+synthetic_telegraphic:66d19a241bc01169f151,I CONDEMNED WITNESS THOSE GENTLEMEN EVERY DAY SAY BEAUCHAMP BUT HE PERFECTLY UNKNOWN ME,"I am condemned to witness those gentlemen every day, said Beauchamp but he is perfectly unknown to me.",i condemned witness those gentlemen every day say beauchamp but he perfectly unknown me,pretrained_flan_t5
+synthetic_telegraphic:7d52a622158b4742e5cb,TEACHER SHOW PUPIL RULE,The teacher is showing the rule to the pupil.,teacher show pupil rule,pretrained_flan_t5
+synthetic_telegraphic:5cac70d5275faf38880c,GIRL STUDY OUTSIDE SUNNY,The girl studied outside when it is sunny.,girl studying outside sunny,pretrained_flan_t5
+synthetic_telegraphic:0753915ae3c1ba75d963,CHILD GOING PARK EVENING,The child is going to the park in the evening.,child going park evening,pretrained_flan_t5
+synthetic_telegraphic:c4153a643b01a5a612aa,HER GREAT WEIRDLY BLUE EYES SEEMED BORE MY BRAIN,"Her great, weirdly blue eyes seemed to bore into my brain.",her great weirdly blue eyes seemed to bore my brain,pretrained_flan_t5
+synthetic_telegraphic:b053065aafaf009f5df8,UNCLE BAKE LUNCH TONIGHT,The uncle bakes lunch tonight.,uncle bake lunch tonight,pretrained_flan_t5
+synthetic_telegraphic:ba601699c387ae2d26c4,DOG WALK OUTSIDE SUNNY,The dog is walking outside when it is sunny.,dog walking outside sunny,pretrained_flan_t5
+synthetic_telegraphic:7fece50aecc74cfb38ca,GIRL GO STORE MORNING,The girl goes to the store in the morning.,girl go store morning,pretrained_flan_t5
+synthetic_telegraphic:7bfbc5d44044fec59587,BUT FIND NOTHING FURTHER REWARD THEIR SEARCH,but found nothing further to reward their search.,but find nothing further reward their search,pretrained_flan_t5
+synthetic_telegraphic:d22037b641b0015d154f,WOMAN BUY CAR LARGE,The woman is buying a large car.,woman buy car large,pretrained_flan_t5
+synthetic_telegraphic:8f223212f643161e466a,DOG WALK OUTSIDE SUNNY,The dog will walk outside when it is sunny.,dog walking outside sunny,pretrained_flan_t5
+synthetic_telegraphic:e85613b2b5deae4949a2,FATHER GO SCHOOL MORNING,The father will go to the school in the morning.,father go school morning,pretrained_flan_t5
+synthetic_telegraphic:037e246a393f74e5e305,GRAHAM MAKE IT PLAIN THAT HIS MIND FAR BUSINESS SAD AHEAD,Graham made it plain that his mind was far from the sad business ahead.,graham makes it plain that his mind far business sad ahead,pretrained_flan_t5

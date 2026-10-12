@@ -1,0 +1,710 @@
+id,gloss,target,corpus_origin
+balanced-val-0,CAT STUDY OUTSIDE BRIGHT,The cat will study outside when it is bright.,controlled_conditions
+balanced-val-1,BOY GO PARK,The boy went to the park.,controlled_compositional
+balanced-val-2,PRESENT MOMENT COMPARED GRATIFICATION VERY DIFFERENT KIND FUTURE TIME,of the present moment is compared with a gratification of a very different kind at a future time.,public_librispeech_clean
+balanced-val-3,MY PURPOSE THIS WORK APPLICATION METHOD,My purpose in this work is the application of method.,public_librispeech_clean
+balanced-val-4,AUNT SELL GIFT RED,The aunt sold a red gift.,controlled_compositional
+balanced-val-5,IT I NOTICE SOMETHING STRANGE,"it, I did notice something strange.",public_librispeech_clean
+balanced-val-6,EVERYTHING OUGHT DETERMINE CHOICE PSYCHOTHERAPEUTIC STEPS,everything ought to determine the choice of the psychotherapeutic steps.,public_librispeech_clean
+balanced-val-7,MAN BUY TICKET GREEN,The man is buying a green ticket.,controlled_compositional
+balanced-val-8,CAT WALK OUTSIDE WARM,The cat is walking outside when it is warm.,controlled_conditions
+balanced-val-9,IT WADDLED ITS TEN SHORT LEGS AND SQUATTED GIRL,"It waddled in on its ten short legs, and squatted down before the girl.",public_librispeech_clean
+balanced-val-10,SECOND BULLET STRUCK SPARK PAVEMENT HIM,A second bullet struck a spark from the pavement beside him.,public_librispeech_clean
+balanced-val-11,NOT THAT PITY,Would not that be pity'?,public_librispeech_clean
+balanced-val-12,WORDS NOT SPOKEN,The words were not spoken.,public_librispeech_clean
+balanced-val-13,MAN MAKE SOUP TONIGHT,The man will make soup tonight.,controlled_compositional
+balanced-val-14,SOMEWHERE HOWEVER DESIRE THESE CHANGE ARISE MINDS INDIVIDUALS,"Somewhere, however, the desire for these changes must arise in the minds of individuals.",public_librispeech_clean
+balanced-val-15,WHEN SWITCH NUMBER TWO THEN HE SENDS THOUGHTS AND NUMBERS ONE AND THREE RECEIVE THEM,"When the switch is on Number Two, then he sends thoughts, and Numbers One and Three receive them.",public_librispeech_clean
+balanced-val-16,WORD LEADER PARTY,A word from the leader of the party.,public_librispeech_clean
+balanced-val-17,SAY ALL MAKE HASTE YOUR RECITAL NOT MORE MINUTE EXCLAIMED LECOQ APPROVINGLY,"saying 'Above all, make haste' Your recital could not be more minute, exclaimed Lecoq, approvingly.",public_librispeech_clean
+balanced-val-18,WICKED BROTHERS STAMPED AND FOAMED RAGE WHEN THEY SEE FAILURE THEIR WICKED DESIGNS,The wicked brothers stamped and foamed with rage when they saw the failure of their wicked designs.,public_librispeech_clean
+balanced-val-19,ME BEHOLD THIS AND LIVE,Could I behold this and live?,public_librispeech_clean
+balanced-val-20,HE MAKE CERTAIN SIGILS GESTURES AND MOVEMENTS SAME TIME,"He made certain sigils, gestures and movements at the same time.",public_librispeech_clean
+balanced-val-21,I DREW HER CONVERSATION OPINION THAT SHE TENDENCY REARING CHILD,I drew from her conversation the opinion that she had a tendency to the rearing of children.,public_librispeech_clean
+balanced-val-22,HORSE RUN QUICKLY PARK,The horse ran quickly in the park.,controlled_compositional
+balanced-val-23,WHILST THIS DOING HOW SHE FORGET MAKE HIM SENSIBLE,"Whilst this was doing, how could she forget to make him sensible,.",public_librispeech_clean
+balanced-val-24,HOW THEY CONTRIVED KEEP THEMSELVES ALIVE MORE THAN I IMAGINE,How they contrived to keep themselves alive is more than I can imagine.,public_librispeech_clean
+balanced-val-25,BOY STUDY OUTSIDE COLD,The boy will study outside when it is cold.,controlled_conditions
+balanced-val-26,NEXT DAY SOME RULERS COME JESUS AND SAY,The next day some of the rulers came to Jesus and said.,public_librispeech_clean
+balanced-val-27,GIRL GO PARK AFTERNOON,The girl will go to the park in the afternoon.,controlled_schedules
+balanced-val-28,PLAYER CATCHES STONE STRONG,The strong player catches the stone.,controlled_compositional
+balanced-val-29,FATHER SELL BOOK GREEN,The father sold a green book.,controlled_compositional
+balanced-val-30,WHAT YOU MEAN THIS CRAGGS,"What do you mean by this, Craggs?",public_librispeech_clean
+balanced-val-31,BOY WALK FAST STORE,The boy walked fast in the store.,controlled_compositional
+balanced-val-32,NOT LIVE THERE ONLY STAY SOME TIME,'Not to live there only to stay for some time.,public_librispeech_clean
+balanced-val-33,MELTED THIN AIR AS HIS HAND SOUGHT CLUTCH IT,melted into thin air as his hand sought to clutch it.,public_librispeech_clean
+balanced-val-34,AS HE TRY FLEE ASIA,as he tried to flee into Asia.,public_librispeech_clean
+balanced-val-35,WOMAN SERVE FOOD TODAY,The woman is serving food today.,controlled_compositional
+balanced-val-36,I SPOKEN LIGHTLY JURISPRUDENCE I RIGHT,I have spoken lightly of jurisprudence I had the right.,public_librispeech_clean
+balanced-val-37,HIS MORBIDNESS HIS MAWKISHNESS HIS FASCINATION AS SERPENTS OTHER,"his morbidness, his mawkishness, his fascination as by serpents, on the other.",public_librispeech_clean
+balanced-val-38,WOMAN MAKE LUNCH TODAY,The woman makes lunch today.,controlled_compositional
+balanced-val-39,NIGHT AND MORNING HE RECITED PRAYER,Night and morning he recited the prayer.,public_librispeech_clean
+balanced-val-40,RUIN AND WRECK FIELDS ATLANTIC,"a ruin and a wreck, upon the fields of the Atlantic.",public_librispeech_clean
+balanced-val-41,I ADVANCED STEP AND DREW HER CLOSER ME,"I advanced a step, and drew her closer to me.",public_librispeech_clean
+balanced-val-42,HE RISEN PERSEVERANCE AND INDUSTRY,"He had risen by perseverance and industry,.",public_librispeech_clean
+balanced-val-43,ME TWO REASONS MIND,I had two reasons in mind.,public_librispeech_clean
+balanced-val-44,IT OBLIGED MY UNCLE TOBY MAKE USE HIS FOREFINGER,It obliged my uncle Toby to make use of his forefinger.,public_librispeech_clean
+balanced-val-45,WHOSE TRADE DEPENDED EXPORTS AND INTERCHANGE WEALTH BECAME BANKRUPT,"whose trade depended on exports and interchange of wealth, became bankrupt.",public_librispeech_clean
+balanced-val-46,SO MORE ADO HE STRODE PATH THAT LAY WAY HIS LIKINGS,"So, without more ado, off he strode down the path that lay the way of his likings.",public_librispeech_clean
+balanced-val-47,BUT THIS MOMENT APPEARED FRIENDLY ENCHANTER FAIRY STILL GREATER THAN SOUSSIO,"But at this moment appeared the friendly enchanter, with a fairy still greater than Soussio,.",public_librispeech_clean
+balanced-val-48,TUTOR EXPLAIN LEARNER ALGEBRA,The tutor is explaining algebra to the learner.,controlled_compositional
+balanced-val-49,STUDENT RUN FAST PARK,The student runs fast in the park.,controlled_compositional
+balanced-val-50,CAT WALK OUTSIDE WARM,The cat walked outside when it is warm.,controlled_conditions
+balanced-val-51,DOG WALK QUICKLY STATION,The dog is walking quickly in the station.,controlled_compositional
+balanced-val-52,BROTHER SERVE RICE TODAY,The brother is serving rice today.,controlled_compositional
+balanced-val-53,THEY SAT ME CALMING ME,"They sat me down, calming me.",public_librispeech_clean
+balanced-val-54,CHILD VISIT PLAYGROUND,The child visited the playground.,controlled_compositional
+balanced-val-55,MOTHER SELL TABLE WHITE,The mother will sell a white table.,controlled_compositional
+balanced-val-56,TUTOR TEACH PUPIL RULE,The tutor taught the pupil the rule.,controlled_compositional
+balanced-val-57,MAN SELL COAT GREEN,The man sold a green coat.,controlled_compositional
+balanced-val-58,MISTER DEAN SAY BREAKFAST THAT YOU BIG AND HANDSOME,mister Dean said at breakfast that you were big and handsome.,public_librispeech_clean
+balanced-val-59,PLAYER WALK QUICKLY MARKET,The player will walk quickly in the market.,controlled_compositional
+balanced-val-60,SISTER CHOOSE BOOK NEW,The sister is choosing a new book.,controlled_compositional
+balanced-val-61,SISTER SELL TABLE WHITE,The sister will sell a white table.,controlled_compositional
+balanced-val-62,INSTRUCTOR TEACH STUDENT RULE,The instructor will teach the student the rule.,controlled_compositional
+balanced-val-63,AS TERRESTRIAL GLOBE ONE DAY BECOME COOLING,as the terrestrial globe will one day become by cooling.,public_librispeech_clean
+balanced-val-64,THIS CONTRIBUTION DISCUSSION HOWEVER MISS STACKPOLE REJECTED SCORN,"This contribution to the discussion, however, Miss Stackpole rejected with scorn.",public_librispeech_clean
+balanced-val-65,TUTOR SHOW STUDENT MATH,The tutor shows math to the student.,controlled_compositional
+balanced-val-66,DOG WALK OUTSIDE WARM,The dog is walking outside when it is warm.,controlled_conditions
+balanced-val-67,BROTHER BAKE DINNER TOMORROW,The brother will bake dinner tomorrow.,controlled_compositional
+balanced-val-68,PUPPY READ OUTSIDE WARM,The puppy will read outside when it is warm.,controlled_conditions
+balanced-val-69,GOD APOLLO ONCE MAKE HIMSELF SHEPHERD AND HE KEPT FLOCKS KING ADMETUS,The God Apollo once made himself a shepherd and he kept the flocks of King Admetus.,public_librispeech_clean
+balanced-val-70,AND SINGLE BOUND HE PLUNGED STREET,And with a single bound he plunged into the street.,public_librispeech_clean
+balanced-val-71,SHE EVIDENTLY RECOVERED CONSCIOUSNESS AND MAKE FEEBLE EFFORTS RAISE HERSELF,"She had evidently recovered consciousness, and was making feeble efforts to raise herself.",public_librispeech_clean
+balanced-val-72,CHILD PLAY STORE,The child is playing in the store.,controlled_compositional
+balanced-val-73,MISCENTES PRO CALIDIS FRIGIDA PRO FRIGIDIS HUMIDA PRO PURGANTIBUS ASTRINGENTIA BINDERS PURGATIVES OMNIA PERTURBABANT,"miscentes pro calidis frigida, pro frigidis humida, pro purgantibus astringentia, binders for purgatives, omnia perturbabant.",public_librispeech_clean
+balanced-val-74,PROFESSOR TEACH PUPIL ALGEBRA,The professor taught the pupil algebra.,controlled_compositional
+balanced-val-75,HER SISTER THOUGH COMPARATIVELY BUT LITTLE REMOVED MATRIMONY,"Her sister, though comparatively but little removed by matrimony,.",public_librispeech_clean
+balanced-val-76,WE WAIT LITTLE WE TALK SETTING LAW FORCE I SAY,"We will wait a little before we talk of setting the law in force, I said.",public_librispeech_clean
+balanced-val-77,PLAYER VISIT GARDEN,The player visits the garden.,controlled_compositional
+balanced-val-78,YOU SEE MY FATHER,Have you seen my father?,public_librispeech_clean
+balanced-val-79,SISTER CHOOSE TICKET SMALL,The sister is choosing a small ticket.,controlled_compositional
+balanced-val-80,DAY CUTTERS LEFT ANTONIA COME SEE US,"The day after the Cutters left, Antonia came over to see us.",public_librispeech_clean
+balanced-val-81,AUNT BAKE BREAD THIS EVENING,The aunt bakes bread this evening.,controlled_compositional
+balanced-val-82,AND ANGRY WATERS SCATTERED LOGS FAR AND WIDE,and the angry waters scattered the logs far and wide.,public_librispeech_clean
+balanced-val-83,BOY PLAY OUTSIDE RAINY,The boy will play outside when it is rainy.,controlled_conditions
+balanced-val-84,WILLINGNESS GROW MOST NECESSARY FACTOR SUCCESS,Willingness to grow is the most necessary factor for success.,public_librispeech_clean
+balanced-val-85,UNCLE BUY BOOK BLACK,The uncle bought a black book.,controlled_compositional
+balanced-val-86,CHILD THROW BALL FORCE,The child will throw the ball with force.,controlled_compositional
+balanced-val-87,THIS TIME I CAPTURE OR KILL THIS NIGHT PROWLER,This time I would capture or kill this night prowler.,public_librispeech_clean
+balanced-val-88,BUT I LAY MY DISFIGURED FACE WALL AND FELT NO PARTICULAR GRATITUDE,But I lay with my disfigured face to the wall and felt no particular gratitude.,public_librispeech_clean
+balanced-val-89,SISTER BUY GIFT BLUE,The sister buys a blue gift.,controlled_compositional
+balanced-val-90,GIRL GOING LIBRARY,The girl is going to the library.,controlled_compositional
+balanced-val-91,HE WORK STILL THOUGH THERE NOW NOTHING WORK MORE,"He worked still, though there was now nothing to work for more.",public_librispeech_clean
+balanced-val-92,IT FOUGHT VALIANTLY PRESTON,it fought valiantly against the Preston.,public_librispeech_clean
+balanced-val-93,WHAT DELICATE WAY REMINDING ME THAT I ONCE FRESHMAN SHE EXCLAIMED,What a delicate way of reminding me that I once was a freshman she exclaimed.,public_librispeech_clean
+balanced-val-94,ME HOPE BACK EVENING,I should hope to be back in the evening.,public_librispeech_clean
+balanced-val-95,AND THAT IT AMPLY REPAID HER SACRIFICE LITTLE HER TIME,and that it amply repaid her for the little sacrifice of her time.,public_librispeech_clean
+balanced-val-96,THERE MORE DARK CLOTHED MAN HALL,There were more dark clothed men in the hall.,public_librispeech_clean
+balanced-val-97,PUPIL WALK OUTSIDE WARM,The pupil will walk outside when it is warm.,controlled_conditions
+balanced-val-98,THAT GO AMERICA EUROPE,that goes from America to Europe.,public_librispeech_clean
+balanced-val-99,WHY THEY BRIGHTEN THEIR TOMAHAWKS AND SHARPEN THEIR KNIVES EACH OTHER,Why should they brighten their tomahawks and sharpen their knives against each other?,public_librispeech_clean
+balanced-val-100,THAT OUTWARD ROW I GRAFTED MYSELF CHOICEST KIND I FIND AND I SUCCEEDED,"That are outward row I grafted myself with the choicest kind I could find, and I succeeded.",public_librispeech_clean
+balanced-val-101,UNCLE BUY BOOK BLACK,The uncle buys a black book.,controlled_compositional
+balanced-val-102,DOG RUN QUICKLY PARK,The dog ran quickly in the park.,controlled_compositional
+balanced-val-103,FATHER CHOOSE CAR BLUE,The father chose a blue car.,controlled_compositional
+balanced-val-104,FOUR OR FIVE JUSTICES COME SMOKE THEIR PIPES,Four or five of the justices are coming in to smoke their pipes.,public_librispeech_clean
+balanced-val-105,DOG WALK FAST STORE,The dog will walk fast in the store.,controlled_compositional
+balanced-val-106,SO THAT SHARPSHOOTERS LINE RANGED OUTLOOK THEIR PAVING STONE DIKE,So that the sharpshooters of the line ranged on the outlook behind their paving stone dike.,public_librispeech_clean
+balanced-val-107,FATHER GOING SCHOOL AFTERNOON,The father is going to the school in the afternoon.,controlled_schedules
+balanced-val-108,HE WAIT HE SEE KITCHEN LIGHT WINDOW HIS OLD HOME,He would wait until he saw the kitchen light from the window of his old home.,public_librispeech_clean
+balanced-val-109,GOOD LORD HOW MODEST YOU REMARKED BORG AND TURNED LEVIN,"Good Lord, how modest you are, remarked Borg, and turned to Levin.",public_librispeech_clean
+balanced-val-110,PUPPY PLAY OUTSIDE RAINY,The puppy plays outside when it is rainy.,controlled_conditions
+balanced-val-111,PADDY FINER TASTE,Paddy had a finer taste.,public_librispeech_clean
+balanced-val-112,LET US WEEP OUR BRETHREN THOUGH WE NEVER EXPERIENCE THEIR REVERSE,"Let us weep for our brethren, though we can never experience their reverse.",public_librispeech_clean
+balanced-val-113,CHILD READ PROBLEM SCHOOL,The child reads the problem at school.,controlled_compositional
+balanced-val-114,GENERAL LEVEL EMOTION WHAT COUNTS NOT SPECTACULAR SCALING PEAKS,"The general level of emotion is what counts, not the spectacular scaling of peaks.",public_librispeech_clean
+balanced-val-115,MOTHER COOK BREAD TODAY,The mother cooks bread today.,controlled_compositional
+balanced-val-116,THAT WELL CONSIDERED SAY MY COLLEAGUE,"That is well considered, said my colleague.",public_librispeech_clean
+balanced-val-117,OUR CASTLE BECAME ASYLUM UNHAPPY,Our Castle became an asylum for the unhappy.,public_librispeech_clean
+balanced-val-118,NEWSPAPER MAN WELL USED THESE,"The newspaper men, well used to these,.",public_librispeech_clean
+balanced-val-119,GENTLEMAN WHO RECEIVES US,The gentleman who receives us?,public_librispeech_clean
+balanced-val-120,AUNT BAKE BREAD THIS EVENING,The aunt will bake bread this evening.,controlled_compositional
+balanced-val-121,WOMAN PREPARE DINNER THIS EVENING,The woman will prepare dinner this evening.,controlled_compositional
+balanced-val-122,PROFESSOR SHOW STUDENT ALGEBRA,The professor shows algebra to the student.,controlled_compositional
+balanced-val-123,CROWDS SEE PROCESSION COME,The crowds saw the procession coming.,public_librispeech_clean
+balanced-val-124,YOU LAKE MORROW NIGHT,Will you be in the lake to morrow night?,public_librispeech_clean
+balanced-val-125,CHILD CATCHES ROPE SKILLED,The skilled child catches the rope.,controlled_compositional
+balanced-val-126,MAN BUY TICKET GREEN,The man bought a green ticket.,controlled_compositional
+balanced-val-127,PROFESSOR TEACHES PUPIL RULE,The professor teaches the pupil the rule.,controlled_compositional
+balanced-val-128,INSTRUCTOR TEACH STUDENT RULE,The instructor taught the student the rule.,controlled_compositional
+balanced-val-129,AND SENT BACK EMPTY HANDED AND HALF STARVED,and sent back empty handed and half starved.,public_librispeech_clean
+balanced-val-130,PUPPY RUN QUICKLY MARKET,The puppy is running quickly in the market.,controlled_compositional
+balanced-val-131,FACT IT ALMOST FANTASTIC,"in fact, it is almost fantastic.",public_librispeech_clean
+balanced-val-132,CAT READ OUTSIDE SUNNY,The cat is reading outside when it is sunny.,controlled_conditions
+balanced-val-133,PLAYER PLAY STORE,The player will play in the store.,controlled_compositional
+balanced-val-134,AUNT CHOOSE COAT WHITE,The aunt chooses a white coat.,controlled_compositional
+balanced-val-135,MAN SELL COAT GREEN,The man sells a green coat.,controlled_compositional
+balanced-val-136,PLAYER RUN FAST MARKET,The player will run fast in the market.,controlled_compositional
+balanced-val-137,AND HOW ONE THEM JAMES NAME COME INVOLVED THIS AFFAIR,"and of how one of them, James by name, came to be involved in this affair.",public_librispeech_clean
+balanced-val-138,WOMAN SELL BOOK RED,The woman sold a red book.,controlled_compositional
+balanced-val-139,TUTOR EXPLAIN LEARNER HISTORY,The tutor explains history to the learner.,controlled_compositional
+balanced-val-140,PARENT CHOOSE BOOK RED,The parent chooses a red book.,controlled_compositional
+balanced-val-141,SOME DISORDER SURELY CREPT COURSE ELEMENTS DESTROYING THEIR BENIGNANT INFLUENCE,"Some disorder had surely crept into the course of the elements, destroying their benignant influence.",public_librispeech_clean
+balanced-val-142,INSTRUCTOR TEACHES STUDENT LESSON,The instructor teaches the student the lesson.,controlled_compositional
+balanced-val-143,THANK YOU BROTHER SAY HE,"Thank you, brother, said he.",public_librispeech_clean
+balanced-val-144,PLEASANT VOYAGE SO FAR HE SAY ME AS HE STARTED HIS MEAL,"A pleasant voyage so far, he said to me as he started his meal.",public_librispeech_clean
+balanced-val-145,HIM ASSISTED KING HIMSELF,"By him, assisted by the king himself,.",public_librispeech_clean
+balanced-val-146,KITCHEN DOOR SWUNG OPEN RUSTY HINGES WINDOWS BROKEN AND LIFELESS,The kitchen door swung open on rusty hinges the windows were broken and lifeless.,public_librispeech_clean
+balanced-val-147,AND FIND ITS FIRST APARTMENT EMPTY,"and finding its first apartment empty,.",public_librispeech_clean
+balanced-val-148,YIELDED RECOGNITION SOMETHING BESIDES HER OWN TERRIBLE BROODING,yielded to a recognition of something besides her own terrible brooding.,public_librispeech_clean
+balanced-val-149,SISTER CHOOSE GIFT LARGE,The sister chose a large gift.,controlled_compositional
+balanced-val-150,JOYCE LOWERED HER VOICE AS SHE GIVE IT,Joyce lowered her voice as she gave it.,public_librispeech_clean
+balanced-val-151,WHAT I SIR,"What could I do, sir?",public_librispeech_clean
+balanced-val-152,SINCE STONE THROW EPISODE MARSHAL DOING DUTY AS WATCHMAN,"Since the stone throwing episode the Marshal had been doing duty as watchman,.",public_librispeech_clean
+balanced-val-153,ME STRUCK SHARP POINTED DEAD TWIG AND DRIVE IT RIGHT MY RIGHT WING,I struck a sharp pointed dead twig and drove it right through my right wing.,public_librispeech_clean
+balanced-val-154,NO SOUNDINGS ABLE REACH THEM,No soundings have been able to reach them.,public_librispeech_clean
+balanced-val-155,INSTRUCTOR TEACH STUDENT ALGEBRA,The instructor taught the student algebra.,controlled_compositional
+balanced-val-156,THESE DISADVANTAGES WHICH THREATENED ALLOY HER MANY ENJOYMENTS,these were the disadvantages which threatened alloy to her many enjoyments.,public_librispeech_clean
+balanced-val-157,PLAYER RUN FAST MARKET,The player ran fast in the market.,controlled_compositional
+balanced-val-158,WOMAN CHOOSE COAT LARGE,The woman will choose a large coat.,controlled_compositional
+balanced-val-159,ANGEL COME AND SHOW MY WAY SON,"an angel came and showed the way to my son,.",public_librispeech_clean
+balanced-val-160,WHICH MEANS ADDED LIEUTENANT MACKINSON,"Which, means, added Lieutenant Mackinson,.",public_librispeech_clean
+balanced-val-161,YOU IMAGINE MY ALARM,You may imagine my alarm.,public_librispeech_clean
+balanced-val-162,FORM WHICH HE OBJECT GIVE NOT OBJECT ITSELF,"to the form which he gives to the object, not to the object itself.",public_librispeech_clean
+balanced-val-163,PLAYER WALK OUTSIDE RAINY,The player walks outside when it is rainy.,controlled_conditions
+balanced-val-164,SHE TAKE PRIDE HER FOREST,She took a pride in her forest.,public_librispeech_clean
+balanced-val-165,THEY NEVER HEARD THAT OGRE EVER CALL MONSIEUR LE BARON,They had never heard that an ogre was ever called monsieur le baron.,public_librispeech_clean
+balanced-val-166,WE ARRIVED THERE TWENTY EIGHTH AND NAUTILUS,"We arrived there on may twenty eighth, and the Nautilus.",public_librispeech_clean
+balanced-val-167,HIS TERM EXPIRES NEXT YEAR AND I FEAR WE LOSE HIM,His term expires next year and I fear we shall lose him.,public_librispeech_clean
+balanced-val-168,HE WALK SLOWLY ABOARD HANDSOME AND GRAVE HIS WHITE GOWN AND LARGE TURBAN,"He walked slowly aboard, handsome and grave in his white gown and large turban.",public_librispeech_clean
+balanced-val-169,THIN YOUNG MAN WHOSE EXPRESSION ONE HABITUAL ANXIETY HABITUAL WARINESS AND HABITUAL EAGERNESS,"thin young man, whose expression was one of habitual anxiety, habitual wariness and habitual eagerness.",public_librispeech_clean
+balanced-val-170,THAT THAT INHERITANCE AND SUCCESSION LAST EVER WHOEVER RECOGNIZED HEIR,"that is, that inheritance and succession will last for ever, whoever may be the recognized heir.",public_librispeech_clean
+balanced-val-171,FATHER MAKE MEAL TOMORROW,The father will make meal tomorrow.,controlled_compositional
+balanced-val-172,FAMILY READ OUTSIDE BRIGHT,The family is reading outside when it is bright.,controlled_conditions
+balanced-val-173,TUTOR SHOW STUDENT MATH,The tutor will show math to the student.,controlled_compositional
+balanced-val-174,DOG WALK FAST PARK,The dog walked fast in the park.,controlled_compositional
+balanced-val-175,TEACHER SHOW CHILD ALGEBRA,The teacher shows algebra to the child.,controlled_compositional
+balanced-val-176,DOG WALK FAST STATION,The dog is walking fast in the station.,controlled_compositional
+balanced-val-177,AND JEAN VALJEAN SAT OPPOSITE THEM AUNT GILLENORMAND WITHDRAWN ONE DEGREE AND SECOND VEHICLE,"and Jean Valjean sat opposite them Aunt Gillenormand had withdrawn one degree, and was in the second vehicle.",public_librispeech_clean
+balanced-val-178,NOT HAPPINESS AS THEY BELIEVE BUT OPPORTUNITY GAINING HAPPINESS,"Not to happiness, as they may believe, but to the opportunity for gaining happiness.",public_librispeech_clean
+balanced-val-179,NOT DELAY AND OBEY THESE INSTRUCTIONS IMPLICITLY,Do not delay and obey these instructions implicitly.,public_librispeech_clean
+balanced-val-180,TROUBLE HEAVY PULL SICK BED,Trouble is a heavy pull down to a sick bed.,public_librispeech_clean
+balanced-val-181,HORSE PLAY PLAYGROUND,The horse plays in the playground.,controlled_compositional
+balanced-val-182,BROTHER MAKE SOUP THIS EVENING,The brother will make soup this evening.,controlled_compositional
+balanced-val-183,BROTHER COOK LUNCH TONIGHT,The brother will cook lunch tonight.,controlled_compositional
+balanced-val-184,THIS MAN ASK GOLFING WRONG,"This man will ask for Golfing wrong,.",public_librispeech_clean
+balanced-val-185,CHILD THROW BALL FORCE,The child throws the ball with force.,controlled_compositional
+balanced-val-186,TEACHER SHOW LEARNER ALGEBRA,The teacher showed algebra to the learner.,controlled_compositional
+balanced-val-187,BOY GOING PLAYGROUND,The boy is going to the playground.,controlled_compositional
+balanced-val-188,ME SUPPOSE MY DEAR HE SUGGESTED DOUBTFULLY,"I suppose, my dear, he suggested doubtfully,.",public_librispeech_clean
+balanced-val-189,UNCLE BUY CAR BLUE,The uncle is buying a blue car.,controlled_compositional
+balanced-val-190,FATHER SERVE SOUP TONIGHT,The father will serve soup tonight.,controlled_compositional
+balanced-val-191,TEACHER TEACH CLASS ALGEBRA,The teacher taught the class algebra.,controlled_compositional
+balanced-val-192,MY ARRIVAL SAY MY FATHER HELVOETSLUYS I OBSERVED BREATHE SOME DIFFICULTY,"On my arrival, says my father, at Helvoetsluys, I was observed to breathe with some difficulty.",public_librispeech_clean
+balanced-val-193,FAMILY PLAY OUTSIDE SUNNY,The family will play outside when it is sunny.,controlled_conditions
+balanced-val-194,AND HEAVY ROAR ARTILLERY ALSO PUNCTUATED LONGER PAUSES,and the heavy roar of the artillery also was punctuated with longer pauses.,public_librispeech_clean
+balanced-val-195,MAN BUY BICYCLE RED,The man will buy a red bicycle.,controlled_compositional
+balanced-val-196,PUPPY WALK OUTSIDE WARM,The puppy will walk outside when it is warm.,controlled_conditions
+balanced-val-197,FRANK NOTICED THAT HEAD DISAPPEARED ALONGSIDE OPEN DOOR,Frank noticed that the head had disappeared from alongside the open door.,public_librispeech_clean
+balanced-val-198,ALLOW ME OFFER YOU MY CARD,Allow me to offer you my card.,public_librispeech_clean
+balanced-val-199,FATHER PREPARE DINNER THIS EVENING,The father prepares dinner this evening.,controlled_compositional
+balanced-val-200,TELL HIM JOHN MERRICK HERE,Tell him John Merrick is here.,public_librispeech_clean
+balanced-val-201,BUT WHY IT CONTEMPTIBLE,But why is it contemptible?,public_librispeech_clean
+balanced-val-202,HERE EXPOSED TERRIBLE TRIALS,must here be exposed to terrible trials.,public_librispeech_clean
+balanced-val-203,I BUY PEMBERLEY ITSELF IF DARCY SELL IT,"I will buy Pemberley itself, if Darcy will sell it.",public_librispeech_clean
+balanced-val-204,HE GO AND THERE HE FIND HELP,"He must go in, and there he will find help'.",public_librispeech_clean
+balanced-val-205,CLASS REVIEW LESSON SCHOOL,The class reviewed the lesson at school.,controlled_compositional
+balanced-val-206,HE QUICKEST ONE HIS FAMILY,He is the quickest one in his family.,public_librispeech_clean
+balanced-val-207,PARENT MAKE RICE TOMORROW,The parent will make rice tomorrow.,controlled_compositional
+balanced-val-208,WOMAN BAKE SOUP THIS MORNING,The woman is baking soup this morning.,controlled_compositional
+balanced-val-209,MOTHER BAKE RICE YESTERDAY,The mother baked rice yesterday.,controlled_compositional
+balanced-val-210,GO COURT LAST WEEK AND WHAT THEY CALL WHITEWASHED I BELIEVE,"went through the Court last week, and was what they call whitewashed, I believe.",public_librispeech_clean
+balanced-val-211,LET ME SEE SAY GRACE,"Let me see, said Grace.",public_librispeech_clean
+balanced-val-212,THEY NOT TOLD THAT THERE SOMETHING DOING,They did not have to be told that there was something doing.,public_librispeech_clean
+balanced-val-213,PLAYER RUN FAST STATION,The player ran fast in the station.,controlled_compositional
+balanced-val-214,PARENT BAKE FOOD THIS AFTERNOON,The parent is baking food this afternoon.,controlled_compositional
+balanced-val-215,UNCLE BAKE LUNCH TODAY,The uncle bakes lunch today.,controlled_compositional
+balanced-val-216,HORSE PLAY GARDEN,The horse played in the garden.,controlled_compositional
+balanced-val-217,PLAYER VISIT STATION,The player visited the station.,controlled_compositional
+balanced-val-218,LET US GET OURSELVES KILLED HERE VERY LAST MAN,"Let us get ourselves killed here, to the very last man.",public_librispeech_clean
+balanced-val-219,OFFICERS PROBING INCREASING GLOOM THEIR NIGHT GLASSES,Officers were probing the increasing gloom with their night glasses.,public_librispeech_clean
+balanced-val-220,MOTHER MAKE SOUP TODAY,The mother is making soup today.,controlled_compositional
+balanced-val-221,WOMAN BAKE RICE THIS AFTERNOON,The woman is baking rice this afternoon.,controlled_compositional
+balanced-val-222,PLAYER WALK OUTSIDE RAINY,The player will walk outside when it is rainy.,controlled_conditions
+balanced-val-223,BUT HE OPEN THEM ONCE,but he did open them at once.,public_librispeech_clean
+balanced-val-224,SPEAK PROFESSIONALLY I THINK YOU WRONG,"Speaking professionally, I think you are wrong.",public_librispeech_clean
+balanced-val-225,HORSE VISIT SCHOOL,The horse visited the school.,controlled_compositional
+balanced-val-226,I SEE IT PERFECT DISTINCTNESS ALL DULL BLUE,"I saw it with perfect distinctness all a dull blue,.",public_librispeech_clean
+balanced-val-227,STUDENT RUN FAST PARK,The student is running fast in the park.,controlled_compositional
+balanced-val-228,MAN SAY I NO OBJECTION BUT QUICK AND GET ME SOMETHING EAT,"The man said 'I have no objection, but be quick and get me something to eat'.",public_librispeech_clean
+balanced-val-229,SHE BROODED HER INJURY,she brooded over her injury.,public_librispeech_clean
+balanced-val-230,HIS FIRST ACT SEND TWO USURPERS WHO SAT HIS THRONE,His first act was to send for the two usurpers who had sat on his throne.,public_librispeech_clean
+balanced-val-231,FATHER SELL COAT BLACK,The father will sell a black coat.,controlled_compositional
+balanced-val-232,PARENT BUY VEHICLE NEW,The parent bought a new vehicle.,controlled_compositional
+balanced-val-233,BUT WHEN FETNAH INFORMED HIM THAT THEY ACTUALLY BAGDAD AND SAME HOUSE HIM,"But when Fetnah informed him, that they were actually in Bagdad, and in the same house with him,.",public_librispeech_clean
+balanced-val-234,SOOTHES US WHERE RECORD ORDINARY PEDANTIC RAIN GAUGE LEAVE US INFURIATED,"soothes us, where the record of the ordinary pedantic rain gauge would leave us infuriated.",public_librispeech_clean
+balanced-val-235,BOY STUDY OUTSIDE COLD,The boy studied outside when it is cold.,controlled_conditions
+balanced-val-236,YOU TRY STARTLE ME ACTING PART,are you trying to startle me by acting a part?,public_librispeech_clean
+balanced-val-237,AS CUSTOMARY RUSSIAN ARMY AND ONLY FEW REPLIED BOW,"as is customary in the Russian Army, and only a few replied with a bow.",public_librispeech_clean
+balanced-val-238,PARENT COOK DINNER THIS AFTERNOON,The parent is cooking dinner this afternoon.,controlled_compositional
+balanced-val-239,FATHER CHOOSE TABLE GREEN,The father chooses a green table.,controlled_compositional
+balanced-val-240,DOG RUN QUICKLY PARK,The dog is running quickly in the park.,controlled_compositional
+balanced-val-241,TUTOR EXPLAIN CLASS PROBLEM,The tutor is explaining the problem to the class.,controlled_compositional
+balanced-val-242,DOG WALK FAST PARK,The dog walks fast in the park.,controlled_compositional
+balanced-val-243,TEACHER GO SCHOOL EVENING,The teacher went to the school in the evening.,controlled_schedules
+balanced-val-244,MOTHER BUY COAT RED,The mother will buy a red coat.,controlled_compositional
+balanced-val-245,DOG VISIT STATION,The dog will visit the station.,controlled_compositional
+balanced-val-246,AS ART REAL,as the art is real.,public_librispeech_clean
+balanced-val-247,THEN HE MENTALLY ADDED STILL MY UNKNOWN PROTECTOR I NOT FORGOTTEN,"Then he mentally added, Still my unknown protector I am not forgotten.",public_librispeech_clean
+balanced-val-248,YOU NOT ADMIT THAT SOCIETY ITS PRESENT STATE LIKE EVERY MAN,"Do you not admit that society in its present state, like every man,.",public_librispeech_clean
+balanced-val-249,STILL HE NOT MENTION WORD WHAT HE POSSIBLY KNOW DASTARDLY DEED,"Still, he did not mention a word about what he might possibly know of the dastardly deed,.",public_librispeech_clean
+balanced-val-250,HE THIS MOMENT EVIDENTLY GAY MOOD,He was at this moment evidently in a gay mood.,public_librispeech_clean
+balanced-val-251,PROFESSOR SHOW CHILD HISTORY,The professor is showing history to the child.,controlled_compositional
+balanced-val-252,FATHER SERVE BREAD THIS EVENING,The father will serve bread this evening.,controlled_compositional
+balanced-val-253,CATHERINE BLUSHED HER FRIEND AND SAY,"Catherine blushed for her friend, and said,.",public_librispeech_clean
+balanced-val-254,HE SO TIRED THAT HE NOT AWAKEN SUN HIGH SKY,He was so tired that he did not awaken until the sun was high in the sky.,public_librispeech_clean
+balanced-val-255,THEN ALL MUSKRATS LAUGHED,Then all the Muskrats laughed.,public_librispeech_clean
+balanced-val-256,HIS HEAD DROPPED HIS BODY QUIVERED LAY STILL,"His head dropped his body quivered, lay still.",public_librispeech_clean
+balanced-val-257,DOG WALK OUTSIDE COLD,The dog will walk outside when it is cold.,controlled_conditions
+balanced-val-258,STUDENT CATCH BALL RED PARK,The student will catch the red ball in the park.,controlled_compositional
+balanced-val-259,AUNT SERVE BREAKFAST TOMORROW,The aunt will serve breakfast tomorrow.,controlled_compositional
+balanced-val-260,PARENT CHOOSE VEHICLE GREEN,The parent chooses a green vehicle.,controlled_compositional
+balanced-val-261,AS SHE SPOKE SHE THROW WATER HIM,"As she spoke, she threw water upon him,.",public_librispeech_clean
+balanced-val-262,PLAYER CATCHES ROPE HAPPY,The happy player catches the rope.,controlled_compositional
+balanced-val-263,OUR NETS ALSO HAULED BOLD,"Our nets also hauled in a bold,.",public_librispeech_clean
+balanced-val-264,MAN COOK FOOD THIS MORNING,The man cooks food this morning.,controlled_compositional
+balanced-val-265,INSTANT I DRAGGED HIM FLOOR,"In an instant I dragged him to the floor,.",public_librispeech_clean
+balanced-val-266,WOMAN MAKE FOOD TONIGHT,The woman is making food tonight.,controlled_compositional
+balanced-val-267,TUTOR TEACH CLASS RULE,The tutor taught the class the rule.,controlled_compositional
+balanced-val-268,CHILD GO LIBRARY EVENING,The child goes to the library in the evening.,controlled_schedules
+balanced-val-269,JANE ACCOMPANIED REBECCA KITCHEN,Jane accompanied Rebecca into the kitchen.,public_librispeech_clean
+balanced-val-270,THERE WORD HAPPENING RIGHT TRIM CRIED MY UNCLE TOBY,"there the word happening is right, Trim, cried my uncle Toby.",public_librispeech_clean
+balanced-val-271,BOY GO STORE,The boy went to the store.,controlled_compositional
+balanced-val-272,EVEN AS THEIR MOVEMENTS CONFINED AND SLOW AND THEIR HABITS STEREOTYPED AND SENSELESS,"even as their movements were confined and slow, and their habits stereotyped and senseless.",public_librispeech_clean
+balanced-val-273,CAPTAIN SMOLLETT NOW RETIRED SEA,Captain Smollett is now retired from the sea.,public_librispeech_clean
+balanced-val-274,EVEN SINGLE OUTER CLOAK OFTEN STRIPED SPOTTED OR CHEQUERED VARIOUS COLOURS,"Even the single outer cloak was often striped, spotted, or chequered in various colours.",public_librispeech_clean
+balanced-val-275,MISTER WESTON MAN UNEXCEPTIONABLE CHARACTER EASY FORTUNE SUITABLE AGE AND PLEASANT MANNERS,"mister Weston was a man of unexceptionable character, easy fortune, suitable age, and pleasant manners.",public_librispeech_clean
+balanced-val-276,CHILD GO LIBRARY EVENING,The child went to the library in the evening.,controlled_schedules
+balanced-val-277,COME HELP ONCE,Am coming with help at once.,public_librispeech_clean
+balanced-val-278,PARENT CHOOSE BICYCLE GREEN,The parent is choosing a green bicycle.,controlled_compositional
+balanced-val-279,WOMAN GO LIBRARY NIGHT,The woman goes to the library in the night.,controlled_schedules
+balanced-val-280,WOMAN BAKE BREAD THIS MORNING,The woman bakes bread this morning.,controlled_compositional
+balanced-val-281,AUNT SELL COAT SMALL,The aunt sold a small coat.,controlled_compositional
+balanced-val-282,AUNT CHOOSE BICYCLE GREEN,The aunt is choosing a green bicycle.,controlled_compositional
+balanced-val-283,UNCLE CHOOSE TICKET RED,The uncle will choose a red ticket.,controlled_compositional
+balanced-val-284,FRANK NOT TELL ALL HIS CHUMS WHAT HE SEE,Frank did not tell all of his chums about what he had seen.,public_librispeech_clean
+balanced-val-285,HIS FACE RETURNED ITS LINES HABITUAL ANXIETY,His face returned into its lines of habitual anxiety.,public_librispeech_clean
+balanced-val-286,AND BULL DURHAM ONLY FIVE CENTS BAG AND BAG OUGHT LAST WEEK,"And Bull Durham is only five cents a bag, and a bag ought to last a week.",public_librispeech_clean
+balanced-val-287,ANY ORDINARY MAN GREATLY ALARMED APPARITION,Any ordinary man would have been greatly alarmed at the apparition.,public_librispeech_clean
+balanced-val-288,BOY GO MARKET,The boy will go to the market.,controlled_compositional
+balanced-val-289,AS IF ONE CROWN NOT AS GOOD AS ANOTHER,as if one crown were not as good as another.,public_librispeech_clean
+balanced-val-290,TEACHER TEACH CHILD SCIENCE,The teacher is teaching the child science.,controlled_compositional
+balanced-val-291,MOTHER MAKE DINNER TODAY,The mother makes dinner today.,controlled_compositional
+balanced-val-292,THEN WE MAILED IT THAT VERY EVENING,Then we mailed it that very evening.,public_librispeech_clean
+balanced-val-293,AND FANCIED HIS COUNTENANCE NOT ALTOGETHER UNKNOWN ME,and fancied his countenance was not altogether unknown to me.,public_librispeech_clean
+balanced-val-294,FATHER SELLING TICKET BLUE,The father is selling a blue ticket.,controlled_compositional
+balanced-val-295,IT EVEN ASSERTED CONFIDENTLY THAT NOTHING MORE EXPECTED THAT INDUCTIVE LOGIC IMPOSSIBLE,"It was even asserted confidently, that nothing more was to be expected, that an inductive logic was impossible.",public_librispeech_clean
+balanced-val-296,WOMAN PREPARE FOOD THIS EVENING,The woman prepares food this evening.,controlled_compositional
+balanced-val-297,HE PLAY THIS GAME SO OFTEN THAT ALMOST FIRST SIGHT HE CLASSIFY HIS DUPES,"He had played this game so often, that, almost at first sight he could classify his dupes.",public_librispeech_clean
+balanced-val-298,TEACHER SHOW CHILD ALGEBRA,The teacher will show algebra to the child.,controlled_compositional
+balanced-val-299,AUNT PREPARE DINNER THIS MORNING,The aunt prepared dinner this morning.,controlled_compositional
+balanced-val-300,MISTER FINN GO IRELAND,mister Finn is to go to Ireland.,public_librispeech_clean
+balanced-val-301,TERESA SIXTEEN AND VAMPA SEVENTEEN,"Teresa was sixteen, and Vampa seventeen.",public_librispeech_clean
+balanced-val-302,MY FATHER EVEN NOW WRITHING HIS GRASP AND ERNEST DEAD HIS FEET,"my father even now might be writhing under his grasp, and Ernest might be dead at his feet.",public_librispeech_clean
+balanced-val-303,WHO WOMAN PRESENT,Who were the women present?,public_librispeech_clean
+balanced-val-304,FATHER CHOOSE TICKET BLACK,The father is choosing a black ticket.,controlled_compositional
+balanced-val-305,DOG RUN OUTSIDE WARM,The dog is running outside when it is warm.,controlled_conditions
+balanced-val-306,JUST AS LITTLE SILLY,just a little as silly.,public_librispeech_clean
+balanced-val-307,SWALLOW LESS SWIFT THAN WIND WIND LESS SWIFT THAN LIGHTNING,"The swallow is less swift than the wind, the wind is less swift than the lightning.",public_librispeech_clean
+balanced-val-308,CHILD RUN OUTSIDE COLD,The child runs outside when it is cold.,controlled_conditions
+balanced-val-309,AND I LOST ALL,and I have lost all.,public_librispeech_clean
+balanced-val-310,WHILST SHE FARED ME EASTWARD BAGHDAD,whilst she fared on with me to the eastward of Baghdad.,public_librispeech_clean
+balanced-val-311,FATIGUE AND NERVOUSNESS EXPRESSED BREED FATIGUE AND NERVOUSNESS SYMPATHETIC AUDIENCE,"Fatigue and nervousness, expressed, breed fatigue and nervousness in a sympathetic audience.",public_librispeech_clean
+balanced-val-312,GIRL STUDIES OUTSIDE COLD,The girl studies outside when it is cold.,controlled_conditions
+balanced-val-313,EIGHT MILES EAST STEAMSHIP BIG VISIBLE HORIZON LINE,"Eight miles to the east, a big steamship was visible on the horizon line.",public_librispeech_clean
+balanced-val-314,HE SAY VERY LITTLE YOU BUT I SPOKE YOU DEAL GOOD,"He said very little about you, but I spoke of you a good deal.",public_librispeech_clean
+balanced-val-315,CHILD WALK QUICKLY GARDEN,The child is walking quickly in the garden.,controlled_compositional
+balanced-val-316,MATTER MERE PICTORIAL BEAUTY,in the matter of mere pictorial beauty.,public_librispeech_clean
+balanced-val-317,YOU ORCHARD AND BACK SO SOON,Have you been to the orchard and back so soon?,public_librispeech_clean
+balanced-val-318,TEACHER SHOW LEARNER LESSON,The teacher is showing the lesson to the learner.,controlled_compositional
+balanced-val-319,CHILD WALK QUICKLY GARDEN,The child will walk quickly in the garden.,controlled_compositional
+balanced-val-320,BROTHER BUY GIFT BLUE,The brother is buying a blue gift.,controlled_compositional
+balanced-val-321,IT CARRIED SEVENTY FOUR CANNONS AND LAUNCHED SEVENTEEN SIXTY TWO,It carried seventy four cannons and was launched in seventeen sixty two.,public_librispeech_clean
+balanced-val-322,MOTHER GO MARKET AFTERNOON,The mother goes to the market in the afternoon.,controlled_schedules
+balanced-val-323,AND THIS MORAL STAMINA MARKED NEW ENGLAND EVER SINCE AND MARKED HER HER GLORY,"And this moral stamina has marked New England ever since, and marked her to her glory.",public_librispeech_clean
+balanced-val-324,PROFESSOR SHOW STUDENT MATH,The professor shows math to the student.,controlled_compositional
+balanced-val-325,YOU KNOW WHERE MY RIG,Do you know where my rig is?,public_librispeech_clean
+balanced-val-326,TUTOR TEACH CLASS RULE,The tutor will teach the class the rule.,controlled_compositional
+balanced-val-327,HORSE PLAY STATION,The horse is playing in the station.,controlled_compositional
+balanced-val-328,DOG STUDIES OUTSIDE COLD,The dog studies outside when it is cold.,controlled_conditions
+balanced-val-329,IT BECAME VIOLATION NATURE AND SO FAR YOU SEE CRIMINAL,"it became a violation of nature and was so far, you see, criminal.",public_librispeech_clean
+balanced-val-330,OUR OWN DISTRESSES THOUGH THEY OCCASIONED FICTITIOUS RECIPROCITY COMMERCE ENCREASED DUE PROPORTION,"Our own distresses, though they were occasioned by the fictitious reciprocity of commerce, encreased in due proportion.",public_librispeech_clean
+balanced-val-331,CHILD STUDY GRAMMAR SCHOOL,The child studied the grammar at school.,controlled_compositional
+balanced-val-332,WE SHOUT WE SING PRAISES SENIORS,"We shout, we sing, the praises of the seniors.",public_librispeech_clean
+balanced-val-333,YOU MARK ME WELL,do you mark me well?,public_librispeech_clean
+balanced-val-334,ME ANY HELP YOU AND THUS REPAY YOUR GREAT KINDNESS ME,"Can I be of any help to you, and thus repay your great kindness to me'?",public_librispeech_clean
+balanced-val-335,FATHER BUY COAT SMALL,The father will buy a small coat.,controlled_compositional
+balanced-val-336,THIS DAY AFTERNOON HOUR SUN,"This day in the afternoon, about an hour by sun,.",public_librispeech_clean
+balanced-val-337,CHILD GOING PLAYGROUND,The child is going to the playground.,controlled_compositional
+balanced-val-338,AND NOW AS DIGNIFIED MOTHER HER DEMURE BABE HER ARMS,and now as a dignified mother with her demure babe in her arms.,public_librispeech_clean
+balanced-val-339,CAT PLAY SCHOOL,The cat plays in the school.,controlled_compositional
+balanced-val-340,MORLEY SHRUGGED HIS SHOULDERS AND THEN SAY EASY QUESTION,"Morley shrugged his shoulders, and then said An easy question.",public_librispeech_clean
+balanced-val-341,WHICH US INSTANCE FOLLOW AMERICAN INDIAN SENTENCE MORE THAN THREE WORDS,"Which of us, for instance, could follow an American Indian through a sentence of more than three words?",public_librispeech_clean
+balanced-val-342,UNCLE BUY CAR BLUE,The uncle buys a blue car.,controlled_compositional
+balanced-val-343,TUTOR SHOW CHILD LESSON,The tutor is showing the lesson to the child.,controlled_compositional
+balanced-val-344,UNCLE MAKE DINNER TONIGHT,The uncle makes dinner tonight.,controlled_compositional
+balanced-val-345,GIRL RUN OUTSIDE SUNNY,The girl ran outside when it is sunny.,controlled_conditions
+balanced-val-346,PARENT CHOOSE VEHICLE GREEN,The parent will choose a green vehicle.,controlled_compositional
+balanced-val-347,USE ERASER REMOVE HARD PART,USE eraser to remove hard part.,public_librispeech_clean
+balanced-val-348,AND CONFESS TRUTH WE SCARCELY LESS EAGER MEET HER AGAIN,"and to confess the truth, we are scarcely less eager to meet her again.",public_librispeech_clean
+balanced-val-349,IT AMID TALL ELMS CHURCH OLD ITS SQUARE TOWER HUNG IVY,"Beyond it, amid tall elms, was the old church with its square tower hung with ivy.",public_librispeech_clean
+balanced-val-350,NOTHING CAN BE MORE DESC-IMPORTANT THAN THAT .,nothing can be more important than that .,aslg_pc12
+balanced-val-351,"X-IT BE SCANDAL , AND SCANDAL THAT NO ONE HAVE PUT X-Y FINGER ON OR IDENTIFY .","it was a scandal , and a scandal that no one has put their finger on or identified .",aslg_pc12
+balanced-val-352,"WHEREVER DESC-INTERNATIONAL DESC-MONETARY FUND HAVE BE , X-IT HAVE ONE MIGHT SAY DESC-SOWN DESTRUCTION .","wherever the international monetary fund has been , it has one might say sown destruction .",aslg_pc12
+balanced-val-353,"TWENTY SIX WOMAN HAVE DIE THIS YEAR IN PORTUGAL DESC-ALREADY , AS VICTIM DESC-DOMESTIC VIOLENCE .","twenty six women have died this year in portugal already , as victims of domestic violence .",aslg_pc12
+balanced-val-354,X-I DESC-PERSONALLY WILL MENTION FIVE X-Y .,i personally will mention five of them .,aslg_pc12
+balanced-val-355,THIS INFORMATION SHOULD BE PROVIDE NO DESC-LATER THAN AT TIME PURCHASE TICKET .,this information should be provided no later than at the time of purchasing the ticket .,aslg_pc12
+balanced-val-356,X-IT PROVIDE DESC-SINGLE POINT CONTACT IN ROMANIUM WITH OLAF FOR EUROPEAN FUND .,it provides the single point of contact in romania with olaf for european funds .,aslg_pc12
+balanced-val-357,EUROPEAN INVESTMENT BANK DESC-MAINLY GET WHAT X-IT WANT .,the european investment bank mainly got what it wanted .,aslg_pc12
+balanced-val-358,X-I WOULD BE DESC-GRATEFUL FOR THIS SUPPORT AND SUGGEST X-WE MOVE DESC-AHEAD AS DESC-QUICKLY AS DESC-POSSIBLE .,i would be grateful for this support and suggest we move ahead as quickly as possible .,aslg_pc12
+balanced-val-359,"X-Y BE , IN FACT , TAKE ALL DESC-NECESSARY ACTION IN THIS RESPECT .","they are , in fact , taking all the necessary action in this respect .",aslg_pc12
+balanced-val-360,THIS DOCUMENT BE ONE MOST DESC-MILITARISTIC THAT X-I HAVE READ IN ALL X-MY YEAR IN PARLIAMENT .,this document is one of the most militaristic that I have read in all my years in parliament .,aslg_pc12
+balanced-val-361,FOUR OUT FIVE EUROPEAN DESC-LIVE IN DESC-URBAN AREA .,four out of five europeans live in urban areas .,aslg_pc12
+balanced-val-362,DESC-REAL LIFE EXAMPLE SHOW THAT SOLVE ISSUE RELATE TO EDUCATION FUEL DESC-STRONG COMMUNITY DEVELOPMENT .,real life examples show that solving issues related to education fuels strong community development .,aslg_pc12
+balanced-val-363,MICRO CREDIT WILL HELP ACHIEVE THIS OBJECTIVE .,micro credit will help achieve this objective .,aslg_pc12
+balanced-val-364,MATTER NEIGHBORHOOD RELATION MUST BE PRIORITY .,the matter of neighbourhood relations must be a priority .,aslg_pc12
+balanced-val-365,DEMOCRACY DESC-ALSO REQUIRE THAT X-WE DESC-CIVIL RIGHTS AND FREEDOM DESC-NEVER BE VIOLATE .,democracy also requires that our civil rights and freedoms never be violated .,aslg_pc12
+balanced-val-366,FINANCING FOR THIS DESC-INTERNATIONAL FUND MUST BE DESC-TRANSPARENT .,the financing for this international fund must be transparent .,aslg_pc12
+balanced-val-367,THIS BE DESC-PARTICULAR DESC-TRUE DESC-RARE DESC-GENETIC DISEASE THAT BE DESC-HEREDITARY .,this is particular true of rare genetic diseases that are hereditary .,aslg_pc12
+balanced-val-368,X-I WOULD LIKE TO MENTION THREE X-Y .,i would like to mention three of them .,aslg_pc12
+balanced-val-369,"X-IT BE DESC-GOOD TO START WITH BONUS SYSTEM , BUT X-IT BE DESC-NOT DESC-ENOUGH .","it is good to start with the bonus systems , but it is not enough .",aslg_pc12
+balanced-val-370,X-IT WILL RESULT IN MORE DESC-EFFICIENT WORK AND ALLOW INSTITUTION TO ESTABLISH X-Y DESC-OWN POLICY STRATEGY .,it will result in more efficient work and allow the institutions to establish their own policy strategies .,aslg_pc12
+balanced-val-371,FRONTEX X-POSS DESC-CURRENT MANDATE DESC-ALREADY PROVIDE FOR DESC-OPERATIONAL COOPERATION IN FIELD DESC-JOINT RETURN OPERATION .,frontex's current mandate already provides for operational cooperation in the field of joint return operations .,aslg_pc12
+balanced-val-372,"THAT BE WHY , COMMISSIONER , X-I BE ASK X-YOU TO DEVOTE X-YOU DESC-FULL ATTENTION TO THIS SITUATION .","that is why , commissioner , I was asking you to devote your full attention to this situation .",aslg_pc12
+balanced-val-373,FROM 2012 X-WE WILL HAVE SCHENGEN AIRSPACE .,from 2012 we will have a schengen airspace .,aslg_pc12
+balanced-val-374,THOSE MEMBER STATE DESC-YET TO RATIFY LISBON TREATY SHOULD ACT TO MAKE THAT DEAL DESC-EASIER TO STRIKE .,those member states yet to ratify the lisbon treaty should act to make that deal easier to strike .,aslg_pc12
+balanced-val-375,PARLIAMENT HELP TO MAKE DIRECTIVE MORE DESC-AMBITIOUS THAN COUNCIL X-POSS DESC-COMMON POSITION ON DESC-CERTAIN DESC-IMPORTANT POINT .,parliament helped to make the directive more ambitious than the council's common position on certain important points .,aslg_pc12
+balanced-val-376,WHEN FINLAND DESC-FINALLY DESC-ALSO BAN SMOKING IN RESTAURANT AND BAR DESC-RE BE OUTCRY .,when finland finally also banned smoking in restaurants and bars there was an outcry .,aslg_pc12
+balanced-val-377,CROATIUM HAVE COME DESC-LONG WAY OVER DESC-RECENT YEAR BUT DESC-IMPORTANT CHALLENGE DESC-STILL REMAIN TO BE TACKLE .,croatia has come a long way over recent years but important challenges still remain to be tackled .,aslg_pc12
+balanced-val-378,"FOR X-WE MUST DESC-NOT , COURSE , SQUANDER THIS OPPORTUNITY IN EUROPE .","for we must not , of course , squander this opportunity in europe .",aslg_pc12
+balanced-val-379,"THANK X-YOU , PRESIDENT IN OFFICE , FOR X-YOU HONESTY .","thank you , president in office , for your honesty .",aslg_pc12
+balanced-val-380,X-WE SHOULD DESC-NOT LET SE ACHIEVEMENT SLIP OUT X-WE HAND IN FACE ANY DESC-OLD HEADWIND .,we should not let these achievements slip out of our hands in the face of any old headwind .,aslg_pc12
+balanced-val-381,THIS REPORT DESC-ALSO MAKE NUMBER DESC-FORWARD LOOK RECOMMENDATION .,this report also makes a number of forward looking recommendations .,aslg_pc12
+balanced-val-382,"X-WE CAN DESC-NOT CRITICISE X-Y FOR DO X-IT , BUT X-WE CAN WONDER .","we cannot criticise them for doing it , but we can wonder .",aslg_pc12
+balanced-val-383,ONE MOST DESC-IMPORTANT ISSUE BE ABOLITION EXEQUATUR PROCEDURE .,one of the most important issues is the abolition of the exequatur procedure .,aslg_pc12
+balanced-val-384,"IF DESC-NOT , UGANDAN AND BURUNDIAN FORCE WILL PULL DESC-AWAY FROM MOGADISHU LEAVE SECURITY GAP BEHIND .","if not , ugandan and burundian forces will pull away from mogadishu leaving a security gap behind .",aslg_pc12
+balanced-val-385,PARTICIPATION BY SWITZERLAND AND LIECHTENSTEIN IN FRONTEX ACTIVITY,participation by switzerland and liechtenstein in frontex activities,aslg_pc12
+balanced-val-386,BUT X-I WOULD LIKE TO DESC-SINCERELY THANK X-WE COLLEAGUE FROM DG FOR X-Y FLEXIBILITY .,but I would like to sincerely thank our colleagues from the dgs for their flexibility .,aslg_pc12
+balanced-val-387,"THIS BE DESC-NOT DESC-EVEN DESC-FULLY DESC-MANAGEABLE , OR DESC-EVEN DESC-DESIRABLE , WITHIN EUROPEAN COMMUNITY X-ITSELF .","this is not even fully manageable , or even desirable , within the european community itself .",aslg_pc12
+balanced-val-388,"DESC-HOWEVER , THIS DIRECTIVE REQUIRE THAT MEMBER STATE INTRODUCE ENFORCEMENT REGIME WHICH BE DESC-EFFECTIVE , PROPORTIONATE AND DISSUASIVE .","however , this directive requires that member states introduce enforcement regimes which are effective , proportionate and dissuasive .",aslg_pc12
+balanced-val-389,DESC-SO DESC-MAYBE X-I GET X-IT DESC-WRONG DESC-MAYBE X-YOU BE DESC-RIGHT MAN .,so maybe I got it wrong maybe you are the right man .,aslg_pc12
+balanced-val-390,"X-WE NEED PROMISE ENERGY EFFICIENCY ACTION PLAN , PROMISE FOR DESC-SO DESC-LONG .","we need the promised energy efficiency action plan , promised for so long .",aslg_pc12
+balanced-val-391,"IN 2009 , X-IT BE 22 000 TONNE AND IN 2006 , X-IT BE 32 000 TONNE .","in 2009 , it was 22 000 tonnes and in 2006 , it was 32 000 tonnes .",aslg_pc12
+balanced-val-392,DESC-RE BE IMPROVEMENT IN 2009 IN THIS REGARD .,there were improvements in 2009 in this regard .,aslg_pc12
+balanced-val-393,"PL EUROPE 2020 STRATEGY CAN DESC-NOT DO AS DESC-MUCH AS X-WE BE SAY , DESC-HERE , TODAY .","pl the europe 2020 strategy cannot do as much as we are saying , here , today .",aslg_pc12
+balanced-val-394,X-I BE DESC-SURE THAT X-Y WILL BE TAKE INTO ACCOUNT .,i am sure that they will be taken into account .,aslg_pc12
+balanced-val-395,ISSUE DESC-INTERNATIONAL GOVERNANCE HAVE DESC-ALREADY BE DISCUSS .,the issue of international governance has already been discussed .,aslg_pc12
+balanced-val-396,SE BE DESC-DISTINCT .,these are distinct .,aslg_pc12
+balanced-val-397,COMMISSION NEED TO ENSURE THAT ANIMAL TRANSPORT REGULATION BE IMPLEMENT AND MONITOR DESC-CONSISTENTLY THROUGHOUT EU .,the commission needs to ensure that the animal transport regulation is implemented and monitored consistently throughout the eu .,aslg_pc12
+balanced-val-398,GIVE PEOPLE THIS DESC-RIGHT SHOULD DESC-ALSO MEAN GUARANTEE X-Y DESC-RIGHT TO DEVELOP X-Y LIFE .,giving people this right should also mean guaranteeing them the right to develop their lives .,aslg_pc12
+balanced-val-399,X-IT DESC-ALSO GIVE PURPOSE TO DESC-CULTURAL TOURISM .,it also gives a purpose to cultural tourism .,aslg_pc12
+balanced-val-400,X-I BE DESC-VERY DESC-PLEASED THAT X-WE HAVE THIS AGREEMENT .,i am very pleased that we have this agreement .,aslg_pc12
+balanced-val-401,X-I BELIEVE PARLIAMENT MUST CONTRIBUTE TO MAKE THIS STRATEGY DESC-STRONGER AND MORE DESC-COHERENT .,i believe parliament must contribute to making this strategy stronger and more coherent .,aslg_pc12
+balanced-val-402,"DESC-THIRDLY , WHERE BE OPPORTUNITY FOR BUSINESS AND ENTREPRENEUR FROM JOB CREATION AND DESC-ECONOMIC POINT VIEW ?","thirdly , where are the opportunities for businesses and entrepreneurs from a job creation and economic point of view ?",aslg_pc12
+balanced-val-403,DESC-RE BE DESC-PROBABLY DESC-FEW PEOPLE AROUND WHO COULD DESC-REALLY UNDERSTAND X-IT .,there are probably few people around who could really understand it .,aslg_pc12
+balanced-val-404,"AT END 2008 , EUROPEAN PARLIAMENT TAKE DESC-UP THIS MATTER , DESC-TOO , IN RESOLUTION .","at the end of 2008 , the european parliament took up this matter , too , in a resolution .",aslg_pc12
+balanced-val-405,"X-WE DESC-URGENTLY NEED TO DO SOMETHING ABOUT VIOLATION DESC-INTELLECTUAL PROPERTY RIGHTS , SMUGGLING AND COUNTERFEITING .","we urgently need to do something about the violation of intellectual property rights , smuggling and counterfeiting .",aslg_pc12
+balanced-val-406,"IN THIS WAY , X-YOU WILL BE DESC-ABLE TO GIVE X-IT ANOR MOBILITY RELATE FUNCTION .","in this way , you will be able to give it another mobility related function .",aslg_pc12
+balanced-val-407,X-HE HAVE DEAL WITH HUNDRED COMMENT .,he has dealt with hundreds of comments .,aslg_pc12
+balanced-val-408,OR BE X-WE HOPE THAT X-Y WILL OFFER TO CONTRIBUTE TO THIS UNDERTAKING X-Y DESC-OWN ACCORD ?,or are we hoping that they will offer to contribute to this undertaking of their own accord ?,aslg_pc12
+balanced-val-409,DESC-TOGER X-WE HAVE COVER DESC-GOOD PART WAY TOWARDS CREATE DESC-FORWARD LOOK EUROPEAN COMMUNITY .,together we have covered a good part of the way towards creating a forward looking european community .,aslg_pc12
+balanced-val-410,EMU PROTECT PROFIT MONOPOLY AND FACILITATE PRIVATISATION AND MERGER .,emu protects the profits of the monopolies and facilitates privatisation and merger .,aslg_pc12
+balanced-val-411,FROM NEXT YEAR X-WE HAVE OPPORTUNITY TO PROVIDE 300 MILLION EMISSION ALLOWANCE FOR DESC-NEW ENTRANT .,from next year we have an opportunity to provide 300 million emission allowances for new entrants .,aslg_pc12
+balanced-val-412,WHER ANYTHING WILL DESC-ACTUALLY BE DO BE DESC-DOUBTFUL .,whether anything will actually be done is doubtful .,aslg_pc12
+balanced-val-413,"PACKAGE DESC-DIRECT THAT STIMULUS TO KEY OBJECTIVE , DESC-SUCH AS BROADBAND DEVELOPMENT , ENERGY SECURITY AND DESC-LOW CARBON TECHNOLOGY .","the package directs that stimulus to key objectives , such as broadband development , energy security and low carbon technologies .",aslg_pc12
+balanced-val-414,FUND FOR NON ANIMAL TESTING ALTERNATIVE MUST DESC-NOT DESC-DRY DESC-UP .,funding for non animal testing alternatives must not dry up .,aslg_pc12
+balanced-val-415,ON SUMMIT X-WE HAVE LOT DESC-DIFFERENT SUMMIT .,on summits we have lots of different summits .,aslg_pc12
+balanced-val-416,"X-WE DUTY BE TO KICK START EUROPEAN INTEGRATION , WHICH BE IN DESC-SERIOUSLY DESC-BAD WAY .","our duty is to kick start european integration , which is in a seriously bad way .",aslg_pc12
+balanced-val-417,"X-WE DESC-STILL MAINTAIN DESC-WIDE DEFINITION , BUT X-WE WILL REDUCE DESC-DISCRETIONARY NON DISCLOSURE DOCUMENT .","we still maintain a wide definition , but we will reduce the discretionary non disclosure of documents .",aslg_pc12
+balanced-val-418,"DESC-HOWEVER , COMPANY MANAGEMENT AND , IN DESC-PARTICULAR , MR DESC-REILLY , HAVE BREACH DELTA AGREEMENT .","however , the company management and , in particular , mr reilly , have breached a delta agreement .",aslg_pc12
+balanced-val-419,THIS BE DESC-POLITICAL ISSUE THAT DESC-NOW HAVE X-ITS TIME .,this is a political issue that now has its time .,aslg_pc12
+balanced-val-420,THIS BE DESC-CRAZY DESC-ECONOMIC POLICY BECAUSE X-IT HAVE NO NET BENEFIT FOR ENVIRONMENT DESC-WHATSOEVER .,this is a crazy economic policy because it has no net benefit for the environment whatsoever .,aslg_pc12
+balanced-val-421,QUESTION BE WHY BE X-IT DESC-NOT INSTALL ?,the question is why was it not installed ?,aslg_pc12
+balanced-val-422,"DESC-RE BE DESC-BILATERAL PROBLEM , BUT X-Y SHOULD DESC-NOT BE ALLOW TO BLOCK NEGOTIATION ON ENLARGEMENT .","there are bilateral problems , but they should not be allowed to block the negotiations on enlargement .",aslg_pc12
+balanced-val-423,DESC-SUCH ATTITUDE BE COMPROMISE FUTURE EUROPEAN PARLIAMENT MISSION TO DESC-OR COUNTRY .,such attitudes are compromising future european parliament missions to other countries .,aslg_pc12
+balanced-val-424,DESC-FIRST QUESTION BE TO COMMISSIONER VASSILIOU DESC-EXACTLY WHAT DO COMMISSION THINK ABOUT DESC-DUAL DESC-LEGAL BASIS ?,the first question is to commissioner vassiliou exactly what does the commission think about the dual legal basis ?,aslg_pc12
+balanced-val-425,"DESC-HOWEVER , X-IT BE DESC-NOT DESC-ENOUGH TO CUT GREENHOUSE GAS EMISSION TO ALLEVIATE IMPACT CLIMATE CHANGE .","however , it is not enough to cut greenhouse gas emissions to alleviate the impact of climate change .",aslg_pc12
+balanced-val-426,"X-I BE VOTE IN FAVOR THIS RESOLUTION , ALTHOUGH X-IT DO DESC-NOT GO DESC-FAR DESC-ENOUGH .","i am voting in favour of this resolution , although it does not go far enough .",aslg_pc12
+balanced-val-427,WHAT THIS DESC-ACTUALLY MEAN BE DISARMAMENT DESC-INSTEAD MODERNISATION BRITISH AND DESC-FRENCH DESC-ATOMIC WEAPON .,what this actually means is disarmament instead of modernisation of british and french atomic weapons .,aslg_pc12
+balanced-val-428,THAT BE X-Y CHOICE .,that is their choice .,aslg_pc12
+balanced-val-429,ALTERNATIVE RESOLUTION HAVE BE PUT DESC-FORWARD BY MINORITY IN COMMITTEE ON DESC-INTERNAL MARKET AND CONSUMER PROTECTION .,an alternative resolution has been put forward by a minority in the committee on internal market and consumer protection .,aslg_pc12
+balanced-val-430,X-IT BE DESC-IMPORTANT BECAUSE DESC-DEMOCRATIC UKRAINE WILL SERVE AS DESC-IMPORTANT EXAMPLE TO X-ITS NEIGHBOR .,it is important because a democratic ukraine will serve as an important example to its neighbours .,aslg_pc12
+balanced-val-431,"NEXT , X-WE MUST ENSURE THAT X-Y RECEIVE COMPENSATION DESC-QUICKLY .","next , we must ensure that they receive compensation quickly .",aslg_pc12
+balanced-val-432,CONFERENCE WILL BE HOLD IN PUNTA DEL ESTE IN URUGUAY ON 15 20 NOVEMBER DESC-20 DEBATE BE DESC-CLOSE .,the conference will be held in punta del este in uruguay on 15 20 november 20the debate is closed .,aslg_pc12
+balanced-val-433,"X-YOU HAVE INSIST ON NEED TO ACT DESC-QUICKLY , AND THIS BE X-WE OBJECTIVE .","you have insisted on the need to act quickly , and this is our objective .",aslg_pc12
+balanced-val-434,DESC-NOW X-Y HAVE RESULT X-Y WANT .,now they have the result they wanted .,aslg_pc12
+balanced-val-435,THAT BE OUT ALL PROPORTION .,that is out of all proportion .,aslg_pc12
+balanced-val-436,X-MY VIEW THIS BE DESC-SLIGHTLY DESC-DIFFERENT TO THAT X-MY FELLOW MEMBER .,my view of this is slightly different to that of my fellow members .,aslg_pc12
+balanced-val-437,X-IT BE DESC-ALSO DESC-CRUCIAL FOR DESC-EXTERNAL RELATION AND DEVELOPMENT .,it is also crucial for external relations and development .,aslg_pc12
+balanced-val-438,THAT BE WHY X-I SHOULD LIKE TO DESC-EXPRESS X-MY THANKS THAT PILOT MEDIA MUNDUS PROJECT BE LAUNCH .,that is why I should like to express my thanks that the pilot media mundus projects were launched .,aslg_pc12
+balanced-val-439,X-I BE DESC-ALSO IN FAVOR DIFFERENTIATE GRANT QUOTA THAT X-YOU PROPOSE .,i am also in favour of the differentiated granting of quotas that you propose .,aslg_pc12
+balanced-val-440,RESTRICTION PLACE ON DESC-FINANCIAL RESOURCE FOR SE OBJECTIVE BE DESC-DISTURBING .,the restrictions placed on the financial resources for these objectives are disturbing .,aslg_pc12
+balanced-val-441,X-IT BE FOR THIS REASON THAT DESC-CONSERVATIVE DESC-RELUCTANTLY VOTE AGAINST THIS REPORT .,it is for this reason that conservatives reluctantly voted against this report .,aslg_pc12
+balanced-val-442,"DESC-NEW STRATEGY MUST BE CONCRETE ACTION PLAN WITH DESC-REALISTIC , DESC-VERIFIABLE GOAL .","the new strategy must be a concrete action plan with realistic , verifiable goals .",aslg_pc12
+balanced-val-443,CORRIGENDUM TO TEXT ADOPT RULE DESC-204A SEE MINUTE,corrigendum to a text adopted rule 204a see minutes,aslg_pc12
+balanced-val-444,X-I GIVE X-YOU X-MY DESC-SINCERE THANKS .,i give you my sincere thanks .,aslg_pc12
+balanced-val-445,DESC-FIRST JOB BE DESC-VERY DESC-IMPORTANT .,the first job is very important .,aslg_pc12
+balanced-val-446,X-I BE DESC-REFORE DESC-UNABLE TO GIVE X-HE FLOOR .,i am therefore unable to give him the floor .,aslg_pc12
+balanced-val-447,THIS BE DESC-SIMPLY BRING MORE PAIN TO FAMILY THAT BE DESC-JUST TRY TO ESCAPE WAR OR HUNGER .,this is simply bringing more pain to families that are just trying to escape war or hunger .,aslg_pc12
+balanced-val-448,"REPORT SUPPORT CROATIUM X-POSS AIM , WHICH BE WHY X-I HAVE VOTE IN FAVOR X-IT .","the report supports croatia's aims , which is why I have voted in favour of it .",aslg_pc12
+balanced-val-449,X-IT BE DESC-RIGHT THAT X-WE DESC-CORRECT THAT DESC-ANOMALY .,it is right that we correct that anomaly .,aslg_pc12
+balanced-val-450,"HU THANK X-YOU DESC-VERY DESC-MUCH , MADAM PRESIDENT .","hu thank you very much , madam president .",aslg_pc12
+balanced-val-451,DO THIS IN NAME DEMOCRACY AND FREEDOM .,do this in the name of democracy and freedom .,aslg_pc12
+balanced-val-452,X-I APPRECIATE X-WE CAN AGREE ON THAT POINT .,i appreciate we can agree on that point .,aslg_pc12
+balanced-val-453,IMPROVE QUALITY TEACHER EDUCATION,improving the quality of teacher education,aslg_pc12
+balanced-val-454,X-I WOULD LIKE TO END ON X-YOU EUROPEAN DESC-SOCIAL PACT .,i would like to end on your european social pact .,aslg_pc12
+balanced-val-455,THIS DO DESC-NOT CHANGE FACT THAT ABORTION MEAN KILL UNBORN CHILD .,this does not change the fact that abortion means killing an unborn child .,aslg_pc12
+balanced-val-456,"X-I WILL ATTEMPT TO ANSWER X-YOU QUESTION , WHERE DESC-POSSIBLE .","i will attempt to answer your questions , where possible .",aslg_pc12
+balanced-val-457,"TO SAVE FUTURE GENERATION , X-WE NEED TO STOP WAR DESC-NOW .","to save future generations , we need to stop the war now .",aslg_pc12
+balanced-val-458,"DESC-HOWEVER , X-WE CAN DESC-NOT INTRODUCE DEMOCRACY OR STABILITY TO IRAN .","however , we cannot introduce democracy or stability to iran .",aslg_pc12
+balanced-val-459,WHAT CITIZEN EUROPEAN UNION DESC-REALLY NEED BE JOB .,what the citizens of the european union really need is jobs .,aslg_pc12
+balanced-val-460,"DESC-SECOND ONE BE DESC-NUCLEAR ENERGY , BUT X-I KNOW THIS BE DESC-SENSITIVE ISSUE FOR SOME MEMBER STATE .","the second one is nuclear energy , but I know this is a sensitive issue for some member states .",aslg_pc12
+balanced-val-461,"MR PRESIDENT , LET X-WE DESC-NOT ALLOW FEAR TO GUIDE X-WE , X-WE DESC-OFTEN SAY .","mr president ,let us not allow fear to guide us, we often say .",aslg_pc12
+balanced-val-462,RESOLUTION CALL ON EUROPEAN INSTITUTION TO MAKE COORDINATE AND DESC-STRATEGIC CONTRIBUTION TO INCLUDE EUROPE X-POSS ROMA POPULATION .,the resolution calls on european institutions to make a coordinated and strategic contribution to including europe's roma population .,aslg_pc12
+balanced-val-463,"MADAM PRESIDENT , X-I WOULD LIKE TO COME DESC-BACK ON WHAT MR WATSON SAY .","madam president , I would like to come back on what mr watson said .",aslg_pc12
+balanced-val-464,RELATION WITH UNITE STATE BE DESC-EXTREMELY DESC-IMPORTANT IN HELP CONSOLIDATE DESC-GLOBAL SECURITY AND STABILITY .,relations with the united states are extremely important in helping consolidate global security and stability .,aslg_pc12
+balanced-val-465,X-IT BE DESC-CRITICAL DESC-POLITICAL SIGNAL .,it is a critical political signal .,aslg_pc12
+balanced-val-466,"WITHOUT SECURITY AND CONTROL , DESC-ECONOMIC PROGRESS WILL BE LOSE .","without security and control , the economic progress will be lost .",aslg_pc12
+balanced-val-467,X-WE BE DESC-CLEARLY AT START DESC-MAJOR DESC-NEW CRIME PREVENTION POLICY .,we are clearly at the start of a major new crime prevention policy .,aslg_pc12
+balanced-val-468,X-I HAVE ONE SPECIFIC COMMENT X-WE KNOW MR BARROSO X-POSS POSITION ON MODIFY POLICY .,i have one specific comment we know mr barroso's position on the modified policies .,aslg_pc12
+balanced-val-469,ISSUE ENERGY EFFICIENCY BE DESC-CRUCIAL TO 2020 STRATEGY .,the issue of energy efficiency is crucial to the 2020 strategy .,aslg_pc12
+balanced-val-470,"TO DESC-CERTAIN EXTENT , THIS RESULT FROM LACK DESC-EFFECTIVE MECHANISM CONTROL AND SUPERVISION .","to a certain extent , this results from a lack of effective mechanisms of control and supervision .",aslg_pc12
+balanced-val-471,"ASYLUM SEEKER , DESC-HOWEVER , BE DESC-NOT DESC-COMPARABLE TO DESC-ILLEGAL DESC-IMMIGRANT .","asylum seekers , however , are not comparable to illegal immigrants .",aslg_pc12
+balanced-val-472,THIS DESC-ALSO MEAN LOSS DESC-PROBABLY 2 000 MORE JOB THAT DEPEND ON DELL PRODUCTION IN IRELAND .,this also means the loss of probably 2 000 more jobs that depend on dell production in ireland .,aslg_pc12
+balanced-val-473,X-WE HAVE DESC-DIFFERENT MODEL HOW RELATIONSHIP BETWEEN CHURCH AND STATE HAVE DEVELOP .,we have different models of how the relationship between church and state has developed .,aslg_pc12
+balanced-val-474,"DESC-REFORE , X-WE NEED TO COMBINE , INTEGRATE AND PRODUCE ACTION ASSOCIATE WITH SYNERGY .","therefore , we need to combine , integrate and produce actions associated with synergy .",aslg_pc12
+balanced-val-475,DESC-25TH DESC-ANNUAL REPORT FROM COMMISSION ON MONITOR APPLICATION COMMUNITY LAW 2007 DEBATE,25th annual report from the commission on monitoring the application of community law 2007 debate,aslg_pc12
+balanced-val-476,X-I WOULD LIKE TO DESC-PRESENT REPORT AGAINST THIS BACKGROUND .,i would like to present the report against this background .,aslg_pc12
+balanced-val-477,DUTCH AUTHORITY SET DESC-SUCH LIMIT TO IDENTIFY TARGET GROUP FOR DESC-SOCIAL HOUSING IN NERLAND .,the dutch authorities set such a limit to identify the target group for social housing in the netherlands .,aslg_pc12
+balanced-val-478,"MADAM PRESIDENT , X-I CONCUR WITH COMMENT MAKE BY X-MY DESC-EXCELLENT COLLEAGUE MR SYE KAMALL ON THIS MATTER .","madam president , I concur with the comments made by my excellent colleague mr syed kamall on this matter .",aslg_pc12
+balanced-val-479,"LET PEOPLE INTERACT , RESEARCHER COOPERATE AND BUSINESS FIND DESC-JOINT SOLUTION TO DESC-CURRENT DESC-ECONOMIC CRISIS .","let people interact , researchers cooperate and businesses find joint solutions to the current economic crisis .",aslg_pc12
+balanced-val-480,X-SHE HAVE DO THIS IN FORM DECLARATION THAT X-SHE NEGOTIATE WITH COUNCIL .,she has done this in the form of the declaration that she negotiated with the council .,aslg_pc12
+balanced-val-481,BE DESC-NOW LEASE OUT X-I DIE PRONOUNCE X-IT LIKE TO TENEMENT OR PELT FARM .,is now leased out I die pronouncing it like to a tenement or pelting farm .,aslg_pc12
+balanced-val-482,"AND MOST DESC-IMPORTANTLY , TO ENSURE THAT FARMER RECEIVE DESC-FAIR AND DESC-ADEQUATE PRICE FOR X-Y PRODUCTION .","and most importantly , to ensure that farmers receive a fair and adequate price for their production .",aslg_pc12
+balanced-val-483,BY ADOPT REPORT PARLIAMENT WILL SEND DESC-POSITIVE SIGNAL TO X-WE CITIZEN .,by adopting the report parliament will send a positive signal to our citizens .,aslg_pc12
+balanced-val-484,THIS BE STEP TOWARDS DESC-STRONG EUROPEAN SUPERVISION DESC-FINANCIAL MARKET THAT HAVE DEVELOP DESC-FAR BEYOND DESC-NATIONAL BORDER .,this is a step towards strong european supervision of the financial markets that have developed far beyond national borders .,aslg_pc12
+balanced-val-485,"BUT X-IT BE DESC-NOT DESC-ONLY GOVERNMENT X-WE HAVE TO WORK WITH , BUT DESC-ALSO NGO .","but it is not only governments we have to work with , but also ngos .",aslg_pc12
+balanced-val-486,"AS X-I SAY , X-WE HAVE DESC-GREAT DEAL WORK DESC-AHEAD X-WE .","as I said , we have a great deal of work ahead of us .",aslg_pc12
+balanced-val-487,DESC-RE BE DESC-VERY DESC-CLEAR AND KEY ROLE FOR PARLIAMENT DESC-RE .,there is a very clear and key role for parliament there .,aslg_pc12
+balanced-val-488,"DESC-HOWEVER , EFFORT MUST BE MAKE BY BOTH SIDE .","however , efforts must be made by both sides .",aslg_pc12
+balanced-val-489,CITIZEN BE X-WE MOST DESC-IMPORTANT ALLY IN ACHIEVE X-WE DESC-JOINT OBJECTIVE .,the citizens are our most important allies in achieving our joint objectives .,aslg_pc12
+balanced-val-490,DESC-SO DESC-MUCH FOR DEMOCRACY !,so much for democracy !,aslg_pc12
+balanced-val-491,"MR PRESIDENT , MAY X-I CONCUR WITH DESC-LAST SPEAKER .","mr president , may I concur with the last speaker .",aslg_pc12
+balanced-val-492,TREATY BE DESC-NEVER DESC-ENOUGH FOR SOLVE PROBLEM .,a treaty is never enough for solving a problem .,aslg_pc12
+balanced-val-493,"X-WE NEED , DESC-FIRST AND DESC-FOREMOST , TO MAKE PROGRESS ON SE .","we need , first and foremost , to make progress on these .",aslg_pc12
+balanced-val-494,DESC-RE SEEM TO BE KIND CONTROVERSY BETWEEN TWO .,there seems to be a kind of controversy between the two .,aslg_pc12
+balanced-val-495,THIS CAN BE DESC-CONDENSED DESC-DOWN DESC-VERY DESC-SIMPLY INTO FOUR DESC-VERY DESC-CLEAR AREA .,this can be condensed down very simply into four very clear areas .,aslg_pc12
+balanced-val-496,X-I HAVE NO DESC-PERSONAL PROBLEM WITH JOS? MANUEL BARROSO .,i have no personal problems with josé manuel barroso .,aslg_pc12
+balanced-val-497,THIS MEAN THAT X-MY BROR X-POSS FARM IN THAT AREA BE AT RISK .,this means that my brother's farm in that area is at risk .,aslg_pc12
+balanced-val-498,"PL MADAM PRESIDENT , COMMISSIONER , X-IT BE TIME TO SPEAK DESC-PLAINLY .","pl madam president , commissioners , it is time to speak plainly .",aslg_pc12
+balanced-val-499,"SE DEMAND X-WE ENGAGEMENT , CONDEMNATION AND ACTION .","these demand our engagement , condemnation and action .",aslg_pc12
+balanced-val-500,PARENT CHOOSE VEHICLE GREEN,The parent is choosing a green vehicle.,controlled_compositional
+balanced-val-501,SISTER PREPARE LUNCH TODAY,The sister prepares lunch today.,controlled_compositional
+balanced-val-502,MAN BUY TICKET GREEN,The man buys a green ticket.,controlled_compositional
+balanced-val-503,BOY STUDY OUTSIDE COLD,The boy studied outside when it is cold.,controlled_conditions
+balanced-val-504,STUDENT READ OUTSIDE SUNNY,The student will read outside when it is sunny.,controlled_conditions
+balanced-val-505,PROFESSOR EXPLAIN STUDENT LESSON,The professor explained the lesson to the student.,controlled_compositional
+balanced-val-506,PUPPY STUDY OUTSIDE RAINY,The puppy studied outside when it is rainy.,controlled_conditions
+balanced-val-507,AUNT SERVE BREAKFAST TOMORROW,The aunt will serve breakfast tomorrow.,controlled_compositional
+balanced-val-508,FATHER PREPARE SOUP TONIGHT,The father is preparing soup tonight.,controlled_compositional
+balanced-val-509,BOY NOT RUN MARKET TOMORROW,The boy will not run to the market tomorrow.,explicit_time_quantity
+balanced-val-510,PROFESSOR TEACH CHILD MATH,The professor is teaching the child math.,controlled_compositional
+balanced-val-511,TEACHER GO SCHOOL EVENING,The teacher will go to the school in the evening.,controlled_schedules
+balanced-val-512,PARENT MAKE DINNER THIS AFTERNOON,The parent is making dinner this afternoon.,controlled_compositional
+balanced-val-513,WOMAN CHOOSE BOOK NEW,The woman will choose a new book.,controlled_compositional
+balanced-val-514,TUTOR EXPLAIN CLASS PROBLEM,The tutor is explaining the problem to the class.,controlled_compositional
+balanced-val-515,TEACHER SHOW LEARNER ALGEBRA,The teacher showed algebra to the learner.,controlled_compositional
+balanced-val-516,WOMAN BAKE SOUP THIS MORNING,The woman bakes soup this morning.,controlled_compositional
+balanced-val-517,TEACHER TEACHES STUDENT PROBLEM,The teacher teaches the student the problem.,controlled_compositional
+balanced-val-518,GIRL BUY 3 BOOK LAST NIGHT,The girl bought 3 books last night.,explicit_time_quantity
+balanced-val-519,ME NOT RUN SCHOOL NEXT WEEK,I will not run to the school next week.,explicit_time_quantity
+balanced-val-520,THEY TRAVEL STORE NEXT WEEK,They will travel to the store next week.,explicit_time_quantity
+balanced-val-521,PLAYER VISIT GARDEN,The player visits the garden.,controlled_compositional
+balanced-val-522,MAN RUN PARK TOMORROW,The man will run to the park tomorrow.,explicit_time_quantity
+balanced-val-523,FAMILY READ OUTSIDE SUNNY,The family will read outside when it is sunny.,controlled_conditions
+balanced-val-524,SISTER BAKE BREAKFAST TONIGHT,The sister will bake breakfast tonight.,controlled_compositional
+balanced-val-525,ME NOT EAT 5 APPLE LAST NIGHT,I did not eat 5 apples last night.,explicit_time_quantity
+balanced-val-526,WOMAN RUN HOSPITAL LAST NIGHT,The woman ran to the hospital last night.,explicit_time_quantity
+balanced-val-527,GIRL STUDIES OUTSIDE RAINY,The girl studies outside when it is rainy.,controlled_conditions
+balanced-val-528,WOMAN EAT 3 APPLE NEXT WEEK,The woman will eat 3 apples next week.,explicit_time_quantity
+balanced-val-529,CHILD STUDY GRAMMAR SCHOOL,The child is studying the grammar at school.,controlled_compositional
+balanced-val-530,SISTER SELL BICYCLE WHITE,The sister sold a white bicycle.,controlled_compositional
+balanced-val-531,I NOT GO HOSPITAL NEXT WEEK,I will not go to the hospital next week.,explicit_time_quantity
+balanced-val-532,CHILD RUN LIBRARY LAST NIGHT,The child ran to the library last night.,explicit_time_quantity
+balanced-val-533,DOG STUDIES OUTSIDE COLD,The dog studies outside when it is cold.,controlled_conditions
+balanced-val-534,SISTER BAKE SOUP YESTERDAY,The sister baked soup yesterday.,controlled_compositional
+balanced-val-535,GIRL NOT TRAVEL SCHOOL TOMORROW,The girl will not travel to the school tomorrow.,explicit_time_quantity
+balanced-val-536,FATHER SELLING COAT LARGE,The father is selling a large coat.,controlled_compositional
+balanced-val-537,GIRL VISIT STATION,The girl visits the station.,controlled_compositional
+balanced-val-538,CLASS REVIEW LESSON SCHOOL,The class reviews the lesson at school.,controlled_compositional
+balanced-val-539,MAN NOT BUY 2 TICKET YESTERDAY,The man did not buy 2 tickets yesterday.,explicit_time_quantity
+balanced-val-540,MAN BAKE BREAD TOMORROW,The man will bake bread tomorrow.,controlled_compositional
+balanced-val-541,CHILD GO HOSPITAL LAST NIGHT,The child went to the hospital last night.,explicit_time_quantity
+balanced-val-542,SISTER SERVE MEAL THIS MORNING,The sister served meal this morning.,controlled_compositional
+balanced-val-543,BROTHER BUY VEHICLE LARGE,The brother buys a large vehicle.,controlled_compositional
+balanced-val-544,PROFESSOR TEACH PUPIL ALGEBRA,The professor is teaching the pupil algebra.,controlled_compositional
+balanced-val-545,I NOT TRAVEL MARKET NEXT WEEK,I will not travel to the market next week.,explicit_time_quantity
+balanced-val-546,SISTER SELLING VEHICLE SMALL,The sister is selling a small vehicle.,controlled_compositional
+balanced-val-547,MAN TRAVEL MARKET TOMORROW,The man will travel to the market tomorrow.,explicit_time_quantity
+balanced-val-548,SHE NOT GO PARK YESTERDAY,She did not go to the park yesterday.,explicit_time_quantity
+balanced-val-549,DOG VISIT STATION,The dog visits the station.,controlled_compositional
+balanced-val-550,PLAYER WALK FAST PLAYGROUND,The player walks fast in the playground.,controlled_compositional
+balanced-val-551,TEACHER GO SCHOOL EVENING,The teacher goes to the school in the evening.,controlled_schedules
+balanced-val-552,FATHER PREPARE DINNER THIS EVENING,The father will prepare dinner this evening.,controlled_compositional
+balanced-val-553,STUDENT GOING MARKET EVENING,The student is going to the market in the evening.,controlled_schedules
+balanced-val-554,MAN NOT TRAVEL SCHOOL NEXT WEEK,The man will not travel to the school next week.,explicit_time_quantity
+balanced-val-555,GIRL NOT WALK SCHOOL NEXT WEEK,The girl will not walk to the school next week.,explicit_time_quantity
+balanced-val-556,HE BUY 1 TICKET YESTERDAY,He bought 1 ticket yesterday.,explicit_time_quantity
+balanced-val-557,CHILD GO LIBRARY EVENING,The child goes to the library in the evening.,controlled_schedules
+balanced-val-558,BROTHER BAKE BREAD THIS EVENING,The brother bakes bread this evening.,controlled_compositional
+balanced-val-559,DOG WALK FAST STATION,The dog walked fast in the station.,controlled_compositional
+balanced-val-560,MAN GOING SCHOOL AFTERNOON,The man is going to the school in the afternoon.,controlled_schedules
+balanced-val-561,BROTHER BUY GIFT NEW,The brother buys a new gift.,controlled_compositional
+balanced-val-562,HE NOT READ 3 BOOK LAST NIGHT,He did not read 3 books last night.,explicit_time_quantity
+balanced-val-563,GIRL WALK SCHOOL TOMORROW,The girl will walk to the school tomorrow.,explicit_time_quantity
+balanced-val-564,WOMAN BUY 3 BOOK TOMORROW,The woman will buy 3 books tomorrow.,explicit_time_quantity
+balanced-val-565,DOG VISIT PARK,The dog visits the park.,controlled_compositional
+balanced-val-566,SISTER BAKE FOOD YESTERDAY,The sister baked food yesterday.,controlled_compositional
+balanced-val-567,PROFESSOR SHOW STUDENT ALGEBRA,The professor showed algebra to the student.,controlled_compositional
+balanced-val-568,BOY GO STORE MORNING,The boy went to the store in the morning.,controlled_schedules
+balanced-val-569,INSTRUCTOR TEACH CHILD LESSON,The instructor taught the child the lesson.,controlled_compositional
+balanced-val-570,TUTOR EXPLAIN LEARNER HISTORY,The tutor will explain history to the learner.,controlled_compositional
+balanced-val-571,STUDENT RUN FAST PLAYGROUND,The student runs fast in the playground.,controlled_compositional
+balanced-val-572,AUNT BAKE LUNCH THIS AFTERNOON,The aunt baked lunch this afternoon.,controlled_compositional
+balanced-val-573,INSTRUCTOR SHOW PUPIL LESSON,The instructor will show the lesson to the pupil.,controlled_compositional
+balanced-val-574,MAN MAKE SOUP TONIGHT,The man is making soup tonight.,controlled_compositional
+balanced-val-575,ME TRAVEL SCHOOL YESTERDAY,I traveled to the school yesterday.,explicit_time_quantity
+balanced-val-576,MAN SERVE MEAL THIS EVENING,The man will serve meal this evening.,controlled_compositional
+balanced-val-577,FATHER BUY TABLE BLUE,The father will buy a blue table.,controlled_compositional
+balanced-val-578,CHILD NOT GO LIBRARY TOMORROW,The child will not go to the library tomorrow.,explicit_time_quantity
+balanced-val-579,MAN SELL COAT GREEN,The man sells a green coat.,controlled_compositional
+balanced-val-580,HORSE PLAY GARDEN,The horse played in the garden.,controlled_compositional
+balanced-val-581,CHILD THROW BALL FORCE,The child is throwing the ball with force.,controlled_compositional
+balanced-val-582,SISTER MAKE BREAD THIS AFTERNOON,The sister is making bread this afternoon.,controlled_compositional
+balanced-val-583,SHE READ 3 BOOK NEXT WEEK,She will read 3 books next week.,explicit_time_quantity
+balanced-val-584,YOU READ 1 BOOK NEXT WEEK,You will read 1 book next week.,explicit_time_quantity
+balanced-val-585,SISTER CHOOSE BOOK NEW,The sister chooses a new book.,controlled_compositional
+balanced-val-586,PROFESSOR EXPLAIN CHILD RULE,The professor will explain the rule to the child.,controlled_compositional
+balanced-val-587,WOMAN GO MARKET TOMORROW,The woman will go to the market tomorrow.,explicit_time_quantity
+balanced-val-588,FAMILY READ OUTSIDE SUNNY,The family read outside when it is sunny.,controlled_conditions
+balanced-val-589,DOG WALK OUTSIDE WARM,The dog is walking outside when it is warm.,controlled_conditions
+balanced-val-590,PLAYER WALK QUICKLY GARDEN,The player is walking quickly in the garden.,controlled_compositional
+balanced-val-591,CHILD THROW BALL FORCE,The child will throw the ball with force.,controlled_compositional
+balanced-val-592,FATHER CHOOSE BOOK RED,The father chooses a red book.,controlled_compositional
+balanced-val-593,BROTHER BUY BOOK LARGE,The brother will buy a large book.,controlled_compositional
+balanced-val-594,INSTRUCTOR TEACH CLASS LESSON,The instructor is teaching the class the lesson.,controlled_compositional
+balanced-val-595,TEACHER TEACH CHILD SCIENCE,The teacher is teaching the child science.,controlled_compositional
+balanced-val-596,CHILD CATCH STONE SKILLED,The skilled child caught the stone.,controlled_compositional
+balanced-val-597,AUNT CHOOSE GIFT BLUE,The aunt chooses a blue gift.,controlled_compositional
+balanced-val-598,DOG VISIT PARK,The dog is visiting the park.,controlled_compositional
+balanced-val-599,UNCLE SELL BICYCLE BLACK,The uncle will sell a black bicycle.,controlled_compositional
+balanced-val-600,THEY NOT TRAVEL SCHOOL NEXT WEEK,They will not travel to the school next week.,explicit_time_quantity
+balanced-val-601,WE NOT RUN SCHOOL TOMORROW,We will not run to the school tomorrow.,explicit_time_quantity
+balanced-val-602,ME NOT GO HOSPITAL TOMORROW,I will not go to the hospital tomorrow.,explicit_time_quantity
+balanced-val-603,CAT STUDY OUTSIDE BRIGHT,The cat studied outside when it is bright.,controlled_conditions
+balanced-val-604,GIRL BUY 5 BOOK YESTERDAY,The girl bought 5 books yesterday.,explicit_time_quantity
+balanced-val-605,DOG VISIT STATION,The dog is visiting the station.,controlled_compositional
+balanced-val-606,BROTHER BUY TICKET WHITE,The brother will buy a white ticket.,controlled_compositional
+balanced-val-607,BOY GO STORE,The boy will go to the store.,controlled_compositional
+balanced-val-608,MOTHER BUY CAR RED,The mother bought a red car.,controlled_compositional
+balanced-val-609,FAMILY STUDY OUTSIDE RAINY,The family will study outside when it is rainy.,controlled_conditions
+balanced-val-610,SISTER SELL BOOK BLUE,The sister sells a blue book.,controlled_compositional
+balanced-val-611,FATHER PREPARE SOUP TONIGHT,The father prepares soup tonight.,controlled_compositional
+balanced-val-612,PROFESSOR SHOW STUDENT ALGEBRA,The professor will show algebra to the student.,controlled_compositional
+balanced-val-613,SHE GO PARK NEXT WEEK,She will go to the park next week.,explicit_time_quantity
+balanced-val-614,WE NOT GO STORE NEXT WEEK,We will not go to the store next week.,explicit_time_quantity
+balanced-val-615,INSTRUCTOR SHOW LEARNER PROBLEM,The instructor shows the problem to the learner.,controlled_compositional
+balanced-val-616,CAT WALK OUTSIDE WARM,The cat walked outside when it is warm.,controlled_conditions
+balanced-val-617,MAN NOT BUY 5 BOOK NEXT WEEK,The man will not buy 5 books next week.,explicit_time_quantity
+balanced-val-618,BROTHER BAKE DINNER TOMORROW,The brother will bake dinner tomorrow.,controlled_compositional
+balanced-val-619,DOG WALK FAST PARK,The dog walked fast in the park.,controlled_compositional
+balanced-val-620,TUTOR EXPLAIN CLASS PROBLEM,The tutor will explain the problem to the class.,controlled_compositional
+balanced-val-621,UNCLE MAKE DINNER TONIGHT,The uncle will make dinner tonight.,controlled_compositional
+balanced-val-622,SHE NOT GO MARKET NEXT WEEK,She will not go to the market next week.,explicit_time_quantity
+balanced-val-623,CAT VISIT STATION,The cat is visiting the station.,controlled_compositional
+balanced-val-624,BOY NOT TRAVEL MARKET YESTERDAY,The boy did not travel to the market yesterday.,explicit_time_quantity
+balanced-val-625,UNCLE BUY BOOK BLACK,The uncle bought a black book.,controlled_compositional
+balanced-val-626,STUDENT THROW BALL FORCE,The student is throwing the ball with force.,controlled_compositional
+balanced-val-627,TUTOR TEACH PUPIL RULE,The tutor will teach the pupil the rule.,controlled_compositional
+balanced-val-628,STUDENT RUN FAST PARK,The student is running fast in the park.,controlled_compositional
+balanced-val-629,FATHER SERVE RICE THIS EVENING,The father serves rice this evening.,controlled_compositional
+balanced-val-630,SISTER BUY BOOK GREEN,The sister will buy a green book.,controlled_compositional
+balanced-val-631,HORSE WALK QUICKLY MARKET,The horse is walking quickly in the market.,controlled_compositional
+balanced-val-632,PLAYER WALK OUTSIDE RAINY,The player walked outside when it is rainy.,controlled_conditions
+balanced-val-633,FAMILY READ OUTSIDE SUNNY,The family reads outside when it is sunny.,controlled_conditions
+balanced-val-634,TEACHER SHOW LEARNER LESSON,The teacher is showing the lesson to the learner.,controlled_compositional
+balanced-val-635,BOY WALK FAST STORE,The boy walked fast in the store.,controlled_compositional
+balanced-val-636,PLAYER WALK QUICKLY GARDEN,The player walked quickly in the garden.,controlled_compositional
+balanced-val-637,GIRL BUY 3 TICKET LAST NIGHT,The girl bought 3 tickets last night.,explicit_time_quantity
+balanced-val-638,BROTHER SELLING TICKET GREEN,The brother is selling a green ticket.,controlled_compositional
+balanced-val-639,FATHER CHOOSE VEHICLE BLUE,The father will choose a blue vehicle.,controlled_compositional
+balanced-val-640,BROTHER MAKE DINNER YESTERDAY,The brother made dinner yesterday.,controlled_compositional
+balanced-val-641,HE NOT TRAVEL PARK NEXT WEEK,He will not travel to the park next week.,explicit_time_quantity
+balanced-val-642,WOMAN BAKE BREAD THIS MORNING,The woman baked bread this morning.,controlled_compositional
+balanced-val-643,CHILD PLAY STORE,The child plays in the store.,controlled_compositional
+balanced-val-644,BOY GO PARK MORNING,The boy went to the park in the morning.,controlled_schedules
+balanced-val-645,PLAYER VISIT STATION,The player will visit the station.,controlled_compositional
+balanced-val-646,MAN MAKE SOUP THIS MORNING,The man makes soup this morning.,controlled_compositional
+balanced-val-647,MAN RUN HOSPITAL TOMORROW,The man will run to the hospital tomorrow.,explicit_time_quantity
+balanced-val-648,SISTER CHOOSE TABLE WHITE,The sister is choosing a white table.,controlled_compositional
+balanced-val-649,STUDENT REVIEW GRAMMAR SCHOOL,The student is reviewing the grammar at school.,controlled_compositional
+balanced-val-650,CHILD WALK STORE,The child walks to the store.,untimed_present_default
+balanced-val-651,ME GO LIBRARY,I go to the library.,untimed_present_default
+balanced-val-652,ME NOT GO SCHOOL,I do not go to the school.,untimed_present_default
+balanced-val-653,GIRL NOT WANT FOOD,The girl does not want food.,untimed_present_default
+balanced-val-654,SHE NOT LIKE MUSIC,She does not like music.,untimed_present_default
+balanced-val-655,ME NOT GO STORE,I do not go to the store.,untimed_present_default
+balanced-val-656,THEY NOT LIKE MUSIC,They do not like music.,untimed_present_default
+balanced-val-657,MAN READ BOOK,The man reads a book.,untimed_present_default
+balanced-val-658,BOY NEED HELP,The boy needs help.,untimed_present_default
+balanced-val-659,CHILD NOT CLOSE WINDOW,The child does not close the window.,untimed_present_default
+balanced-val-660,THEY OPEN DOOR,They open the door.,untimed_present_default
+balanced-val-661,THEY NOT WALK OFFICE,They do not walk to the office.,untimed_present_default
+balanced-val-662,I NOT NEED HELP,I do not need help.,untimed_present_default
+balanced-val-663,THEY WALK HOSPITAL,They walk to the hospital.,untimed_present_default
+balanced-val-664,YOU GO STORE,You go to the store.,untimed_present_default
+balanced-val-665,SHE NOT READ BOOK,She does not read a book.,untimed_present_default
+balanced-val-666,YOU GO SCHOOL,You go to the school.,untimed_present_default
+balanced-val-667,THEY WALK MARKET,They walk to the market.,untimed_present_default
+balanced-val-668,BOY NOT GO HOSPITAL,The boy does not go to the hospital.,untimed_present_default
+balanced-val-669,GIRL WALK STORE,The girl walks to the store.,untimed_present_default
+balanced-val-670,I NOT WALK STORE,I do not walk to the store.,untimed_present_default
+balanced-val-671,GIRL NOT BUY RED CAR,The girl does not buy a red car.,untimed_present_default
+balanced-val-672,GIRL READ BOOK,The girl reads a book.,untimed_present_default
+balanced-val-673,THEY DRINK WATER,They drink water.,untimed_present_default
+balanced-val-674,I READ BOOK,I read a book.,untimed_present_default
+balanced-val-675,THEY NEED HELP,They need help.,untimed_present_default
+balanced-val-676,WOMAN BUY RED CAR,The woman buys a red car.,untimed_present_default
+balanced-val-677,THEY NOT GO MARKET,They do not go to the market.,untimed_present_default
+balanced-val-678,HE NOT GO PARK,He does not go to the park.,untimed_present_default
+balanced-val-679,YOU NOT WALK SCHOOL,You do not walk to the school.,untimed_present_default
+balanced-val-680,HE NOT NEED HELP,He does not need help.,untimed_present_default
+balanced-val-681,YOU NOT EAT RICE,You do not eat rice.,untimed_present_default
+balanced-val-682,CHILD NOT WALK OFFICE,The child does not walk to the office.,untimed_present_default
+balanced-val-683,WOMAN NOT GO LIBRARY,The woman does not go to the library.,untimed_present_default
+balanced-val-684,THEY WALK STATION,They walk to the station.,untimed_present_default
+balanced-val-685,HE NOT BUY RED CAR,He does not buy a red car.,untimed_present_default
+balanced-val-686,GIRL NEED HELP,The girl needs help.,untimed_present_default
+balanced-val-687,BOY NOT NEED HELP,The boy does not need help.,untimed_present_default
+balanced-val-688,HE NOT WALK PARK,He does not walk to the park.,untimed_present_default
+balanced-val-689,WOMAN NOT LIKE MUSIC,The woman does not like music.,untimed_present_default
+balanced-val-690,MAN CLOSE WINDOW,The man closes the window.,untimed_present_default
+balanced-val-691,HE GO STORE,He goes to the store.,untimed_present_default
+balanced-val-692,I GO STORE,I go to the store.,untimed_present_default
+balanced-val-693,ME NOT GO HOSPITAL,I do not go to the hospital.,untimed_present_default
+balanced-val-694,MAN NOT LIKE MUSIC,The man does not like music.,untimed_present_default
+balanced-val-695,YOU WANT FOOD,You want food.,untimed_present_default
+balanced-val-696,GIRL NOT GO OFFICE,The girl does not go to the office.,untimed_present_default
+balanced-val-697,BOY PUT BOOK ON TABLE,The boy puts the book on the table.,untimed_present_default
+balanced-val-698,HE DRINK WATER,He drinks water.,untimed_present_default
+balanced-val-699,MAN BUY RED CAR,The man buys a red car.,untimed_present_default
+balanced-val-700,THEY NOT GO HOSPITAL,They do not go to the hospital.,untimed_present_default
+balanced-val-701,MAN LIKE MUSIC,The man likes music.,untimed_present_default
+balanced-val-702,BOY DRINK WATER,The boy drinks water.,untimed_present_default
+balanced-val-703,HE NOT DRINK WATER,He does not drink water.,untimed_present_default
+balanced-val-704,YOU NOT PUT BOOK ON TABLE,You do not put the book on the table.,untimed_present_default
+balanced-val-705,YOU READ BOOK,You read a book.,untimed_present_default
+balanced-val-706,GIRL WALK MARKET,The girl walks to the market.,untimed_present_default
+balanced-val-707,HE LIKE MUSIC,He likes music.,untimed_present_default
+balanced-val-708,WE NOT GO PARK,We do not go to the park.,untimed_present_default

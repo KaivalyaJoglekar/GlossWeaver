@@ -82,6 +82,7 @@ class GrammarAwareT5(T5ForConditionalGeneration):
         decoder_inputs_embeds: Optional[torch.FloatTensor] = None,
         labels: Optional[torch.LongTensor] = None,
         grammar_labels: Optional[torch.FloatTensor] = None,
+        grammar_mask: Optional[torch.FloatTensor] = None,
         use_cache: Optional[bool] = None,
         output_attentions: Optional[bool] = None,
         output_hidden_states: Optional[bool] = None,
@@ -127,9 +128,12 @@ class GrammarAwareT5(T5ForConditionalGeneration):
         grammar_loss = None
         total_loss = outputs.loss
         if grammar_labels is not None:
-            grammar_loss = self.grammar_loss_fn(
-                grammar_logits.float(), grammar_labels.to(grammar_logits.dtype)
-            )
+            valid = torch.isfinite(grammar_labels) & (grammar_labels >= 0)
+            if grammar_mask is not None:
+                valid = valid & grammar_mask.bool()
+            targets = torch.nan_to_num(grammar_labels.float()).clamp(0, 1)
+            element_loss = torch.nn.functional.binary_cross_entropy_with_logits(grammar_logits.float(), targets, reduction="none")
+            grammar_loss = (element_loss * valid).sum() / valid.sum().clamp_min(1)
             total_loss = grammar_loss * self.lambda_grammar if total_loss is None else total_loss + self.lambda_grammar * grammar_loss
         if not return_dict:
             values = outputs.to_tuple()

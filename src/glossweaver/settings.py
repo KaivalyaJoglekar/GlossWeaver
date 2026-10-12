@@ -2,9 +2,10 @@ from __future__ import annotations
 
 from dataclasses import dataclass, replace
 from pathlib import Path
+import os
 
 
-ROOT = Path(__file__).resolve().parents[2]
+ROOT = Path(os.environ.get("GLOSSWEAVER_ROOT", Path(__file__).resolve().parents[2])).resolve()
 
 
 @dataclass(frozen=True)
@@ -15,6 +16,10 @@ class GenerationConfig:
     no_repeat_ngram_size: int = 3
     length_penalty: float = 1.0
     max_new_tokens: int = 64
+
+    def __post_init__(self) -> None:
+        if not 1 <= self.num_beams <= 10 or self.max_new_tokens < 1:
+            raise ValueError("Beam width must be 1–10 and output length positive")
 
 
 @dataclass(frozen=True)
@@ -39,13 +44,27 @@ class TrainConfig:
     max_source_length: int = 96
     max_target_length: int = 96
     seed: int = 42
+    dataset_seed: int = 42
     grammar_enabled: bool = False
     grammar_lambda: float = 0.1
     num_grammar_labels: int = 7
     output_dir: Path | None = None
     max_steps: int | None = None
+    optimizer_steps_per_epoch: int | None = None
     early_stopping_patience: int = 2
     device: str = "auto"
+
+    def __post_init__(self) -> None:
+        for name in ("epochs", "batch_size", "gradient_accumulation_steps", "max_source_length", "max_target_length", "early_stopping_patience"):
+            if getattr(self, name) < 1:
+                raise ValueError(f"{name} must be positive")
+        if self.learning_rate <= 0 or self.grammar_lambda < 0:
+            raise ValueError("Learning rate must be positive and grammar lambda non-negative")
+        if not 0 <= self.warmup_ratio <= 1:
+            raise ValueError("warmup_ratio must be in [0, 1]")
+        for name in ("train_size", "validation_size", "max_steps", "optimizer_steps_per_epoch"):
+            if getattr(self, name) is not None and getattr(self, name) < 1:
+                raise ValueError(f"{name} must be positive")
 
     @property
     def checkpoint_dir(self) -> Path:
@@ -53,7 +72,7 @@ class TrainConfig:
 
     @property
     def history_csv(self) -> Path:
-        return ROOT / "results/training" / f"{self.experiment_name}_history.csv"
+        return self.checkpoint_dir / "history.csv"
 
 
 RESEARCH_TRAIN_IDS = ROOT / "datasets/processed/aslg_pc12/research_train_ids.json"
@@ -150,6 +169,47 @@ PRESETS = {
     "e3": GRAMMAR_CONFIG,
     "e4": FULL_CONFIG,
 }
+
+# New studies use repaired group-disjoint datasets and a shared validation mix.
+# Historical E1–E4 presets remain unchanged for provenance.
+MATCHED_BASE = replace(
+    BASELINE_CONFIG, model_name="google/flan-t5-small",
+    train_file=ROOT / "datasets/processed/study_v2/aslg_grouped/train.jsonl",
+    validation_file=ROOT / "datasets/processed/study_v2/aslg_grouped/validation.jsonl",
+    train_ids_file=None, validation_ids_file=None,
+    synthetic_validation_file=ROOT / "datasets/processed/study_v2/reconstruction_grouped/validation.csv",
+    epochs=4, max_steps=1000, optimizer_steps_per_epoch=250, early_stopping_patience=4,
+)
+for name, augmented, grammar in (
+    ("study-baseline", False, False), ("study-augmentation", True, False),
+    ("study-grammar", False, True), ("study-full", True, True),
+):
+    PRESETS[name] = replace(
+        MATCHED_BASE, experiment_name=name,
+        synthetic_train_file=ROOT / "datasets/processed/study_v2/reconstruction_grouped/train.csv" if augmented else None,
+        grammar_enabled=grammar,
+    )
+
+
+PRESETS['demo-adaptation'] = replace(
+    MATCHED_BASE, experiment_name='reconstruction-flan',
+    initial_checkpoint=ROOT / 'checkpoints/study-augmentation',
+    train_file=ROOT / 'datasets/processed/demo_adaptation/train.csv',
+    validation_file=ROOT / 'datasets/processed/demo_adaptation/validation.csv',
+    synthetic_train_file=None, synthetic_validation_file=None,
+    train_size=None, validation_size=400, learning_rate=1e-4,
+    epochs=3, max_steps=300, optimizer_steps_per_epoch=100, early_stopping_patience=3,
+)
+
+
+PRESETS['balanced-adaptation'] = replace(
+    PRESETS['demo-adaptation'], experiment_name='balanced-flan',
+    initial_checkpoint=ROOT / 'checkpoints/reconstruction-flan',
+    train_file=ROOT / 'datasets/processed/balanced_adaptation/train.csv',
+    validation_file=ROOT / 'datasets/processed/balanced_adaptation/validation.csv',
+    validation_size=None, learning_rate=8e-5,
+    epochs=4, max_steps=600, optimizer_steps_per_epoch=150, early_stopping_patience=4,
+)
 
 
 def get_preset(name: str) -> TrainConfig:

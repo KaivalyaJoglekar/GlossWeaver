@@ -1,0 +1,121 @@
+id,gloss,reference,prediction,model
+balanced-val-361,FOUR OUT FIVE EUROPEAN DESC-LIVE IN DESC-URBAN AREA .,four out of five europeans live in urban areas .,four out five european living in the urban area .,reconstruction-flan
+balanced-val-565,DOG VISIT PARK,The dog visits the park.,The dog visits the park.,reconstruction-flan
+balanced-val-132,CAT READ OUTSIDE SUNNY,The cat is reading outside when it is sunny.,The cat read outside when it is sunny.,reconstruction-flan
+balanced-val-560,MAN GOING SCHOOL AFTERNOON,The man is going to the school in the afternoon.,The man is going to the school in the afternoon.,reconstruction-flan
+balanced-val-547,MAN TRAVEL MARKET TOMORROW,The man will travel to the market tomorrow.,The man will travel to the market tomorrow.,reconstruction-flan
+balanced-val-197,FRANK NOTICED THAT HEAD DISAPPEARED ALONGSIDE OPEN DOOR,Frank noticed that the head had disappeared from alongside the open door.,The professor said that the head disappeared outside when it is open.,reconstruction-flan
+balanced-val-677,THEY NOT GO MARKET,They do not go to the market.,They did not go to the market.,reconstruction-flan
+balanced-val-350,NOTHING CAN BE MORE DESC-IMPORTANT THAN THAT .,nothing can be more important than that .,nothing can be more important than that .,reconstruction-flan
+balanced-val-4,AUNT SELL GIFT RED,The aunt sold a red gift.,The aunt will sell a red gift.,reconstruction-flan
+balanced-val-588,FAMILY READ OUTSIDE SUNNY,The family read outside when it is sunny.,The family read outside when it is sunny.,reconstruction-flan
+balanced-val-568,BOY GO STORE MORNING,The boy went to the store in the morning.,The boy went to the store in the morning.,reconstruction-flan
+balanced-val-556,HE BUY 1 TICKET YESTERDAY,He bought 1 ticket yesterday.,He bought 1 ticket yesterday.,reconstruction-flan
+balanced-val-82,AND ANGRY WATERS SCATTERED LOGS FAR AND WIDE,and the angry waters scattered the logs far and wide.,And the angry water scattered the logs in the road and went to the side.,reconstruction-flan
+balanced-val-699,MAN BUY RED CAR,The man buys a red car.,The man bought a red car.,reconstruction-flan
+balanced-val-438,THAT BE WHY X-I SHOULD LIKE TO DESC-EXPRESS X-MY THANKS THAT PILOT MEDIA MUNDUS PROJECT BE LAUNCH .,that is why I should like to express my thanks that the pilot media mundus projects were launched .,that is why I should like to express my thanks that the financing of the media madus project is running .,reconstruction-flan
+balanced-val-315,CHILD WALK QUICKLY GARDEN,The child is walking quickly in the garden.,The child walks quickly in the garden.,reconstruction-flan
+balanced-val-110,PUPPY PLAY OUTSIDE RAINY,The puppy plays outside when it is rainy.,The puppy plays outside when it is rainy.,reconstruction-flan
+balanced-val-553,STUDENT GOING MARKET EVENING,The student is going to the market in the evening.,The student is going to the market in the evening.,reconstruction-flan
+balanced-val-584,YOU READ 1 BOOK NEXT WEEK,You will read 1 book next week.,You will read 1 book next week.,reconstruction-flan
+balanced-val-19,ME BEHOLD THIS AND LIVE,Could I behold this and live?,I will be holding this and live.,reconstruction-flan
+balanced-val-678,HE NOT GO PARK,He does not go to the park.,He did not go to the park.,reconstruction-flan
+balanced-val-386,BUT X-I WOULD LIKE TO DESC-SINCERELY THANK X-WE COLLEAGUE FROM DG FOR X-Y FLEXIBILITY .,but I would like to sincerely thank our colleagues from the dgs for their flexibility .,but I would like to finally thank our colleagues from the dd for their flexibility .,reconstruction-flan
+balanced-val-559,DOG WALK FAST STATION,The dog walked fast in the station.,The dog walks fast in the station.,reconstruction-flan
+balanced-val-328,DOG STUDIES OUTSIDE COLD,The dog studies outside when it is cold.,The dog studies outside when it is cold.,reconstruction-flan
+balanced-val-268,CHILD GO LIBRARY EVENING,The child goes to the library in the evening.,The child will go to the library in the evening.,reconstruction-flan
+balanced-val-539,MAN NOT BUY 2 TICKET YESTERDAY,The man did not buy 2 tickets yesterday.,The man did not buy 2 tickets yesterday.,reconstruction-flan
+balanced-val-87,THIS TIME I CAPTURE OR KILL THIS NIGHT PROWLER,This time I would capture or kill this night prowler.,This time I shot or killed this night prowler.,reconstruction-flan
+balanced-val-673,THEY DRINK WATER,They drink water.,They drank water.,reconstruction-flan
+balanced-val-423,DESC-SUCH ATTITUDE BE COMPROMISE FUTURE EUROPEAN PARLIAMENT MISSION TO DESC-OR COUNTRY .,such attitudes are compromising future european parliament missions to other countries .,such an approach is a compromise of the future european parliament mission to other countries .,reconstruction-flan
+balanced-val-534,SISTER BAKE SOUP YESTERDAY,The sister baked soup yesterday.,The sister baked soup yesterday.,reconstruction-flan
+balanced-val-50,CAT WALK OUTSIDE WARM,The cat walked outside when it is warm.,The cat walks outside when it is warm.,reconstruction-flan
+balanced-val-551,TEACHER GO SCHOOL EVENING,The teacher goes to the school in the evening.,The teacher goes to the school in the evening.,reconstruction-flan
+balanced-val-531,I NOT GO HOSPITAL NEXT WEEK,I will not go to the hospital next week.,I will not go to the hospital next week.,reconstruction-flan
+balanced-val-223,BUT HE OPEN THEM ONCE,but he did open them at once.,But he opened them once.,reconstruction-flan
+balanced-val-707,HE LIKE MUSIC,He likes music.,He likes music.,reconstruction-flan
+balanced-val-430,X-IT BE DESC-IMPORTANT BECAUSE DESC-DEMOCRATIC UKRAINE WILL SERVE AS DESC-IMPORTANT EXAMPLE TO X-ITS NEIGHBOR .,it is important because a democratic ukraine will serve as an important example to its neighbours .,it is important because democratic ukraine will serve as an important example to its neighbours .,reconstruction-flan
+balanced-val-530,SISTER SELL BICYCLE WHITE,The sister sold a white bicycle.,The sister sells a white bicycle.,reconstruction-flan
+balanced-val-257,DOG WALK OUTSIDE COLD,The dog will walk outside when it is cold.,The dog walks outside when it is cold.,reconstruction-flan
+balanced-val-322,MOTHER GO MARKET AFTERNOON,The mother goes to the market in the afternoon.,The mother went to the market in the afternoon.,reconstruction-flan
+balanced-val-522,MAN RUN PARK TOMORROW,The man will run to the park tomorrow.,The man will run to the park tomorrow.,reconstruction-flan
+balanced-val-91,HE WORK STILL THOUGH THERE NOW NOTHING WORK MORE,"He worked still, though there was now nothing to work for more.",He works still though there now nothing to work more.,reconstruction-flan
+balanced-val-667,THEY WALK MARKET,They walk to the market.,They walked to the market.,reconstruction-flan
+balanced-val-379,"THANK X-YOU , PRESIDENT IN OFFICE , FOR X-YOU HONESTY .","thank you , president in office , for your honesty .","thank you , president in office , for your kindness .",reconstruction-flan
+balanced-val-225,HORSE VISIT SCHOOL,The horse visited the school.,The horse visits the school.,reconstruction-flan
+balanced-val-345,GIRL RUN OUTSIDE SUNNY,The girl ran outside when it is sunny.,The girl is running outside when it is sunny.,reconstruction-flan
+balanced-val-27,GIRL GO PARK AFTERNOON,The girl will go to the park in the afternoon.,The girl went to the park in the afternoon.,reconstruction-flan
+balanced-val-532,CHILD RUN LIBRARY LAST NIGHT,The child ran to the library last night.,The child ran to the library last night.,reconstruction-flan
+balanced-val-180,TROUBLE HEAVY PULL SICK BED,Trouble is a heavy pull down to a sick bed.,The trolley will buy a small stick.,reconstruction-flan
+balanced-val-708,WE NOT GO PARK,We do not go to the park.,We did not go to the park.,reconstruction-flan
+balanced-val-367,THIS BE DESC-PARTICULAR DESC-TRUE DESC-RARE DESC-GENETIC DISEASE THAT BE DESC-HEREDITARY .,this is particular true of rare genetic diseases that are hereditary .,this is a fundamentally strong political debate that is hereditary .,reconstruction-flan
+balanced-val-238,PARENT COOK DINNER THIS AFTERNOON,The parent is cooking dinner this afternoon.,The parent cooked dinner this afternoon.,reconstruction-flan
+balanced-val-25,BOY STUDY OUTSIDE COLD,The boy will study outside when it is cold.,The boy is studying outside when it is cold.,reconstruction-flan
+balanced-val-276,CHILD GO LIBRARY EVENING,The child went to the library in the evening.,The child will go to the library in the evening.,reconstruction-flan
+balanced-val-601,WE NOT RUN SCHOOL TOMORROW,We will not run to the school tomorrow.,We will not run to the school tomorrow.,reconstruction-flan
+balanced-val-348,AND CONFESS TRUTH WE SCARCELY LESS EAGER MEET HER AGAIN,"and to confess the truth, we are scarcely less eager to meet her again.",And confess the truth we gathered last night to meet her alone.,reconstruction-flan
+balanced-val-689,WOMAN NOT LIKE MUSIC,The woman does not like music.,The woman did not like music.,reconstruction-flan
+balanced-val-429,ALTERNATIVE RESOLUTION HAVE BE PUT DESC-FORWARD BY MINORITY IN COMMITTEE ON DESC-INTERNAL MARKET AND CONSUMER PROTECTION .,an alternative resolution has been put forward by a minority in the committee on internal market and consumer protection .,alternative resolutions have been put forward by the minority in the commission on the internal market and consumer protection .,reconstruction-flan
+balanced-val-260,PARENT CHOOSE VEHICLE GREEN,The parent chooses a green vehicle.,The parent chooses a green vehicle.,reconstruction-flan
+balanced-val-312,GIRL STUDIES OUTSIDE COLD,The girl studies outside when it is cold.,The girl studies outside when it is cold.,reconstruction-flan
+balanced-val-644,BOY GO PARK MORNING,The boy went to the park in the morning.,The boy went to the park in the morning.,reconstruction-flan
+balanced-val-541,CHILD GO HOSPITAL LAST NIGHT,The child went to the hospital last night.,The child went to the hospital last night.,reconstruction-flan
+balanced-val-33,MELTED THIN AIR AS HIS HAND SOUGHT CLUTCH IT,melted into thin air as his hand sought to clutch it.,He walked into the air as his hand sucked into the room.,reconstruction-flan
+balanced-val-653,GIRL NOT WANT FOOD,The girl does not want food.,The girl will not want food.,reconstruction-flan
+balanced-val-451,DO THIS IN NAME DEMOCRACY AND FREEDOM .,do this in the name of democracy and freedom .,do this in the name of democracy and freedom .,reconstruction-flan
+balanced-val-335,FATHER BUY COAT SMALL,The father will buy a small coat.,The father buys a small coat.,reconstruction-flan
+balanced-val-523,FAMILY READ OUTSIDE SUNNY,The family will read outside when it is sunny.,The family read outside when it is sunny.,reconstruction-flan
+balanced-val-557,CHILD GO LIBRARY EVENING,The child goes to the library in the evening.,The child will go to the library in the evening.,reconstruction-flan
+balanced-val-600,THEY NOT TRAVEL SCHOOL NEXT WEEK,They will not travel to the school next week.,They will not travel to the school next week.,reconstruction-flan
+balanced-val-167,HIS TERM EXPIRES NEXT YEAR AND I FEAR WE LOSE HIM,His term expires next year and I fear we shall lose him.,"His route will next year, and I fear we will die.",reconstruction-flan
+balanced-val-690,MAN CLOSE WINDOW,The man closes the window.,The man will carry out the trick.,reconstruction-flan
+balanced-val-491,"MR PRESIDENT , MAY X-I CONCUR WITH DESC-LAST SPEAKER .","mr president , may I concur with the last speaker .","mr president , may I discuss with last speaker .",reconstruction-flan
+balanced-val-592,FATHER CHOOSE BOOK RED,The father chooses a red book.,The father chooses a red book.,reconstruction-flan
+balanced-val-308,CHILD RUN OUTSIDE COLD,The child runs outside when it is cold.,The child runs outside when it is cold.,reconstruction-flan
+balanced-val-279,WOMAN GO LIBRARY NIGHT,The woman goes to the library in the night.,The woman went to the library in the night.,reconstruction-flan
+balanced-val-528,WOMAN EAT 3 APPLE NEXT WEEK,The woman will eat 3 apples next week.,The woman will eat 3 apples next week.,reconstruction-flan
+balanced-val-311,FATIGUE AND NERVOUSNESS EXPRESSED BREED FATIGUE AND NERVOUSNESS SYMPATHETIC AUDIENCE,"Fatigue and nervousness, expressed, breed fatigue and nervousness in a sympathetic audience.",The situation and the sense of expression expressed echoes of the situation and a sense of social intuition.,reconstruction-flan
+balanced-val-684,THEY WALK STATION,They walk to the station.,They walked to the station.,reconstruction-flan
+balanced-val-431,"NEXT , X-WE MUST ENSURE THAT X-Y RECEIVE COMPENSATION DESC-QUICKLY .","next , we must ensure that they receive compensation quickly .","next , we must ensure that they receive commission quickly .",reconstruction-flan
+balanced-val-221,WOMAN BAKE RICE THIS AFTERNOON,The woman is baking rice this afternoon.,The woman baked rice this afternoon.,reconstruction-flan
+balanced-val-0,CAT STUDY OUTSIDE BRIGHT,The cat will study outside when it is bright.,The cat will study outside when it is bright.,reconstruction-flan
+balanced-val-107,FATHER GOING SCHOOL AFTERNOON,The father is going to the school in the afternoon.,The father is going to the school in the afternoon.,reconstruction-flan
+balanced-val-583,SHE READ 3 BOOK NEXT WEEK,She will read 3 books next week.,She will read 3 books next week.,reconstruction-flan
+balanced-val-63,AS TERRESTRIAL GLOBE ONE DAY BECOME COOLING,as the terrestrial globe will one day become by cooling.,As a terrestrial dog one day becomes cooking.,reconstruction-flan
+balanced-val-655,ME NOT GO STORE,I do not go to the store.,I did not go to the store.,reconstruction-flan
+balanced-val-362,DESC-REAL LIFE EXAMPLE SHOW THAT SOLVE ISSUE RELATE TO EDUCATION FUEL DESC-STRONG COMMUNITY DEVELOPMENT .,real life examples show that solving issues related to education fuels strong community development .,the real life example shows that the issue relates to the implementation of the strong community development .,reconstruction-flan
+balanced-val-344,UNCLE MAKE DINNER TONIGHT,The uncle makes dinner tonight.,The uncle will make dinner tonight.,reconstruction-flan
+balanced-val-193,FAMILY PLAY OUTSIDE SUNNY,The family will play outside when it is sunny.,The family plays outside when it is sunny.,reconstruction-flan
+balanced-val-243,TEACHER GO SCHOOL EVENING,The teacher went to the school in the evening.,The teacher goes to the school in the evening.,reconstruction-flan
+balanced-val-624,BOY NOT TRAVEL MARKET YESTERDAY,The boy did not travel to the market yesterday.,The boy did not travel to the market yesterday.,reconstruction-flan
+balanced-val-265,INSTANT I DRAGGED HIM FLOOR,"In an instant I dragged him to the floor,.",In the meantime I dragged him to the store.,reconstruction-flan
+balanced-val-658,BOY NEED HELP,The boy needs help.,The boy needs help.,reconstruction-flan
+balanced-val-369,"X-IT BE DESC-GOOD TO START WITH BONUS SYSTEM , BUT X-IT BE DESC-NOT DESC-ENOUGH .","it is good to start with the bonus systems , but it is not enough .","it is good to start with a bonus system , but it is not enough .",reconstruction-flan
+balanced-val-501,SISTER PREPARE LUNCH TODAY,The sister prepares lunch today.,The sister prepares lunch today.,reconstruction-flan
+balanced-val-66,DOG WALK OUTSIDE WARM,The dog is walking outside when it is warm.,The dog walks outside when it is warm.,reconstruction-flan
+balanced-val-511,TEACHER GO SCHOOL EVENING,The teacher will go to the school in the evening.,The teacher goes to the school in the evening.,reconstruction-flan
+balanced-val-509,BOY NOT RUN MARKET TOMORROW,The boy will not run to the market tomorrow.,The boy will not run to the market tomorrow.,reconstruction-flan
+balanced-val-277,COME HELP ONCE,Am coming with help at once.,Come to the help once.,reconstruction-flan
+balanced-val-669,GIRL WALK STORE,The girl walks to the store.,The girl walks to the store.,reconstruction-flan
+balanced-val-413,"PACKAGE DESC-DIRECT THAT STIMULUS TO KEY OBJECTIVE , DESC-SUCH AS BROADBAND DEVELOPMENT , ENERGY SECURITY AND DESC-LOW CARBON TECHNOLOGY .","the package directs that stimulus to key objectives , such as broadband development , energy security and low carbon technologies .","the strategy directs that stimulus to key objectives , such as building development , energy security and low carbon technology .",reconstruction-flan
+balanced-val-103,FATHER CHOOSE CAR BLUE,The father chose a blue car.,The father chooses a blue car.,reconstruction-flan
+balanced-val-506,PUPPY STUDY OUTSIDE RAINY,The puppy studied outside when it is rainy.,The puppy is studying outside when it is rainy.,reconstruction-flan
+balanced-val-535,GIRL NOT TRAVEL SCHOOL TOMORROW,The girl will not travel to the school tomorrow.,The girl will not travel to the school tomorrow.,reconstruction-flan
+balanced-val-94,ME HOPE BACK EVENING,I should hope to be back in the evening.,I will hope back in the evening.,reconstruction-flan
+balanced-val-705,YOU READ BOOK,You read a book.,You read the book.,reconstruction-flan
+balanced-val-460,"DESC-SECOND ONE BE DESC-NUCLEAR ENERGY , BUT X-I KNOW THIS BE DESC-SENSITIVE ISSUE FOR SOME MEMBER STATE .","the second one is nuclear energy , but I know this is a sensitive issue for some member states .","second one is nuclear energy , but I know this is a sensible issue for some member states .",reconstruction-flan
+balanced-val-580,HORSE PLAY GARDEN,The horse played in the garden.,The horse plays in the garden.,reconstruction-flan
+balanced-val-305,DOG RUN OUTSIDE WARM,The dog is running outside when it is warm.,The dog runs outside when it is warm.,reconstruction-flan
+balanced-val-587,WOMAN GO MARKET TOMORROW,The woman will go to the market tomorrow.,The woman will go to the market tomorrow.,reconstruction-flan
+balanced-val-250,HE THIS MOMENT EVIDENTLY GAY MOOD,He was at this moment evidently in a gay mood.,He this moment obviously goes to the meal.,reconstruction-flan
+balanced-val-670,I NOT WALK STORE,I do not walk to the store.,I did not walk to the store.,reconstruction-flan
+balanced-val-377,CROATIUM HAVE COME DESC-LONG WAY OVER DESC-RECENT YEAR BUT DESC-IMPORTANT CHALLENGE DESC-STILL REMAIN TO BE TACKLE .,croatia has come a long way over recent years but important challenges still remain to be tackled .,the crunch has come a long way over recent years but important challenges still remain to be tackled .,reconstruction-flan
+balanced-val-507,AUNT SERVE BREAKFAST TOMORROW,The aunt will serve breakfast tomorrow.,The aunt will serve breakfast tomorrow.,reconstruction-flan
+balanced-val-589,DOG WALK OUTSIDE WARM,The dog is walking outside when it is warm.,The dog walks outside when it is warm.,reconstruction-flan
+balanced-val-520,THEY TRAVEL STORE NEXT WEEK,They will travel to the store next week.,They will travel to the store next week.,reconstruction-flan
+balanced-val-64,THIS CONTRIBUTION DISCUSSION HOWEVER MISS STACKPOLE REJECTED SCORN,"This contribution to the discussion, however, Miss Stackpole rejected with scorn.","This conclusion was however mistaken for a sackpole, proposed by the Scor.",reconstruction-flan
+balanced-val-672,GIRL READ BOOK,The girl reads a book.,The girl reads the book.,reconstruction-flan
+balanced-val-470,"TO DESC-CERTAIN EXTENT , THIS RESULT FROM LACK DESC-EFFECTIVE MECHANISM CONTROL AND SUPERVISION .","to a certain extent , this results from a lack of effective mechanisms of control and supervision .","to certain extent , this result from losing effective communication control and supervision .",reconstruction-flan
+balanced-val-648,SISTER CHOOSE TABLE WHITE,The sister is choosing a white table.,The sister chooses a white table.,reconstruction-flan
+balanced-val-504,STUDENT READ OUTSIDE SUNNY,The student will read outside when it is sunny.,The student read outside when it is sunny.,reconstruction-flan
+balanced-val-575,ME TRAVEL SCHOOL YESTERDAY,I traveled to the school yesterday.,I traveled to the school yesterday.,reconstruction-flan

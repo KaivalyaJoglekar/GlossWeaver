@@ -89,3 +89,13 @@ Augmentation is generated only from selected ASLG-PC12 training targets and is
 stored separately under `datasets/synthetic/aslg_pc12/`. Starting ratios are
 0%, 25%, and 50%; E2/E4 default to 25%. These fragments are controlled
 telegraphic reconstruction examples, not authentic ASL.
+
+## October 2026 research update
+
+Human-annotated 2M-Flores-ASL text pairs have now been acquired and preprocessed
+under `datasets/raw/2m_flores_asl/` and `datasets/processed/2m_flores_asl/`.
+See `datasets/README.md` for counts, license, filtering and final-test policy.
+New grouped ASLG/synthetic corpora live separately under `aslg_grouped` and
+`reconstruction_grouped`; historical claims above describe the earlier pipeline.
+The new matched study uses an explicit additive synthetic-data cap, not a 25%
+augmentation ratio. Final model weights and new scores still require training.

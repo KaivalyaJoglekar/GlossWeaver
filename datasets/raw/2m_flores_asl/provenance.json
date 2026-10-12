@@ -1,0 +1,18 @@
+{
+  "acquisition": "official dataset-server text projection; video omitted",
+  "annotation": "human glosses, expert harmonization per official dataset card",
+  "dataset": "facebook/2M-Flores-ASL",
+  "license": "CC-BY-SA-4.0",
+  "revision": "b450c1a427738e78f06362fc4619674f5d74f774",
+  "source": "https://huggingface.co/datasets/facebook/2M-Flores-ASL",
+  "splits": {
+    "dev": {
+      "rows": 999,
+      "sha256": "b33cf1c3b762b97c02c1d1ff861808ffafeb68b37fca92d7e8717752a9ec0c6e"
+    },
+    "devtest": {
+      "rows": 1016,
+      "sha256": "5dd449b9adf91e437b7e8e4db4da77ed1a53f668c1e48aeed72a2b53f6ea2c23"
+    }
+  }
+}

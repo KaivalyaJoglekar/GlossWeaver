@@ -105,3 +105,15 @@ def sha256_file(path: str | Path, chunk_size: int = 1024 * 1024) -> str:
         for chunk in iter(lambda: handle.read(chunk_size), b""):
             digest.update(chunk)
     return digest.hexdigest()
+
+
+def code_provenance() -> dict[str, Any]:
+    """Record the working source as well as HEAD, since runs may use uncommitted edits."""
+    import subprocess
+    root = project_root()
+    revision = subprocess.run(['git', 'rev-parse', 'HEAD'], cwd=root, capture_output=True, text=True)
+    status = subprocess.run(['git', 'status', '--porcelain'], cwd=root, capture_output=True, text=True)
+    return {'git_revision': revision.stdout.strip() or None,
+            'git_dirty': bool(status.stdout.strip()) if status.returncode == 0 else None,
+            'source_sha256': {str(path.relative_to(root)): sha256_file(path)
+                              for folder in (root/'src', root/'app') for path in sorted(folder.rglob('*.py'))}}

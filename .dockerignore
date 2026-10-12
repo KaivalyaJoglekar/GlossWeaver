@@ -1,0 +1,14 @@
+.git
+.venv
+.hf-cache
+.cache
+.uv-cache
+.pytest_cache
+**/__pycache__
+frontend/node_modules
+frontend/dist
+checkpoints
+results
+datasets
+data
+archive

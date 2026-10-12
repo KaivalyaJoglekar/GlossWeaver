@@ -13,6 +13,7 @@ sys.path.insert(0, str(ROOT / "src"))
 
 from glossweaver.evaluation.metrics import compute_metrics
 from glossweaver.inference import Reconstructor
+from glossweaver.model_registry import resolve_checkpoint
 from glossweaver.settings import get_preset
 from glossweaver.training.train import _records, run_training
 
@@ -27,7 +28,9 @@ def main() -> None:
     from dataclasses import replace
     config = replace(config, device=args.device)
     if not args.skip_training:
-        run_training(config)
+        metadata = run_training(config)
+        config = replace(config, output_dir=Path(metadata["checkpoint_path"]))
+    config = replace(config, output_dir=resolve_checkpoint(config.checkpoint_dir))
     records = _records(config.train_file, max_examples=64, seed=config.seed)
     reconstructor = Reconstructor(str(config.checkpoint_dir), device=args.device)
     rows = []

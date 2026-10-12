@@ -1,6 +1,9 @@
 from __future__ import annotations
 
 from pathlib import Path
+import random
+import numpy as np
+from contextlib import nullcontext
 from typing import Any
 
 import pandas as pd
@@ -60,27 +63,61 @@ def train_epochs(
     gradient_accumulation_steps: int = 1,
     early_stopping_patience: int = 2,
     max_steps: int | None = None,
+    resume_state: dict | None = None,
+    mixed_precision: bool = True,
 ) -> list[dict[str, float | int]]:
     output = Path(output_dir)
+    if not len(train_loader) or not len(validation_loader):
+        raise ValueError("Training and validation loaders must not be empty")
+    if gradient_accumulation_steps < 1:
+        raise ValueError("gradient_accumulation_steps must be positive")
     history_path = Path(history_csv)
     history_path.parent.mkdir(parents=True, exist_ok=True)
     history: list[dict[str, float | int]] = []
     best_loss = float("inf")
     stale_epochs = global_step = 0
+    start_epoch = 1
+    if resume_state:
+        optimizer.load_state_dict(resume_state["optimizer"])
+        if scheduler is not None and resume_state.get("scheduler"):
+            scheduler.load_state_dict(resume_state["scheduler"])
+        global_step = resume_state["global_step"]
+        start_epoch = resume_state["epoch"] + 1
+        best_loss = resume_state.get("best_loss", best_loss)
+        stale_epochs = resume_state.get("stale_epochs", 0)
+        history = resume_state.get("history", [])
+        torch.set_rng_state(resume_state["torch_rng_state"].cpu())
+        if "python_rng_state" in resume_state:
+            random.setstate(resume_state["python_rng_state"])
+            np.random.set_state(resume_state["numpy_rng_state"])
+        if device.startswith("cuda") and resume_state.get("cuda_rng_state"):
+            torch.cuda.set_rng_state_all(resume_state["cuda_rng_state"])
+        if max_steps is not None and global_step >= max_steps:
+            raise ValueError("Resume has already reached max_steps; increase the budget")
+        if start_epoch > epochs:
+            raise ValueError("Resume has completed the configured epochs; increase epochs")
+    # BF16 needs no loss scaler. Other devices retain stable full precision.
+    use_bf16 = mixed_precision and device.startswith("cuda") and torch.cuda.is_bf16_supported()
     optimizer.zero_grad(set_to_none=True)
-    for epoch in range(1, epochs + 1):
+    for epoch in range(start_epoch, epochs + 1):
         model.train()
         train_gen = train_grammar = train_total = 0.0
         epoch_batches = 0
         for batch_index, batch in enumerate(tqdm(train_loader, desc=f"train {epoch}/{epochs}"), 1):
-            result = model(**move_batch(batch, device))
-            (result.loss / gradient_accumulation_steps).backward()
+            with torch.autocast("cuda", dtype=torch.bfloat16) if use_bf16 else nullcontext():
+                result = model(**move_batch(batch, device))
+            if not torch.isfinite(result.loss):
+                raise FloatingPointError("Nonfinite training loss; checkpoint was not updated")
+            group_start = ((batch_index - 1) // gradient_accumulation_steps) * gradient_accumulation_steps
+            group_size = min(gradient_accumulation_steps, len(train_loader) - group_start)
+            (result.loss / group_size).backward()
             generation_loss, grammar_loss, total_loss = _losses(result)
             train_gen += generation_loss
             train_grammar += grammar_loss
             train_total += total_loss
             epoch_batches += 1
             if batch_index % gradient_accumulation_steps == 0 or batch_index == len(train_loader):
+                torch.nn.utils.clip_grad_norm_(model.parameters(), 1.0, error_if_nonfinite=True)
                 optimizer.step()
                 optimizer.zero_grad(set_to_none=True)
                 if scheduler is not None:
@@ -94,6 +131,8 @@ def train_epochs(
         with torch.no_grad():
             for batch in validation_loader:
                 result = model(**move_batch(batch, device))
+                if not torch.isfinite(result.loss):
+                    raise FloatingPointError("Nonfinite validation loss")
                 generation_loss, grammar_loss, total_loss = _losses(result)
                 val_gen += generation_loss
                 val_grammar += grammar_loss
@@ -111,6 +150,7 @@ def train_epochs(
             "validation_grammar_loss": val_grammar / val_batches,
             "validation_total_loss": val_total / val_batches,
             "validation_bleu": float(metrics["sacrebleu"]),
+            "validation_chrf": float(metrics.get("chrf", 0)),
             "validation_rouge_l": float(metrics["rouge_l"]),
             "validation_meteor": float(metrics["meteor"]),
         }
@@ -123,6 +163,15 @@ def train_epochs(
             output.mkdir(parents=True, exist_ok=True)
             model.save_pretrained(output)
             tokenizer.save_pretrained(output)
+            torch.save({
+                "optimizer": optimizer.state_dict(),
+                "scheduler": scheduler.state_dict() if scheduler is not None else None,
+                "epoch": epoch, "global_step": global_step,
+                "torch_rng_state": torch.get_rng_state(),
+                "python_rng_state": random.getstate(), "numpy_rng_state": np.random.get_state(),
+                "cuda_rng_state": torch.cuda.get_rng_state_all() if device.startswith("cuda") else None,
+                "best_loss": best_loss, "stale_epochs": stale_epochs, "history": history,
+            }, output / "optimizer_state.pt")
         else:
             stale_epochs += 1
         if stale_epochs >= early_stopping_patience:

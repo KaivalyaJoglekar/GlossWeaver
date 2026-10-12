@@ -1,0 +1,34 @@
+[
+  {
+    "input": "ME GO STORE YESTERDAY",
+    "output": "I went to the store yesterday."
+  },
+  {
+    "input": "BOY NOT WANT FOOD",
+    "output": "The boy will not want food."
+  },
+  {
+    "input": "i going school tomorrow",
+    "output": "I will go to the school tomorrow."
+  },
+  {
+    "input": "WOMAN BUY CAR RED",
+    "output": "The woman bought a red car."
+  },
+  {
+    "input": "I NOT BUY 3 BOOK YESTERDAY",
+    "output": "I did not buy 3 books yesterday."
+  },
+  {
+    "input": "SHE NOT GO HOSPITAL TOMORROW",
+    "output": "She will not go to the hospital tomorrow."
+  },
+  {
+    "input": "WE READ 5 BOOK LAST NIGHT",
+    "output": "We read 5 books last night."
+  },
+  {
+    "input": "ME WALK LIBRARY NEXT WEEK",
+    "output": "I will walk to the library next week."
+  }
+]

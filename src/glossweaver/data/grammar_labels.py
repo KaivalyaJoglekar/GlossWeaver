@@ -3,6 +3,7 @@ from __future__ import annotations
 import argparse
 import json
 import re
+import os
 from dataclasses import dataclass
 from functools import lru_cache
 from typing import Iterable
@@ -90,12 +91,17 @@ def simple_lemma(token: str) -> str:
 
 @lru_cache(maxsize=1)
 def _spacy_model():
+    parser = os.environ.get("GLOSSWEAVER_GRAMMAR_PARSER", "lexical-v1")
+    if parser == "lexical-v1":
+        return None
+    if parser != "spacy-en_core_web_sm":
+        raise ValueError("Unknown GLOSSWEAVER_GRAMMAR_PARSER")
     try:
         import spacy
 
         return spacy.load("en_core_web_sm")
-    except (ImportError, OSError):
-        return None
+    except (ImportError, OSError) as exc:
+        raise RuntimeError("The explicitly selected spaCy parser is unavailable; install en_core_web_sm") from exc
 
 
 def _target_features(target: str) -> dict[str, object]:

@@ -120,15 +120,10 @@ def deterministic_split(
     *,
     seed: int = 42,
 ) -> list[CanonicalRecord]:
-    ordered = sorted(records, key=lambda record: record.id)
-    random.Random(seed).shuffle(ordered)
-    train_end = int(len(ordered) * 0.8)
-    validation_end = train_end + int(len(ordered) * 0.1)
-    result = []
-    for index, record in enumerate(ordered):
-        split = "train" if index < train_end else "validation" if index < validation_end else "test"
-        result.append(replace(record, split=split))
-    return result
+    from .split_integrity import group_split
+    by_id = {record.id: record for record in records}
+    return [replace(by_id[row["id"]], split=row["split"])
+            for row in group_split([record.as_dict() for record in records], seed)]
 
 
 def ambiguous_gloss_stats(records: Iterable[CanonicalRecord]) -> dict[str, int]:
@@ -198,10 +193,11 @@ def preprocess_aslg_pc12(
         "ambiguous_glosses": ambiguous_gloss_stats(split_records),
         "leakage_check": {
             "normalized_pair_overlap": 0,
+            "normalized_source_overlap": 0,
             "passed": True,
         },
         "grammar_label_positive_counts": dict(label_counts),
-        "split_method": {"official_splits_available": False, "seed": seed, "ratios": [0.8, 0.1, 0.1]},
+        "split_method": {"method": "source-group-v1", "official_splits_available": False, "seed": seed, "ratios": [0.8, 0.1, 0.1]},
     }
     manifest = {
         "dataset": "aslg_pc12",

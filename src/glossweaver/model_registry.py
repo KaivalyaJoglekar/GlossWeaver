@@ -3,6 +3,7 @@ from __future__ import annotations
 from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
+import json
 
 from glossweaver.settings import ROOT
 
@@ -23,7 +24,7 @@ class ModelInfo:
     def available(self) -> bool:
         if self.model_type == "copy":
             return True
-        return bool(self.checkpoint_path and checkpoint_has_weights(self.checkpoint_path))
+        return bool(self.checkpoint_path and checkpoint_has_weights(resolve_checkpoint(self.checkpoint_path)))
 
     def debug_dict(self) -> dict[str, object]:
         modified = None
@@ -49,6 +50,23 @@ def checkpoint_has_weights(path: Path) -> bool:
     )
 
 
+def resolve_checkpoint(path: Path) -> Path:
+    """A completed run pointer selects a versioned checkpoint; no cross-model fallback."""
+    marker = path / "latest.json"
+    if not marker.exists() and not checkpoint_has_weights(path):
+        candidates = sorted(path.glob("seed-*/latest.json"))
+        if candidates:
+            return resolve_checkpoint(candidates[0].parent)
+    if marker.exists():
+        try:
+            candidate = (path / json.loads(marker.read_text())["run_directory"]).resolve()
+            if candidate.is_relative_to(path.resolve()) and checkpoint_has_weights(candidate):
+                return candidate
+        except (ValueError, KeyError, OSError):
+            pass
+    return path
+
+
 MODELS: dict[str, ModelInfo] = {
     "e0_copy": ModelInfo(
         "e0_copy", "E0 – Copy Baseline", None, "copy", "none", False,
@@ -71,7 +89,7 @@ MODELS: dict[str, ModelInfo] = {
     "e4_glossweaver": ModelInfo(
         "e4_glossweaver", "E4 – GlossWeaver", ROOT / "checkpoints/e4_glossweaver",
         "grammar-flan-t5", "shared_v1", True, "e4_glossweaver",
-        "Best validated grammar-aware model and augmentation mix.", True,
+        "Historical staged grammar-aware model and augmentation mix.", True,
     ),
     # Archived models remain directly inspectable, but are never silent fallbacks.
     "legacy_e1": ModelInfo(
@@ -85,6 +103,47 @@ MODELS: dict[str, ModelInfo] = {
     ),
 }
 
+for key, grammar in (("study-baseline", False), ("study-augmentation", False), ("study-grammar", True), ("study-full", True)):
+    MODELS[key] = ModelInfo(key, key.replace("study-", "Study · ").title() + " · fine-tuned", ROOT / "checkpoints" / key,
+                          "grammar-flan-t5" if grammar else "flan-t5", "shared_v1", grammar, key,
+                          "Matched FLAN study configuration. Existing installed weights may predate study-v2; inspect saved run provenance.")
+
+
+
+def cached_pretrained_checkpoint(repository: str) -> Path:
+    """Expose local Hugging Face base weights without downloading or relabeling runs."""
+    cache = ROOT / ".hf-cache/hub" / ("models--" + repository.replace("/", "--"))
+    reference = cache / "refs/main"
+    if reference.is_file():
+        revision = reference.read_text().strip()
+        if revision and all(char in "0123456789abcdef" for char in revision):
+            return cache / "snapshots" / revision
+    return cache / "snapshots/unavailable"
+
+
+for key, repository, name, formatter in (
+    ("pretrained_flan_t5", "google/flan-t5-small", "FLAN-T5-small · pretrained", "flan_grammar_v1"),
+    ("pretrained_t5", "google-t5/t5-small", "T5-small · pretrained", "shared_v1"),
+):
+    MODELS[key] = ModelInfo(
+        key, name, cached_pretrained_checkpoint(repository), "pretrained", formatter, False, key,
+        "Original pretrained weights; not fine-tuned for GlossWeaver. Exploratory results only.",
+    )
+
+
+MODELS['reconstruction-flan'] = ModelInfo(
+    'reconstruction-flan', 'FLAN-T5-small · reconstruction', ROOT / 'checkpoints/reconstruction-flan',
+    'flan-t5', 'shared_v1', False, 'reconstruction-flan',
+    'Fine-tuned reconstruction model with separate synthetic time/quantity adaptation; not a matched ablation.',
+)
+
+
+MODELS['balanced-flan'] = ModelInfo(
+    'balanced-flan', 'FLAN-T5-small · balanced', ROOT / 'checkpoints/balanced-flan',
+    'flan-t5', 'shared_v1', False, 'balanced-flan',
+    'Deployment continuation on broader reconstruction data and untimed present-tense examples; not a matched ablation.',
+)
+
 
 def get_model(key: str) -> ModelInfo:
     try:
@@ -94,10 +153,13 @@ def get_model(key: str) -> ModelInfo:
 
 
 def default_available_model() -> ModelInfo:
+    for key in ("balanced-flan", "reconstruction-flan", "study-full", "study-augmentation", "study-grammar", "study-baseline"):
+        if MODELS[key].available:
+            return MODELS[key]
     candidates = [model for model in MODELS.values() if model.default and model.available]
     if candidates:
         return candidates[0]
-    for key in ("e4_glossweaver", "e3_grammar_flan", "e2_flan", "e1_t5", "e0_copy"):
+    for key in ("e4_glossweaver", "e3_grammar_flan", "e2_flan", "e1_t5", "pretrained_flan_t5", "pretrained_t5", "e0_copy"):
         if MODELS[key].available:
             return MODELS[key]
     raise RuntimeError("No model is available")

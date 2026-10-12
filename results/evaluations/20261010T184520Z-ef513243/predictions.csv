@@ -1,0 +1,101 @@
+id,gloss,reference,prediction,model
+time-quantity-03368,GIRL READ 2 BOOK LAST NIGHT,The girl read 2 books last night.,The girl read 2 books last night.,reconstruction-flan
+time-quantity-00514,I NOT GO LIBRARY LAST NIGHT,I did not go to the library last night.,I did not go to the library last night.,reconstruction-flan
+time-quantity-00162,ME NOT GO HOSPITAL LAST NIGHT,I did not go to the hospital last night.,I did not go to the hospital last night.,reconstruction-flan
+time-quantity-03975,MAN NOT WALK LIBRARY YESTERDAY,The man did not walk to the library yesterday.,The man did not walk to the library yesterday.,reconstruction-flan
+time-quantity-01318,YOU WALK HOSPITAL YESTERDAY,You walked to the hospital yesterday.,You walked to the hospital yesterday.,reconstruction-flan
+time-quantity-01201,YOU NOT RUN SCHOOL LAST NIGHT,You did not run to the school last night.,You did not run to the school last night.,reconstruction-flan
+time-quantity-01073,WE NOT READ 3 BOOK LAST NIGHT,We did not read 3 books last night.,We did not read 3 books last night.,reconstruction-flan
+time-quantity-00713,I NOT BUY 2 TICKET LAST NIGHT,I did not buy 2 tickets last night.,I did not buy 2 tickets last night.,reconstruction-flan
+time-quantity-03970,MAN GO LIBRARY TOMORROW,The man will go to the library tomorrow.,The man will go to the library tomorrow.,reconstruction-flan
+time-quantity-00490,I NOT WALK PARK LAST NIGHT,I did not walk to the park last night.,I did not walk to the park last night.,reconstruction-flan
+time-quantity-03550,WOMAN GO PARK YESTERDAY,The woman went to the park yesterday.,The woman went to the park yesterday.,reconstruction-flan
+time-quantity-04570,CHILD BUY 5 TICKET TOMORROW,The child will buy 5 tickets tomorrow.,The child will buy 5 tickets tomorrow.,reconstruction-flan
+time-quantity-02842,BOY TRAVEL LIBRARY TOMORROW,The boy will travel to the library tomorrow.,The boy will travel to the library tomorrow.,reconstruction-flan
+time-quantity-00449,I GO MARKET LAST NIGHT,I went to the market last night.,I went to the market last night.,reconstruction-flan
+time-quantity-03115,GIRL NOT WALK SCHOOL TOMORROW,The girl will not walk to the school tomorrow.,The girl will not walk to the school tomorrow.,reconstruction-flan
+time-quantity-02237,SHE NOT READ 5 BOOK NEXT WEEK,She will not read 5 books next week.,She will not read 5 books next week.,reconstruction-flan
+time-quantity-00177,ME RUN HOSPITAL LAST NIGHT,I ran to the hospital last night.,I ran to the hospital last night.,reconstruction-flan
+time-quantity-00173,ME WALK HOSPITAL NEXT WEEK,I will walk to the hospital next week.,I will walk to the hospital next week.,reconstruction-flan
+time-quantity-00468,I NOT RUN MARKET TOMORROW,I will not run to the market tomorrow.,I will not run to the market tomorrow.,reconstruction-flan
+time-quantity-01060,WE READ 1 BOOK NEXT WEEK,We will read 1 book next week.,We will read 1 book next week.,reconstruction-flan
+time-quantity-01131,WE NOT EAT 2 APPLE TOMORROW,We will not eat 2 apples tomorrow.,We will not eat 2 apples tomorrow.,reconstruction-flan
+time-quantity-02674,THEY EAT 3 APPLE TOMORROW,They will eat 3 apples tomorrow.,They will eat 3 apples tomorrow.,reconstruction-flan
+time-quantity-03227,GIRL NOT TRAVEL LIBRARY TOMORROW,The girl will not travel to the library tomorrow.,The girl will not travel to the library tomorrow.,reconstruction-flan
+time-quantity-00170,ME NOT WALK HOSPITAL LAST NIGHT,I did not walk to the hospital last night.,I did not walk to the hospital last night.,reconstruction-flan
+time-quantity-02964,BOY BUY 3 BOOK NEXT WEEK,The boy will buy 3 books next week.,The boy will buy 3 books next week.,reconstruction-flan
+time-quantity-00945,WE NOT RUN HOSPITAL LAST NIGHT,We did not run to the hospital last night.,We did not run to the hospital last night.,reconstruction-flan
+time-quantity-03838,MAN GO STORE YESTERDAY,The man went to the store yesterday.,The man went to the store yesterday.,reconstruction-flan
+time-quantity-03417,GIRL NOT BUY 5 TICKET LAST NIGHT,The girl did not buy 5 tickets last night.,The girl did not buy 5 tickets last night.,reconstruction-flan
+time-quantity-03732,WOMAN BUY 3 BOOK NEXT WEEK,The woman will buy 3 books next week.,The woman will buy 3 books next week.,reconstruction-flan
+time-quantity-04499,CHILD NOT BUY 3 BOOK TOMORROW,The child will not buy 3 books tomorrow.,The child will not buy 3 books tomorrow.,reconstruction-flan
+time-quantity-02216,SHE READ 2 BOOK LAST NIGHT,She read 2 books last night.,She read 2 books last night.,reconstruction-flan
+time-quantity-01064,WE READ 2 BOOK LAST NIGHT,We read 2 books last night.,We read 2 books last night.,reconstruction-flan
+time-quantity-02368,THEY GO MARKET LAST NIGHT,They went to the market last night.,They went to the market last night.,reconstruction-flan
+time-quantity-03110,GIRL WALK SCHOOL YESTERDAY,The girl walked to the school yesterday.,The girl walked to the school yesterday.,reconstruction-flan
+time-quantity-01323,YOU NOT WALK HOSPITAL TOMORROW,You will not walk to the hospital tomorrow.,You will not walk to the hospital tomorrow.,reconstruction-flan
+time-quantity-04221,MAN NOT EAT 5 APPLE NEXT WEEK,The man will not eat 5 apples next week.,The man will not eat 5 apples next week.,reconstruction-flan
+time-quantity-00036,ME NOT GO SCHOOL TOMORROW,I will not go to the school tomorrow.,I will not go to the school tomorrow.,reconstruction-flan
+time-quantity-04065,MAN NOT GO OFFICE LAST NIGHT,The man did not go to the office last night.,The man did not go to the office last night.,reconstruction-flan
+time-quantity-04211,MAN NOT EAT 3 APPLE TOMORROW,The man will not eat 3 apples tomorrow.,The man will not eat 3 apples tomorrow.,reconstruction-flan
+time-quantity-00766,WE GO STORE YESTERDAY,We went to the store yesterday.,We went to the store yesterday.,reconstruction-flan
+time-quantity-03700,WOMAN RUN OFFICE NEXT WEEK,The woman will run to the office next week.,The woman will run to the office next week.,reconstruction-flan
+time-quantity-04485,CHILD NOT BUY 1 BOOK NEXT WEEK,The child will not buy 1 book next week.,The child will not buy 1 book next week.,reconstruction-flan
+time-quantity-01711,HE NOT RUN HOSPITAL YESTERDAY,He did not run to the hospital yesterday.,He did not run to the hospital yesterday.,reconstruction-flan
+time-quantity-04286,CHILD GO MARKET YESTERDAY,The child went to the market yesterday.,The child went to the market yesterday.,reconstruction-flan
+time-quantity-00742,I EAT 2 APPLE YESTERDAY,I ate 2 apples yesterday.,I ate 2 apples yesterday.,reconstruction-flan
+time-quantity-01053,WE NOT BUY 5 BOOK NEXT WEEK,We will not buy 5 books next week.,We will not buy 5 books next week.,reconstruction-flan
+time-quantity-04071,MAN NOT WALK OFFICE YESTERDAY,The man did not walk to the office yesterday.,The man did not walk to the office yesterday.,reconstruction-flan
+time-quantity-01662,HE GO LIBRARY YESTERDAY,He went to the library yesterday.,He went to the library yesterday.,reconstruction-flan
+time-quantity-04512,CHILD READ 1 BOOK LAST NIGHT,The child read 1 book last night.,The child read 1 book last night.,reconstruction-flan
+time-quantity-04449,CHILD NOT GO OFFICE LAST NIGHT,The child did not go to the office last night.,The child did not go to the office last night.,reconstruction-flan
+time-quantity-02004,SHE RUN MARKET NEXT WEEK,She will run to the market next week.,She will run to the market next week.,reconstruction-flan
+time-quantity-00471,I TRAVEL MARKET YESTERDAY,I traveled to the market yesterday.,I traveled to the market yesterday.,reconstruction-flan
+time-quantity-01810,HE BUY 3 BOOK TOMORROW,He will buy 3 books tomorrow.,He will buy 3 books tomorrow.,reconstruction-flan
+time-quantity-01723,HE NOT TRAVEL HOSPITAL TOMORROW,He will not travel to the hospital tomorrow.,He will not travel to the hospital tomorrow.,reconstruction-flan
+time-quantity-03230,GIRL GO HOSPITAL YESTERDAY,The girl went to the hospital yesterday.,The girl went to the hospital yesterday.,reconstruction-flan
+time-quantity-01273,YOU NOT TRAVEL PARK LAST NIGHT,You did not travel to the park last night.,You did not travel to the park last night.,reconstruction-flan
+time-quantity-00248,ME NOT TRAVEL OFFICE YESTERDAY,I did not travel to the office yesterday.,I did not travel to the office yesterday.,reconstruction-flan
+time-quantity-03915,MAN NOT WALK MARKET TOMORROW,The man will not walk to the market tomorrow.,The man will not walk to the market tomorrow.,reconstruction-flan
+time-quantity-02419,THEY NOT RUN PARK TOMORROW,They will not run to the park tomorrow.,They will not run to the park tomorrow.,reconstruction-flan
+time-quantity-02805,BOY NOT RUN PARK NEXT WEEK,The boy will not run to the park next week.,The boy will not run to the park next week.,reconstruction-flan
+time-quantity-00586,I NOT WALK STATION LAST NIGHT,I did not walk to the station last night.,I did not walk to the station last night.,reconstruction-flan
+time-quantity-01982,SHE GO MARKET YESTERDAY,She went to the market yesterday.,She went to the market yesterday.,reconstruction-flan
+time-quantity-00430,I NOT WALK SCHOOL NEXT WEEK,I will not walk to the school next week.,I will not walk to the school next week.,reconstruction-flan
+time-quantity-02890,BOY WALK STATION TOMORROW,The boy will walk to the station tomorrow.,The boy will walk to the station tomorrow.,reconstruction-flan
+time-quantity-01392,YOU RUN OFFICE LAST NIGHT,You ran to the office last night.,You ran to the office last night.,reconstruction-flan
+time-quantity-03320,GIRL TRAVEL OFFICE LAST NIGHT,The girl traveled to the office last night.,The girl traveled to the office last night.,reconstruction-flan
+time-quantity-03305,GIRL NOT WALK OFFICE LAST NIGHT,The girl did not walk to the office last night.,The girl did not walk to the office last night.,reconstruction-flan
+time-quantity-01839,HE NOT READ 3 BOOK YESTERDAY,He did not read 3 books yesterday.,He did not read 3 books yesterday.,reconstruction-flan
+time-quantity-03068,BOY EAT 5 APPLE NEXT WEEK,The boy will eat 5 apples next week.,The boy will eat 5 apples next week.,reconstruction-flan
+time-quantity-00932,WE GO HOSPITAL NEXT WEEK,We will go to the hospital next week.,We will go to the hospital next week.,reconstruction-flan
+time-quantity-03741,WOMAN NOT BUY 5 BOOK NEXT WEEK,The woman will not buy 5 books next week.,The woman will not buy 5 books next week.,reconstruction-flan
+time-quantity-00396,I NOT WALK STORE TOMORROW,I will not walk to the store tomorrow.,I will not walk to the store tomorrow.,reconstruction-flan
+time-quantity-00272,ME NOT BUY 3 BOOK YESTERDAY,I did not buy 3 books yesterday.,I did not buy 3 books yesterday.,reconstruction-flan
+time-quantity-03472,WOMAN RUN STORE LAST NIGHT,The woman ran to the store last night.,The woman ran to the store last night.,reconstruction-flan
+time-quantity-01094,WE BUY 2 TICKET YESTERDAY,We bought 2 tickets yesterday.,We bought 2 tickets yesterday.,reconstruction-flan
+time-quantity-01376,YOU GO OFFICE LAST NIGHT,You went to the office last night.,You went to the office last night.,reconstruction-flan
+time-quantity-04135,MAN NOT READ 2 BOOK YESTERDAY,The man did not read 2 books yesterday.,The man did not read 2 books yesterday.,reconstruction-flan
+time-quantity-04441,CHILD NOT TRAVEL STATION LAST NIGHT,The child did not travel to the station last night.,The child did not travel to the station last night.,reconstruction-flan
+time-quantity-00477,I TRAVEL MARKET NEXT WEEK,I will travel to the market next week.,I will travel to the market next week.,reconstruction-flan
+time-quantity-04210,MAN EAT 3 APPLE TOMORROW,The man will eat 3 apples tomorrow.,The man will eat 3 apples tomorrow.,reconstruction-flan
+time-quantity-04236,CHILD WALK STORE NEXT WEEK,The child will walk to the store next week.,The child will walk to the store next week.,reconstruction-flan
+time-quantity-02407,THEY NOT WALK PARK YESTERDAY,They did not walk to the park yesterday.,They did not walk to the park yesterday.,reconstruction-flan
+time-quantity-03357,GIRL NOT BUY 5 BOOK NEXT WEEK,The girl will not buy 5 books next week.,The girl will not buy 5 books next week.,reconstruction-flan
+time-quantity-01873,HE NOT BUY 3 TICKET LAST NIGHT,He did not buy 3 tickets last night.,He did not buy 3 tickets last night.,reconstruction-flan
+time-quantity-00776,WE WALK STORE LAST NIGHT,We walked to the store last night.,We walked to the store last night.,reconstruction-flan
+time-quantity-01909,HE NOT EAT 3 APPLE NEXT WEEK,He will not eat 3 apples next week.,He will not eat 3 apples next week.,reconstruction-flan
+time-quantity-01761,HE NOT GO OFFICE LAST NIGHT,He did not go to the office last night.,He did not go to the office last night.,reconstruction-flan
+time-quantity-01030,WE BUY 2 BOOK YESTERDAY,We bought 2 books yesterday.,We bought 2 books yesterday.,reconstruction-flan
+time-quantity-03500,WOMAN WALK SCHOOL NEXT WEEK,The woman will walk to the school next week.,The woman will walk to the school next week.,reconstruction-flan
+time-quantity-01279,YOU NOT GO LIBRARY YESTERDAY,You did not go to the library yesterday.,You did not go to the library yesterday.,reconstruction-flan
+time-quantity-04313,CHILD NOT TRAVEL MARKET LAST NIGHT,The child did not travel to the market last night.,The child did not travel to the market last night.,reconstruction-flan
+time-quantity-03582,WOMAN GO LIBRARY YESTERDAY,The woman went to the library yesterday.,The woman went to the library yesterday.,reconstruction-flan
+time-quantity-03407,GIRL NOT BUY 3 TICKET YESTERDAY,The girl did not buy 3 tickets yesterday.,The girl did not buy 3 tickets yesterday.,reconstruction-flan
+time-quantity-00398,I NOT WALK STORE NEXT WEEK,I will not walk to the store next week.,I will not walk to the store next week.,reconstruction-flan
+time-quantity-03247,GIRL NOT RUN HOSPITAL YESTERDAY,The girl did not run to the hospital yesterday.,The girl did not run to the hospital yesterday.,reconstruction-flan
+time-quantity-04502,CHILD BUY 5 BOOK YESTERDAY,The child bought 5 books yesterday.,The child bought 5 books yesterday.,reconstruction-flan
+time-quantity-00811,WE NOT WALK SCHOOL TOMORROW,We will not walk to the school tomorrow.,We will not walk to the school tomorrow.,reconstruction-flan
+time-quantity-02797,BOY NOT WALK PARK NEXT WEEK,The boy will not walk to the park next week.,The boy will not walk to the park next week.,reconstruction-flan
+time-quantity-04545,CHILD NOT BUY 1 TICKET LAST NIGHT,The child did not buy 1 ticket last night.,The child did not buy 1 ticket last night.,reconstruction-flan
+time-quantity-04529,CHILD NOT READ 3 BOOK LAST NIGHT,The child did not read 3 books last night.,The child did not read 3 books last night.,reconstruction-flan

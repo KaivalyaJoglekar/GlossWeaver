@@ -13,7 +13,7 @@ def iter_aligned_text_pairs(path: str | Path, split: str) -> Iterator[CanonicalR
     with source.open(newline="", encoding="utf-8-sig") as handle:
         reader = csv.DictReader(handle)
         fields = set(reader.fieldnames or [])
-        gloss_key = next((key for key in ("gloss", "asl_gloss", "SENTENCE") if key in fields), None)
+        gloss_key = next((key for key in ("gloss", "asl_gloss") if key in fields), None)
         text_key = next((key for key in ("text", "translation", "english") if key in fields), None)
         if not gloss_key or not text_key:
             raise ValueError(
@@ -29,4 +29,3 @@ def iter_aligned_text_pairs(path: str | Path, split: str) -> Iterator[CanonicalR
                 split=split,
                 source_partition=split,
             )
-

@@ -55,7 +55,9 @@ class GlossTextDataset(Dataset):
         if self.include_grammar_labels and (labels is None or len(labels) != len(LABEL_NAMES)):
             labels = extract_grammar_labels(record["gloss"], record["target"])
         if labels is not None:
-            item["grammar_labels"] = torch.tensor(labels, dtype=torch.float)
+            item["grammar_labels"] = torch.tensor([float("nan") if value is None else value for value in labels], dtype=torch.float)
+            if record.get("grammar_mask") is not None:
+                item["grammar_mask"] = torch.tensor(record["grammar_mask"], dtype=torch.float)
         return item
 
 
@@ -87,4 +89,5 @@ class Seq2SeqCollator:
         }
         if self.include_grammar and all(item is not None for item in grammar):
             batch["grammar_labels"] = torch.stack(grammar)  # type: ignore[arg-type]
+            batch["grammar_mask"] = torch.stack([feature.get("grammar_mask", torch.ones_like(feature["grammar_labels"])) for feature in features])
         return batch

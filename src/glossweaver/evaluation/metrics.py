@@ -49,7 +49,7 @@ def compute_metrics(
     predictions: Sequence[str],
     references: Sequence[str],
     *,
-    include_bertscore: bool = True,
+    include_bertscore: bool = False,
     bertscore_model: str = "distilbert-base-uncased",
     glosses: Sequence[str] | None = None,
 ) -> dict[str, float | str]:
@@ -61,7 +61,8 @@ def compute_metrics(
     from nltk.translate.meteor_score import meteor_score
     from rouge_score import rouge_scorer
 
-    bleu = sacrebleu.corpus_bleu(list(predictions), [list(references)])
+    scorer = sacrebleu.metrics.BLEU()
+    bleu = scorer.corpus_score(list(predictions), [list(references)])
     chrf = sacrebleu.corpus_chrf(list(predictions), [list(references)])
     rouge = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=True)
     rouge_l = sum(
@@ -74,7 +75,7 @@ def compute_metrics(
     ) / len(predictions)
     result: dict[str, float | str] = {
         "sacrebleu": float(bleu.score),
-        "sacrebleu_signature": str(bleu),
+        "sacrebleu_signature": str(scorer.get_signature()),
         "chrf": float(chrf.score),
         "rouge_l": float(rouge_l),
         "meteor": float(meteor),
@@ -101,18 +102,22 @@ def compute_metrics(
         result["bertscore_f1"] = float(f1.mean().item())
         result["bertscore_model"] = bertscore_model
     else:
-        result["bertscore_status"] = "skipped by explicit command-line option"
+        result["bertscore_status"] = "disabled; enable explicitly"
     return result
 
 
 def compute_multi_reference_metrics(
     predictions: Sequence[str], reference_sets: Sequence[Sequence[str]], *,
-    include_bertscore: bool = True,
+    include_bertscore: bool = False,
     bertscore_model: str = "distilbert-base-uncased",
     glosses: Sequence[str] | None = None,
 ) -> dict[str, float | str]:
     if len(predictions) != len(reference_sets) or not predictions:
         raise ValueError("Predictions and non-empty reference sets must have equal length")
+    if any(not refs for refs in reference_sets):
+        raise ValueError("Every prediction requires at least one reference")
+    if glosses is not None and len(glosses) != len(predictions):
+        raise ValueError("Glosses and predictions must have equal length")
     import sacrebleu
     from nltk.translate.meteor_score import meteor_score
     from rouge_score import rouge_scorer
@@ -122,7 +127,8 @@ def compute_multi_reference_metrics(
         [refs[min(index, len(refs) - 1)] for refs in reference_sets]
         for index in range(width)
     ]
-    bleu = sacrebleu.corpus_bleu(list(predictions), streams)
+    scorer = sacrebleu.metrics.BLEU()
+    bleu = scorer.corpus_score(list(predictions), streams)
     chrf = sacrebleu.corpus_chrf(list(predictions), streams)
     rouge = rouge_scorer.RougeScorer(["rougeL"], use_stemmer=True)
     rouge_l = sum(
@@ -134,7 +140,7 @@ def compute_multi_reference_metrics(
         for prediction, refs in zip(predictions, reference_sets, strict=True)
     ) / len(predictions)
     result: dict[str, float | str] = {
-        "sacrebleu": float(bleu.score), "sacrebleu_signature": str(bleu),
+        "sacrebleu": float(bleu.score), "sacrebleu_signature": str(scorer.get_signature()),
         "chrf": float(chrf.score), "rouge_l": float(rouge_l),
         "meteor": float(meteor),
         "exact_match": sum(
@@ -167,5 +173,5 @@ def compute_multi_reference_metrics(
         result["bertscore_f1"] = sum(best) / len(best)
         result["bertscore_model"] = bertscore_model
     else:
-        result["bertscore_status"] = "skipped by explicit command-line option"
+        result["bertscore_status"] = "disabled; enable explicitly"
     return result

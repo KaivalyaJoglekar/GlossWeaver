@@ -19,12 +19,12 @@ TRAIN_EXAMPLES = {
 
 
 def build_tables(metrics: pd.DataFrame) -> None:
-    metrics["train_examples"] = metrics["model"].map(TRAIN_EXAMPLES)
+    metrics = metrics.copy()
+    metrics["train_examples"] = metrics["train_examples"].fillna(metrics["model"].map(TRAIN_EXAMPLES))
     metrics["model_label"] = metrics["model"].map(DISPLAY)
     metrics = metrics.sort_values([
         "model_label", "dataset", "split"
     ])
-    metrics.to_csv(RESULTS / "metrics/model_metrics.csv", index=False)
     metrics.to_csv(RESULTS / "tables/main_results.csv", index=False)
     wide = metrics.pivot_table(
         index=["model_label", "train_examples", "seed"], columns="dataset",
@@ -114,7 +114,7 @@ def build_qualitative() -> None:
     for row in legacy.to_dict(orient="records"):
         error_rows.append({"id": row["id"], "model": "legacy_e4", "prediction": row["prediction"], "categories": legacy_errors[row["id"]]})
     for row in current.to_dict(orient="records"):
-        error_rows.append({"id": row["id"], "model": "e4_glossweaver", "prediction": row["prediction"], "categories": "VALID_PARAPHRASE"})
+        error_rows.append({"id": row["id"], "model": "e4_glossweaver", "prediction": row["prediction"], "categories": "PENDING_HUMAN_REVIEW"})
     pd.DataFrame(error_rows).to_csv(RESULTS / "tables/error_analysis.csv", index=False)
 
 
@@ -127,7 +127,7 @@ def build_report(metrics: pd.DataFrame) -> None:
 
 ## Outcome
 
-The model-quality failure is fixed. The promoted E4 checkpoint reconstructs all nine isolated challenge examples fluently and without obvious semantic drift. On the three-reference challenge set it scores **BLEU {value('e4_glossweaver', 'challenge', 'bleu'):.2f}**, **ROUGE-L {value('e4_glossweaver', 'challenge', 'rouge_l'):.3f}**, **METEOR {value('e4_glossweaver', 'challenge', 'meteor'):.3f}**, **BERTScore F1 {value('e4_glossweaver', 'challenge', 'bertscore_f1'):.3f}**, and **content recall {value('e4_glossweaver', 'challenge', 'content_word_recall'):.3f}**.
+The saved E4 evaluation covers nine development challenge examples. Semantic fidelity requires independent human review; these automatic metrics do not establish natural-ASL translation quality. On the three-reference challenge set it scores **BLEU {value('e4_glossweaver', 'challenge', 'bleu'):.2f}**, **ROUGE-L {value('e4_glossweaver', 'challenge', 'rouge_l'):.3f}**, **METEOR {value('e4_glossweaver', 'challenge', 'meteor'):.3f}**, **BERTScore F1 {value('e4_glossweaver', 'challenge', 'bertscore_f1'):.3f}**, and **content recall {value('e4_glossweaver', 'challenge', 'content_word_recall'):.3f}**.
 
 ## Root cause
 
@@ -135,7 +135,9 @@ The legacy training pipeline optimized a parliamentary, long-form ASLG-PC12 dist
 
 The active pipeline now uses one shared Python input formatter, an explicit checkpoint registry with no silent fallback, verified `gloss → English` orientation, clean public-source telegraphic augmentation, controlled compositional coverage, and challenge-leak assertions.
 
-## Data and leakage controls
+## Historical data and leakage limitations
+
+These results predate source-group repairs. The original full synthetic test split contains 666 source-overlap rows; the reported 500-row slice covers public LibriSpeech only. The challenge examples informed development and are not an independent final test. Use repaired splits and new evaluations for the paper.
 
 - ASLG-PC12: 87,710 raw rows; 81,017 unique pairs; deterministic seed-42 split of 64,813 / 8,101 / 8,103.
 - Reconstruction corpus: 21,785 quality-checked pairs across public LibriSpeech clean text and controlled compositional, condition, and schedule sources.
@@ -160,15 +162,15 @@ The active pipeline now uses one shared Python input formatter, an explicit chec
 | E3 + grammar loss | 10,000 | {value('e3_grammar_flan','aslg_pc12','bleu'):.2f} | {value('e3_grammar_flan','synthetic_telegraphic','bleu'):.2f} | {value('e3_grammar_flan','challenge','bleu'):.2f} | {value('e3_grammar_flan','challenge','content_word_recall'):.3f} |
 | E4 scaled recipe | 37,388 | {value('e4_glossweaver','aslg_pc12','bleu'):.2f} | {value('e4_glossweaver','synthetic_telegraphic','bleu'):.2f} | {value('e4_glossweaver','challenge','bleu'):.2f} | {value('e4_glossweaver','challenge','content_word_recall'):.3f} |
 
-E2 was iteratively continued from its passing baseline checkpoint as uncovered constructions were repaired; its final checkpoint has seven total epochs across staged, leakage-checked data revisions. E3 is the matched auxiliary-objective continuation from E2. E4 scales E3 to all 37,388 available training examples for two epochs. This staged compute difference is reported explicitly and should not be mistaken for a perfectly compute-matched ablation.
+E2 was iteratively continued from its passing baseline checkpoint as uncovered constructions were repaired; its final checkpoint has seven total epochs across staged, leakage-checked data revisions. E3 continues E2 with additional training and an auxiliary objective; this does not isolate the objective alone. E4 scales E3 to all 37,388 available training examples for two epochs. This staged compute difference is reported explicitly and should not be mistaken for a perfectly compute-matched ablation.
 
 ## Interpretation
 
-E1 demonstrates the failure: ASLG BLEU is {value('e1_t5','aslg_pc12','bleu'):.2f}, but challenge BLEU is only {value('e1_t5','challenge','bleu'):.2f}. Hybrid reconstruction data is the dominant intervention: E2 raises challenge BLEU to {value('e2_flan','challenge','bleu'):.2f} and content recall to 1.0. E3 provides a modest held-out gain (ASLG {value('e2_flan','aslg_pc12','bleu'):.2f} → {value('e3_grammar_flan','aslg_pc12','bleu'):.2f}; synthetic {value('e2_flan','synthetic_telegraphic','bleu'):.2f} → {value('e3_grammar_flan','synthetic_telegraphic','bleu'):.2f}) but no challenge gain, so the grammar objective helps slightly rather than driving the recovery. Scaling to E4 gives the best results on every measured domain.
+E1 demonstrates the failure: ASLG BLEU is {value('e1_t5','aslg_pc12','bleu'):.2f}, but challenge BLEU is only {value('e1_t5','challenge','bleu'):.2f}. The historical staged recipe changes several factors together: E2 raises challenge BLEU to {value('e2_flan','challenge','bleu'):.2f} and content recall to 1.0. E3 provides a modest held-out gain (ASLG {value('e2_flan','aslg_pc12','bleu'):.2f} → {value('e3_grammar_flan','aslg_pc12','bleu'):.2f}; synthetic {value('e2_flan','synthetic_telegraphic','bleu'):.2f} → {value('e3_grammar_flan','synthetic_telegraphic','bleu'):.2f}) but no challenge gain, but matched continuation controls are required before attributing the difference to grammar supervision. Scaling to E4 gives the best results on every measured domain.
 
 ## Serving parity and limitations
 
-Direct inference, the FastAPI endpoint, and the frontend use the same registry, formatter, beam settings, and checkpoint metadata. E4 is the default only because its artifacts exist; unavailable requested models return explicit errors rather than falling back.
+Direct inference, the FastAPI endpoint, and the frontend use the same registry, formatter, beam settings, and checkpoint metadata. Serving selects an available checkpoint; this checkout contains no trained neural weights. Unavailable requested models return explicit errors rather than falling back.
 
 Limitations remain: ASLG-PC12 is rule-generated parliamentary text, controlled data is synthetic, the challenge set is small, weak grammar labels have uneven reliability, and automatic metrics cannot replace human evaluation. The task remains text-only Gloss-to-Text reconstruction; video recognition, pose estimation, sign detection, and speech synthesis are out of scope.
 """
@@ -177,8 +179,14 @@ Limitations remain: ASLG-PC12 is rule-generated parliamentary text, controlled d
 
 def main() -> None:
     metrics = pd.read_csv(RESULTS / "metrics/model_metrics.csv")
+    # This legacy report is restricted to the original historical runs.
+    # Immutable new evaluations must not be averaged into an old comparison.
+    if "evaluation_id" in metrics:
+        metrics = metrics[metrics.evaluation_id.fillna("") == ""]
+    metrics = metrics[metrics.model.isin(MODEL_ORDER)]
+    if metrics.duplicated(["model", "dataset"]).any():
+        raise ValueError("Historical report requires one original row per model/dataset")
     build_tables(metrics)
-    metrics = pd.read_csv(RESULTS / "metrics/model_metrics.csv")
     build_plots(metrics)
     build_qualitative()
     build_report(metrics)
