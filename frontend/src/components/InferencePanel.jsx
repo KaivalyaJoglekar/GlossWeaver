@@ -37,9 +37,10 @@ export default function InferencePanel() {
     try {
       const data = await fetchModels();
       if (!mounted.current) return;
-      setModels(data.models);
-      setCheckpoint(current => data.models.some(m => m.checkpoint === current && m.available)
-        ? current : (data.models.find(m => m.default && m.available)?.checkpoint || ''));
+      const working = data.models.filter(m => m.available);
+      setModels(working);
+      setCheckpoint(current => working.some(m => m.checkpoint === current)
+        ? current : (working.find(m => m.default)?.checkpoint || working[0]?.checkpoint || ''));
     } catch (e) { if (mounted.current) setModelError(e.message); }
     finally { if (mounted.current) setRefreshing(false); }
   }
@@ -47,8 +48,9 @@ export default function InferencePanel() {
     mounted.current = true;
     fetchModels().then(data => {
       if (!mounted.current) return;
-      setModels(data.models);
-      setCheckpoint(data.models.find(m => m.default && m.available)?.checkpoint || '');
+      const working = data.models.filter(m => m.available);
+      setModels(working);
+      setCheckpoint(working.find(m => m.default)?.checkpoint || working[0]?.checkpoint || '');
     }).catch(e => { if (mounted.current) setModelError(e.message); });
     return () => { mounted.current = false; controller.current?.abort(); };
   }, []);
@@ -93,7 +95,7 @@ export default function InferencePanel() {
     </div>
     <div className="model-status" role="status">
       <span className={`status-dot ${neuralReady ? 'ready' : ''}`} />
-      <div><strong>{models.length ? (neuralReady ? 'Models ready' : 'Copy baseline available · trained weights missing') : 'Checking model availability'}</strong>
+      <div><strong>{models.length ? (neuralReady ? 'Model active · Neural inference ready' : 'Copy baseline ready') : 'Checking model availability'}</strong>
         {!neuralReady && <p>Trained weights are required to restore grammar.</p>}</div>
       <button className="text-button" onClick={loadModels} disabled={refreshing || loading}>{refreshing ? 'Checking…' : 'Refresh status'}</button>
     </div>
@@ -113,7 +115,7 @@ export default function InferencePanel() {
         <select id="model-select" className="form-select" value={checkpoint} disabled={loading || !models.length}
           onChange={e => { setCheckpoint(e.target.value); setResult(null); setError(''); }}>
           {!models.length && <option value="">Waiting for API…</option>}
-          {models.map(m => <option key={m.checkpoint} value={m.checkpoint} disabled={!m.available}>{m.name}{!m.available ? ' · weights missing' : ''}</option>)}
+          {models.map(m => <option key={m.checkpoint} value={m.checkpoint}>{m.name}</option>)}
         </select>
         {selected?.debug.model_type === 'pretrained' && <p className="form-hint">{selected.debug.training_data_description}</p>}
         {selected?.debug.model_type === 'copy' && <p className="form-hint">This baseline normalizes your text. It cannot fill missing grammar.</p>}
@@ -122,7 +124,7 @@ export default function InferencePanel() {
             disabled={loading} onChange={e => setNumBeams(e.target.value === '' ? '' : Number(e.target.value))} /></div>
           <div><label className="form-label" htmlFor="threshold-input">Feature threshold</label><input id="threshold-input" className="form-input" type="number" min="0" max="1" step="0.05" value={threshold}
             disabled={loading} onChange={e => setThreshold(e.target.value === '' ? '' : Number(e.target.value))} /></div>
-        <div><label className="form-label" htmlFor="alternative-input">Candidate count</label><input id="alternative-input" className="form-input" type="number" min="1" max={Math.min(5, numBeams)} value={alternatives} disabled={loading} onChange={e => setAlternatives(Number(e.target.value))} /></div></div><p className="form-hint">The threshold controls displayed grammar features, not output correctness.</p><p className="form-hint">{models.filter(m => !m.available).length} registry entries have no weight files and cannot run.</p></details>
+        <div><label className="form-label" htmlFor="alternative-input">Candidate count</label><input id="alternative-input" className="form-input" type="number" min="1" max={Math.min(5, numBeams)} value={alternatives} disabled={loading} onChange={e => setAlternatives(Number(e.target.value))} /></div></div><p className="form-hint">The threshold controls displayed grammar features, not output correctness.</p></details>
         {!validSettings && <p className="error-banner">Use beams 1–10, threshold 0–1, and candidate count 1–5 within the beam width.</p>}
         <div className="submit-row"><button className="btn-primary" type="submit" disabled={!canRun}>{loading ? 'Reconstructing…' : 'Reconstruct sentence'}<span aria-hidden="true">→</span></button>
           <button type="button" className="text-button" disabled={loading || !gloss} onClick={() => editInput('')}>Clear</button></div>

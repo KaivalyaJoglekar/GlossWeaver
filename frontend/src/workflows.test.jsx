@@ -15,10 +15,8 @@ function setup() {
   api.fetchHealth.mockResolvedValue({ status: 'ok' }); api.fetchMetrics.mockResolvedValue({ rows: [], evaluations: [], provenance: 'Saved' });
 }
 describe('laboratory workflows', () => {
-  it('renders overview and navigates to Studio', async () => {
-    setup(); const user = userEvent.setup(); render(<App />);
-    expect(screen.getByRole('heading', { name: 'From fragments to fluency.' })).toBeTruthy();
-    await user.click(screen.getByRole('button', { name: 'Open Reconstruction Studio' }));
+  it('renders Reconstruction Studio directly in App', async () => {
+    setup(); render(<App />);
     expect(screen.getByLabelText('Text to reconstruct')).toBeTruthy();
     await waitFor(() => expect(screen.getByRole('option', { name: 'Balanced model' })).toBeTruthy());
   });
@@ -32,7 +30,7 @@ describe('laboratory workflows', () => {
     await screen.findAllByText('I go.');
     expect(api.runInfer).toHaveBeenCalledWith(expect.objectContaining({ gloss: 'ME GO', checkpoint: 'balanced-flan', alternatives: 1 }));
     expect(screen.getByText('No issue detected')).toBeTruthy();
-    expect(screen.getByRole('option', { name: 'Missing model · weights missing' }).disabled).toBe(true);
+    expect(screen.queryByRole('option', { name: /Missing model/ })).toBeNull();
   });
   it('shows a loading state and an actionable API error', async () => {
     setup(); let reject;
